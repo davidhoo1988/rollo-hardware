@@ -1,0 +1,199 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/david/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_for_surface/behav/modelsim
+T_opt
+!s110 1573377736
+V=eO0:;ED4a5Fg1S_DdW<I2
+04 12 4 work gf2mz_top_tb fast 0
+04 4 4 work glbl fast 0
+=1-2816a8722bd0-5dc7d6c7-209-86c
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+vgf2m_mul
+Z2 !s10a 1573099102
+Z3 !s110 1573115630
+!i10b 1
+!s100 1b6Xk4F8O[]6R=U`8HFAW0
+I:gjN<DVY]QJUPjmOI4T992
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z5 w1573099102
+Z6 8../../../../Improve-I.srcs/sources_1/new/gf2m_mul.v
+Z7 F../../../../Improve-I.srcs/sources_1/new/gf2m_mul.v
+L0 5
+Z8 OL;L;10.5;63
+r1
+!s85 0
+31
+Z9 !s108 1573115629.000000
+Z10 !s107 ../../../../Improve-I.srcs/sources_1/new/define.v|../../../../Improve-I.srcs/sources_1/new/clog2.v|../../../../Improve-I.srcs/sources_1/new/gf2mz_top_tb.v|../../../../Improve-I.srcs/sources_1/new/mul_ctrl.v|../../../../Improve-I.srcs/sources_1/new/mem_sp.v|../../../../Improve-I.srcs/sources_1/new/mem_dp.v|../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v|../../../../Improve-I.srcs/sources_1/new/gf2m_mul.v|
+Z11 !s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../Improve-I.srcs/sources_1/new|../../../../Improve-I.srcs/sources_1/new/gf2m_mul.v|../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v|../../../../Improve-I.srcs/sources_1/new/mem_dp.v|../../../../Improve-I.srcs/sources_1/new/mem_sp.v|../../../../Improve-I.srcs/sources_1/new/mul_ctrl.v|../../../../Improve-I.srcs/sources_1/new/gf2mz_top_tb.v|
+!i113 0
+Z12 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 -work xil_defaultlib +incdir+../../../../Improve-I.srcs/sources_1/new -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vgf2mz_top
+Z14 !s110 1573377718
+!i10b 1
+!s100 kYzomSVZ]aGi`CiGhZYz=0
+I`QE_=oc^dmDedbf4>J3n]1
+R4
+R0
+w1573377420
+8../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v
+F../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v
+L0 25
+R8
+r1
+!s85 0
+31
+Z15 !s108 1573377718.000000
+R10
+R11
+!i113 0
+R12
+R13
+R1
+vgf2mz_top_tb
+R14
+!i10b 1
+!s100 LCS;33V_kJaQIZ8:OjE:63
+IKhCj:SoI_Xg`=mPN:nIG^3
+R4
+R0
+w1572167573
+8../../../../Improve-I.srcs/sources_1/new/gf2mz_top_tb.v
+F../../../../Improve-I.srcs/sources_1/new/gf2mz_top_tb.v
+L0 23
+R8
+r1
+!s85 0
+31
+R15
+R10
+R11
+!i113 0
+R12
+R13
+R1
+vglbl
+R14
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+IAl?5;D^:bf?I5A^M>WzmU1
+R4
+R0
+w1522801934
+8glbl.v
+Fglbl.v
+L0 6
+R8
+r1
+!s85 0
+31
+R15
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+R12
+R1
+vmem_dp
+!s10a 1571553190
+Z16 !s110 1572949585
+!i10b 1
+!s100 jYVS@<boSRkNPG66mdSKC2
+IWn<bo4P6J07iFiG`@g=JV0
+R4
+R0
+w1571553190
+8../../../../Improve-I.srcs/sources_1/new/mem_dp.v
+F../../../../Improve-I.srcs/sources_1/new/mem_dp.v
+Z17 L0 11
+R8
+r1
+!s85 0
+31
+Z18 !s108 1572949584.000000
+R10
+R11
+!i113 0
+R12
+R13
+R1
+vmem_sp
+!s10a 1571553171
+R16
+!i10b 1
+!s100 eMPDi[n6X>YOOgRG97EBg0
+I:<QjAfD2M=D`JFWBSPkg70
+R4
+R0
+w1571553171
+8../../../../Improve-I.srcs/sources_1/new/mem_sp.v
+F../../../../Improve-I.srcs/sources_1/new/mem_sp.v
+R17
+R8
+r1
+!s85 0
+31
+R18
+R10
+R11
+!i113 0
+R12
+R13
+R1
+vmul_ctrl
+R14
+!i10b 1
+!s100 f:Z_]7PU4VXh5JIZ@bHfZ2
+IVM6nODU3O>S2Ug0XDib0I1
+R4
+R0
+w1573377221
+8../../../../Improve-I.srcs/sources_1/new/mul_ctrl.v
+F../../../../Improve-I.srcs/sources_1/new/mul_ctrl.v
+L0 24
+R8
+r1
+!s85 0
+31
+R15
+R10
+R11
+!i113 0
+R12
+R13
+R1
+vshift_x_by_i
+R2
+R3
+!i10b 1
+!s100 eAGRh728AfWX0[niUW5h33
+I0Jhjj>?=SeRh=j:E0Ehz51
+R4
+R0
+R5
+R6
+R7
+L0 271
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R1

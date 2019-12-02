@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Improve-I.srcs/sources_1/new/gf2m_mul.v" \
+"../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v" \
+"../../../../Improve-I.srcs/sources_1/new/mem_dp.v" \
+"../../../../Improve-I.srcs/sources_1/new/mem_sp.v" \
+"../../../../Improve-I.srcs/sources_1/new/mul_ctrl.v" \
+"../../../../Improve-I.srcs/sources_1/new/gf2mz_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

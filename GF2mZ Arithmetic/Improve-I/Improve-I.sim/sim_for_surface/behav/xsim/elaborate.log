@@ -1,0 +1,34 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6ea32c48308848edac3c176f5f510e27 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot gf2mz_top_tb_behav xil_defaultlib.gf2mz_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem_sp(WIDTH=237,DEPTH=32'b01000...
+Compiling module xil_defaultlib.mem_dp(WIDTH=237,DEPTH=32'b01000...
+Compiling module xil_defaultlib.mem_sp(WIDTH=237,DEPTH=32'b01000...
+Compiling module xil_defaultlib.shift_x_by_i(i=1)
+Compiling module xil_defaultlib.shift_x_by_i(i=2)
+Compiling module xil_defaultlib.shift_x_by_i(i=3)
+Compiling module xil_defaultlib.shift_x_by_i(i=4)
+Compiling module xil_defaultlib.shift_x_by_i(i=5)
+Compiling module xil_defaultlib.shift_x_by_i(i=6)
+Compiling module xil_defaultlib.shift_x_by_i(i=7)
+Compiling module xil_defaultlib.shift_x_by_i(i=8)
+Compiling module xil_defaultlib.shift_x_by_i(i=9)
+Compiling module xil_defaultlib.shift_x_by_i(i=10)
+Compiling module xil_defaultlib.shift_x_by_i(i=11)
+Compiling module xil_defaultlib.shift_x_by_i(i=12)
+Compiling module xil_defaultlib.shift_x_by_i(i=13)
+Compiling module xil_defaultlib.shift_x_by_i(i=14)
+Compiling module xil_defaultlib.shift_x_by_i(i=15)
+Compiling module xil_defaultlib.shift_x_by_i(i=16)
+Compiling module xil_defaultlib.gf2m_mul(WIDTH=79,k=9,d=16)
+Compiling module xil_defaultlib.mul_ctrl(WIDTH=237,DEPTH=32'b010...
+Compiling module xil_defaultlib.gf2mz_top(FILE_A="../../../../Im...
+Compiling module xil_defaultlib.gf2mz_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gf2mz_top_tb_behav

@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Aug 14 11:21:49 2019
+# Process ID: 38780
+# Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12184 C:\Users\David\Dropbox\LRPC Code\hardware\GF2m Arithmetic\GF2m_multiplier\GF2m_multiplier.xpr
+# Log file: C:/Users/David/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/vivado.log
+# Journal file: C:/Users/David/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.5/win64
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk]
+file mkdir {C:/Users/David/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/constrs_1/new}
+close [ open {C:/Users/David/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/constrs_1/new/usr_constrain.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/David/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/constrs_1/new/usr_constrain.xdc}}
+set_property target_constrs_file {C:/Users/David/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/constrs_1/new/usr_constrain.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+refresh_design
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1

@@ -1,0 +1,158 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\David\Dropbox\LRPC Code\hardware\GF2mZ Arithmetic\Improve-I\Improve-I.sim\sim_1\behav\modelsim
+vgf2m_mul
+Z1 IbR7UbXRC[1AJ<gVQKAJjN0
+Z2 VkS9Ok6e9PWIabnCda2Ocb0
+Z3 dC:\Users\David\Dropbox\LRPC Code\hardware\GF2mZ Arithmetic\Improve-I\Improve-I.sim\sim_1\behav\modelsim
+Z4 w1574748479
+Z5 8../../../../Improve-I.srcs/sources_1/new/gf2m_mul.v
+Z6 F../../../../Improve-I.srcs/sources_1/new/gf2m_mul.v
+L0 5
+Z7 OL;L;10.1c;51
+r1
+31
+Z8 !s108 1574748788.289000
+Z9 !s107 ../../../../Improve-I.srcs/sources_1/new/define.v|../../../../Improve-I.srcs/sources_1/new/clog2.v|../../../../Improve-I.srcs/sources_1/new/gf2mz_top_tb.v|../../../../Improve-I.srcs/sources_1/new/mul_ctrl.v|../../../../Improve-I.srcs/sources_1/new/mem_sp.v|../../../../Improve-I.srcs/sources_1/new/mem_dp.v|../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v|../../../../Improve-I.srcs/sources_1/new/gf2m_mul.v|
+Z10 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../Improve-I.srcs/sources_1/new|../../../../Improve-I.srcs/sources_1/new/gf2m_mul.v|../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v|../../../../Improve-I.srcs/sources_1/new/mem_dp.v|../../../../Improve-I.srcs/sources_1/new/mem_sp.v|../../../../Improve-I.srcs/sources_1/new/mul_ctrl.v|../../../../Improve-I.srcs/sources_1/new/gf2mz_top_tb.v|
+Z11 o-work xil_defaultlib -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z12 !s92 -work xil_defaultlib +incdir+../../../../Improve-I.srcs/sources_1/new -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+Z13 !s100 25XoeIc<RjFgjjUzM<RcR0
+!s85 0
+vgf2mz_top
+Z14 IY@UF_U^4j=RSNZW6zQNHa1
+Z15 V2V]^fK[zbH36O@JEW1]^=1
+R3
+R4
+Z16 8../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v
+Z17 F../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v
+L0 25
+R7
+r1
+31
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+Z18 !s100 CEnUCa;lnQWM]Dhi`QHac1
+!s85 0
+vgf2mz_top_tb
+Z19 IU:LbaN3WnB7HL9^Zkgn`^0
+Z20 Vnjl;Cf>3Aa@Agj2C_Nkif1
+R3
+Z21 w1572167573
+Z22 8../../../../Improve-I.srcs/sources_1/new/gf2mz_top_tb.v
+Z23 F../../../../Improve-I.srcs/sources_1/new/gf2mz_top_tb.v
+L0 23
+R7
+r1
+31
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+Z24 !s100 9h_`zRz=RPM@O=2<BE?H91
+!s85 0
+vglbl
+Z25 IW[VLR6<Sjz:J_[b[HG]gG0
+Z26 VM[9mS]S:KA1i4VeCMX35[3
+R3
+Z27 w1522801934
+Z28 8glbl.v
+Z29 Fglbl.v
+L0 6
+R7
+r1
+31
+R11
+!i10b 1
+Z30 !s100 ??YMin6;S^;eQM5I2PDA81
+!s85 0
+Z31 !s108 1574748788.676000
+Z32 !s107 glbl.v|
+Z33 !s90 -work|xil_defaultlib|glbl.v|
+vmem_dp
+Z34 IU@9U>E2YhPd<Wn=V[9Smz2
+Z35 VeN9f<AOIOPHE7DPzUG7N93
+R3
+Z36 w1571553190
+Z37 8../../../../Improve-I.srcs/sources_1/new/mem_dp.v
+Z38 F../../../../Improve-I.srcs/sources_1/new/mem_dp.v
+L0 11
+R7
+r1
+31
+Z39 !s108 1572939528.374000
+R9
+R10
+R11
+R12
+Z40 !s10a 1571553190
+!i10b 1
+Z41 !s100 hnA_zD34f8mdk;Lg9iBhf3
+!s85 0
+vmem_sp
+Z42 IB=4EUd2DLfkUG65KC17FQ2
+Z43 Vb^jl3VF4bzDQ84STObdP[3
+R3
+Z44 w1571553171
+Z45 8../../../../Improve-I.srcs/sources_1/new/mem_sp.v
+Z46 F../../../../Improve-I.srcs/sources_1/new/mem_sp.v
+L0 11
+R7
+r1
+31
+R39
+R9
+R10
+R11
+R12
+Z47 !s10a 1571553171
+!i10b 1
+Z48 !s100 5S=cO9Y@8m0E^S`SH@N;^0
+!s85 0
+vmul_ctrl
+Z49 I3h1E>Uo2h08l_MDi>okOC2
+Z50 V=BF4`j90HJL[MX5WKnU4a1
+R3
+R4
+Z51 8../../../../Improve-I.srcs/sources_1/new/mul_ctrl.v
+Z52 F../../../../Improve-I.srcs/sources_1/new/mul_ctrl.v
+L0 24
+R7
+r1
+31
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+Z53 !s100 PRB;3BogQRQFkk6jkA4KE3
+!s85 0
+vshift_x_by_i
+Z54 IU[CMefVJTRJeiG1Q:MB6o1
+Z55 VYM2=Xk@M9_D[I@;>YYWd>3
+R3
+R4
+R5
+R6
+Z56 L0 271
+R7
+r1
+31
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+Z57 !s100 `7IN?@:mcg6lC6K0L?WkS3
+!s85 0

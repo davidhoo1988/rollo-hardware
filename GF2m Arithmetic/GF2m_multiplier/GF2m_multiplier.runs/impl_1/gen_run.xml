@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a50tifgg484-1L" LaunchTime="1566443689">
+  <File Type="PA-TCL" Name="GF2m_mul.tcl"/>
+  <File Type="PWROPT-DCP" Name="GF2m_mul_pwropt.dcp"/>
+  <File Type="REPORTS-TCL" Name="GF2m_mul_reports.tcl"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="GF2m_mul_postplace_pwropt.dcp"/>
+  <File Type="BG-DRC" Name="GF2m_mul.drc"/>
+  <File Type="OPT-HWDEF" Name="GF2m_mul.hwdef"/>
+  <File Type="OPT-DCP" Name="GF2m_mul_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="GF2m_mul_placed.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="GF2m_mul_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="GF2m_mul_physopt.dcp"/>
+  <File Type="BG-BIT" Name="GF2m_mul.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="GF2m_mul_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="GF2m_mul_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="GF2m_mul_routed_bb.dcp"/>
+  <File Type="BITSTR-MSK" Name="GF2m_mul.msk"/>
+  <File Type="BG-BGN" Name="GF2m_mul.bgn"/>
+  <File Type="BITSTR-RBT" Name="GF2m_mul.rbt"/>
+  <File Type="BG-BIN" Name="GF2m_mul.bin"/>
+  <File Type="ROUTE-TIMING-PB" Name="GF2m_mul_timing_summary_routed.pb"/>
+  <File Type="RDI-RDI" Name="GF2m_mul.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="GF2m_mul_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="GF2m_mul_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="GF2m_mul.nky"/>
+  <File Type="BITSTR-BMM" Name="GF2m_mul_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="GF2m_mul.mmi"/>
+  <File Type="BITSTR-LTX" Name="GF2m_mul.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="GF2m_mul.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/clog2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GF2m_mul.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GF2m_mul_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="GF2m_mul"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/usr_constrain.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/usr_constrain.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,1078 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Dec  1 16:53:34 2019
+# Process ID: 20324
+# Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.runs/synth_1
+# Command line: vivado.exe -log gf2mz_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gf2mz_top.tcl
+# Log file: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.runs/synth_1/gf2mz_top.vds
+# Journal file: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source gf2mz_top.tcl -notrace
+Command: synth_design -top gf2mz_top -part xc7a100tfgg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7516 
+WARNING: [Synth 8-2507] parameter declaration becomes local in gf2m_mul with formal parameter declaration list [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:15]
+WARNING: [Synth 8-2507] parameter declaration becomes local in gf2m_mul with formal parameter declaration list [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:16]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mul_ctrl with formal parameter declaration list [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/mul_ctrl.v:99]
+WARNING: [Synth 8-2507] parameter declaration becomes local in gf2mz_top with formal parameter declaration list [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2mz_top.v:34]
+WARNING: [Synth 8-2507] parameter declaration becomes local in gf2mz_top with formal parameter declaration list [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2mz_top.v:35]
+WARNING: [Synth 8-2507] parameter declaration becomes local in gf2mz_top with formal parameter declaration list [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2mz_top.v:36]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 421.480 ; gain = 109.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gf2mz_top' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2mz_top.v:25]
+	Parameter n bound to: 47 - type: integer 
+	Parameter m bound to: 79 - type: integer 
+	Parameter d bound to: 3 - type: integer 
+	Parameter FILE_A bound to: mem_A.txt - type: string 
+	Parameter FILE_B bound to: mem_B.txt - type: string 
+	Parameter WIDTH bound to: 237 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter DELAY bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mem_sp' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/mem_sp.v:11]
+	Parameter WIDTH bound to: 237 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter FILE bound to: mem_A.txt - type: string 
+INFO: [Synth 8-3876] $readmem data file 'mem_A.txt' is read successfully [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/mem_sp.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'mem_sp' (1#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/mem_sp.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mem_dp' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/mem_dp.v:11]
+	Parameter WIDTH bound to: 237 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter FILE bound to: mem_B.txt - type: string 
+INFO: [Synth 8-3876] $readmem data file 'mem_B.txt' is read successfully [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/mem_dp.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'mem_dp' (2#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/mem_dp.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mem_sp__parameterized0' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/mem_sp.v:11]
+	Parameter WIDTH bound to: 237 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter FILE bound to: (null) - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'mem_sp__parameterized0' (2#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/mem_sp.v:11]
+INFO: [Synth 8-6157] synthesizing module 'gf2m_mul' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:5]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter d bound to: 16 - type: integer 
+	Parameter DIGIT_N bound to: 5 - type: integer 
+	Parameter WIDTH_A bound to: 80 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized0' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized0' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized1' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized1' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized2' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized2' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized3' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized3' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized4' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized4' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized5' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized5' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized6' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized6' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized7' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized7' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized8' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized8' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized9' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized9' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized10' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized10' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized11' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized11' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized12' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized12' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized13' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized13' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized14' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+	Parameter WIDTH bound to: 79 - type: integer 
+	Parameter k bound to: 9 - type: integer 
+	Parameter i bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized14' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:271]
+INFO: [Synth 8-6155] done synthesizing module 'gf2m_mul' (4#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2m_mul.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mul_ctrl' [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/mul_ctrl.v:24]
+	Parameter WIDTH bound to: 237 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter m bound to: 79 - type: integer 
+	Parameter d bound to: 3 - type: integer 
+	Parameter DELAY bound to: 6 - type: integer 
+	Parameter INIT bound to: 3'b000 
+	Parameter PRE bound to: 3'b001 
+	Parameter MUL bound to: 3'b010 
+	Parameter POST bound to: 3'b011 
+INFO: [Synth 8-6155] done synthesizing module 'mul_ctrl' (5#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/mul_ctrl.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'gf2mz_top' (6#1) [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/sources_1/new/gf2mz_top.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 464.730 ; gain = 152.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 464.730 ; gain = 152.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 464.730 ; gain = 152.355
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/constrs_1/new/user_constrain.xdc]
+Finished Parsing XDC File [C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/constrs_1/new/user_constrain.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 862.734 ; gain = 0.965
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 862.734 ; gain = 550.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 862.734 ; gain = 550.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 862.734 ; gain = 550.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "start_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mul_ctrl'
+INFO: [Synth 8-5546] ROM "PRE_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "POST_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mul_start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mul_start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "B_addra" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "B_addra" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "B_addra" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "B_addrb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3971] The signal mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                              000
+                     PRE |                               01 |                              001
+                     MUL |                               10 |                              010
+                    POST |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mul_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 862.734 ; gain = 550.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 9     
++---XORs : 
+	   2 Input    237 Bit         XORs := 3     
+	  17 Input     79 Bit         XORs := 9     
+	   2 Input     79 Bit         XORs := 5     
+	   3 Input     79 Bit         XORs := 3     
+	   2 Input     16 Bit         XORs := 9     
+	   2 Input     15 Bit         XORs := 9     
+	   2 Input     14 Bit         XORs := 9     
+	   2 Input     13 Bit         XORs := 9     
+	   2 Input     12 Bit         XORs := 9     
+	   2 Input     11 Bit         XORs := 9     
+	   2 Input     10 Bit         XORs := 9     
+	   2 Input      9 Bit         XORs := 9     
+	   2 Input      8 Bit         XORs := 9     
+	   2 Input      7 Bit         XORs := 9     
+	   2 Input      6 Bit         XORs := 9     
+	   2 Input      5 Bit         XORs := 9     
+	   2 Input      4 Bit         XORs := 9     
+	   2 Input      3 Bit         XORs := 9     
+	   2 Input      2 Bit         XORs := 9     
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	              237 Bit    Registers := 8     
+	               80 Bit    Registers := 9     
+	               79 Bit    Registers := 21    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 9     
+	                1 Bit    Registers := 28    
++---RAMs : 
+	               3K Bit         RAMs := 3     
++---Muxes : 
+	   2 Input    237 Bit        Muxes := 8     
+	   4 Input    237 Bit        Muxes := 5     
+	   2 Input     80 Bit        Muxes := 27    
+	   2 Input     79 Bit        Muxes := 167   
+	   4 Input     79 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 54    
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module gf2mz_top 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     79 Bit         XORs := 1     
+Module mem_sp 
+Detailed RTL Component Info : 
++---Registers : 
+	              237 Bit    Registers := 1     
++---RAMs : 
+	               3K Bit         RAMs := 1     
+Module mem_dp 
+Detailed RTL Component Info : 
++---Registers : 
+	              237 Bit    Registers := 2     
++---RAMs : 
+	               3K Bit         RAMs := 1     
+Module mem_sp__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	              237 Bit    Registers := 1     
++---RAMs : 
+	               3K Bit         RAMs := 1     
+Module shift_x_by_i 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      3 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      5 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      6 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      7 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     10 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     11 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     12 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     13 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     14 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized13 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     15 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module shift_x_by_i__parameterized14 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     79 Bit        Muxes := 1     
+Module gf2m_mul 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	  17 Input     79 Bit         XORs := 1     
++---Registers : 
+	               80 Bit    Registers := 1     
+	               79 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 3     
+	   2 Input     79 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module mul_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---XORs : 
+	   2 Input    237 Bit         XORs := 3     
+	   2 Input     79 Bit         XORs := 5     
+	   3 Input     79 Bit         XORs := 2     
++---Registers : 
+	              237 Bit    Registers := 4     
+	               79 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input    237 Bit        Muxes := 8     
+	   4 Input    237 Bit        Muxes := 5     
+	   2 Input     79 Bit        Muxes := 14    
+	   4 Input     79 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3971] The signal mem_B/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[214] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[215] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[196] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[197] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[198] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[199] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[200] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[201] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[202] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[203] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[204] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[205] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[206] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[207] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[208] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[209] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[210] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[211] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[212] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[213] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[180] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[181] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[182] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[183] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[184] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[185] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[186] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[187] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[188] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[189] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[190] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[191] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[192] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[193] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[194] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[195] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[232] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[233] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[234] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[235] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[236] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[216] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[217] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[218] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[219] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[220] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[221] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[222] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[223] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[224] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[225] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[226] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[227] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[228] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[229] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[230] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[231] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\A_do_reg[56] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (A_we_reg) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[236]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[235]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[234]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[233]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[232]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[231]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[230]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[229]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[228]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[227]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[226]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[225]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[224]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[223]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[222]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[221]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[220]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[219]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[218]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[217]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[216]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[215]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[214]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[213]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[212]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[211]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[210]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[209]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[208]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[207]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[206]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[205]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[204]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[203]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[202]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[201]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[200]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[199]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[198]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[197]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[196]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[195]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[194]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[193]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[192]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[191]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[190]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[189]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[188]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[187]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[186]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[185]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[184]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[183]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[182]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[181]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[180]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[179]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[178]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[177]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[176]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[175]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[174]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[173]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[172]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[171]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[170]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[169]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[168]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[167]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[166]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[165]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[164]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[163]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[162]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[161]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[160]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[159]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[158]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[157]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[156]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[155]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[154]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[153]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[152]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[151]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[150]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[149]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[148]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[147]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[146]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[145]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[144]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[143]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[142]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[141]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[140]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[139]) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (A_do_reg[138]) is unused and will be removed from module mul_ctrl.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:08 . Memory (MB): peak = 862.734 ; gain = 550.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem_sp:                 | mem_reg    | 16 x 237(READ_FIRST)   | W | R |                        |   |   | Port A           | 7      | 0      | 
+|mem_dp:                 | mem_reg    | 16 x 237(READ_FIRST)   | W | R | 16 x 237(READ_FIRST)   | W | R | Port A and B     | 0      | 7      | 
+|mem_sp__parameterized0: | mem_reg    | 16 x 237(READ_FIRST)   | W | R |                        |   |   | Port A           | 7      | 0      | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/mem_A/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_B/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/mem_C/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:18 . Memory (MB): peak = 862.734 ; gain = 550.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:30 . Memory (MB): peak = 988.965 ; gain = 676.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem_sp:                 | mem_reg    | 16 x 237(READ_FIRST)   | W | R |                        |   |   | Port A           | 7      | 0      | 
+|mem_dp:                 | mem_reg    | 16 x 237(READ_FIRST)   | W | R | 16 x 237(READ_FIRST)   | W | R | Port A and B     | 0      | 7      | 
+|mem_sp__parameterized0: | mem_reg    | 16 x 237(READ_FIRST)   | W | R |                        |   |   | Port A           | 7      | 0      | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[5]' (FDR) to 'mul12/a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[4]' (FDR) to 'mul12/a_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[3]' (FDR) to 'mul12/a_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[2]' (FDR) to 'mul12/a_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[1]' (FDR) to 'mul12/a_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[12]' (FDR) to 'mul12/a_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[13]' (FDR) to 'mul12/a_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[14]' (FDR) to 'mul12/a_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[15]' (FDR) to 'mul12/a_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[0]' (FDR) to 'mul12/a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[6]' (FDR) to 'mul12/a_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[7]' (FDR) to 'mul12/a_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[8]' (FDR) to 'mul12/a_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[9]' (FDR) to 'mul12/a_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[10]' (FDR) to 'mul12/a_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mul11/a_reg[11]' (FDR) to 'mul12/a_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[5]' (FDR) to 'mul02/a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[4]' (FDR) to 'mul02/a_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[3]' (FDR) to 'mul02/a_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[2]' (FDR) to 'mul02/a_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[1]' (FDR) to 'mul02/a_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[12]' (FDR) to 'mul02/a_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[13]' (FDR) to 'mul02/a_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[14]' (FDR) to 'mul02/a_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[15]' (FDR) to 'mul02/a_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[0]' (FDR) to 'mul02/a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[6]' (FDR) to 'mul02/a_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[7]' (FDR) to 'mul02/a_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[8]' (FDR) to 'mul02/a_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[9]' (FDR) to 'mul02/a_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[10]' (FDR) to 'mul02/a_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mul01/a_reg[11]' (FDR) to 'mul02/a_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[5]' (FDR) to 'mul20/a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[4]' (FDR) to 'mul20/a_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[3]' (FDR) to 'mul20/a_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[2]' (FDR) to 'mul20/a_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[1]' (FDR) to 'mul20/a_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[12]' (FDR) to 'mul20/a_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[13]' (FDR) to 'mul20/a_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[14]' (FDR) to 'mul20/a_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[15]' (FDR) to 'mul20/a_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[0]' (FDR) to 'mul20/a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[6]' (FDR) to 'mul20/a_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[7]' (FDR) to 'mul20/a_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[8]' (FDR) to 'mul20/a_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[9]' (FDR) to 'mul20/a_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[10]' (FDR) to 'mul20/a_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mul22/a_reg[11]' (FDR) to 'mul20/a_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[5]' (FDR) to 'mul00/a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[4]' (FDR) to 'mul00/a_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[3]' (FDR) to 'mul00/a_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[2]' (FDR) to 'mul00/a_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[1]' (FDR) to 'mul00/a_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[12]' (FDR) to 'mul00/a_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[13]' (FDR) to 'mul00/a_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[14]' (FDR) to 'mul00/a_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[15]' (FDR) to 'mul00/a_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[0]' (FDR) to 'mul00/a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[6]' (FDR) to 'mul00/a_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[7]' (FDR) to 'mul00/a_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[8]' (FDR) to 'mul00/a_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[9]' (FDR) to 'mul00/a_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[10]' (FDR) to 'mul00/a_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mul02/a_reg[11]' (FDR) to 'mul00/a_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[5]' (FDR) to 'mul10/a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[4]' (FDR) to 'mul10/a_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[3]' (FDR) to 'mul10/a_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[2]' (FDR) to 'mul10/a_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[1]' (FDR) to 'mul10/a_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[12]' (FDR) to 'mul10/a_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[13]' (FDR) to 'mul10/a_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[14]' (FDR) to 'mul10/a_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[15]' (FDR) to 'mul10/a_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[0]' (FDR) to 'mul10/a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[6]' (FDR) to 'mul10/a_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[7]' (FDR) to 'mul10/a_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[8]' (FDR) to 'mul10/a_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[9]' (FDR) to 'mul10/a_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[10]' (FDR) to 'mul10/a_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mul12/a_reg[11]' (FDR) to 'mul10/a_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[5]' (FDR) to 'mul21/a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[4]' (FDR) to 'mul21/a_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[3]' (FDR) to 'mul21/a_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[2]' (FDR) to 'mul21/a_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[1]' (FDR) to 'mul21/a_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[12]' (FDR) to 'mul21/a_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[13]' (FDR) to 'mul21/a_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[14]' (FDR) to 'mul21/a_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[15]' (FDR) to 'mul21/a_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[0]' (FDR) to 'mul21/a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[6]' (FDR) to 'mul21/a_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[7]' (FDR) to 'mul21/a_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[8]' (FDR) to 'mul21/a_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[9]' (FDR) to 'mul21/a_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[10]' (FDR) to 'mul21/a_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mul20/a_reg[11]' (FDR) to 'mul21/a_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mul11/b_reg[0]' (FDRE) to 'mul00/b_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul21/b_reg[0]' (FDRE) to 'mul10/b_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul11/b_reg[1]' (FDRE) to 'mul00/b_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul10/b_reg[1]' (FDRE) to 'mul21/b_reg[1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_A/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_B/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_C/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:36 . Memory (MB): peak = 1147.695 ; gain = 835.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:37 . Memory (MB): peak = 1147.695 ; gain = 835.320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:37 . Memory (MB): peak = 1147.695 ; gain = 835.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:38 . Memory (MB): peak = 1147.695 ; gain = 835.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:38 . Memory (MB): peak = 1147.695 ; gain = 835.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:39 . Memory (MB): peak = 1147.695 ; gain = 835.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:39 . Memory (MB): peak = 1147.695 ; gain = 835.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |LUT1       |     1|
+|3     |LUT2       |   471|
+|4     |LUT3       |   408|
+|5     |LUT4       |  3235|
+|6     |LUT5       |   717|
+|7     |LUT6       |  3583|
+|8     |RAMB18E1   |     1|
+|9     |RAMB18E1_1 |     1|
+|10    |RAMB18E1_2 |     1|
+|11    |RAMB18E1_3 |     1|
+|12    |RAMB18E1_4 |     1|
+|13    |RAMB18E1_5 |     1|
+|14    |RAMB18E1_6 |     1|
+|15    |RAMB18E1_7 |     7|
+|16    |RAMB36E1   |     1|
+|17    |RAMB36E1_1 |     1|
+|18    |RAMB36E1_2 |     1|
+|19    |RAMB36E1_3 |     1|
+|20    |RAMB36E1_4 |     1|
+|21    |RAMB36E1_5 |     1|
+|22    |RAMB36E1_6 |     1|
+|23    |FDRE       |  2913|
+|24    |IBUF       |     3|
+|25    |OBUF       |    80|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------+-----------------------+------+
+|      |Instance |Module                 |Cells |
++------+---------+-----------------------+------+
+|1     |top      |                       | 11433|
+|2     |  ctrl   |mul_ctrl               |  2286|
+|3     |  mem_A  |mem_sp                 |   103|
+|4     |  mem_B  |mem_dp                 |   402|
+|5     |  mem_C  |mem_sp__parameterized0 |     7|
+|6     |  mul00  |gf2m_mul               |  1546|
+|7     |  mul01  |gf2m_mul_0             |   942|
+|8     |  mul02  |gf2m_mul_1             |   942|
+|9     |  mul10  |gf2m_mul_2             |   902|
+|10    |  mul11  |gf2m_mul_3             |   359|
+|11    |  mul12  |gf2m_mul_4             |   942|
+|12    |  mul20  |gf2m_mul_5             |   942|
+|13    |  mul21  |gf2m_mul_6             |  1034|
+|14    |  mul22  |gf2m_mul_7             |   942|
++------+---------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:39 . Memory (MB): peak = 1147.695 ; gain = 835.320
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 238 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:17 . Memory (MB): peak = 1147.695 ; gain = 437.316
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:39 . Memory (MB): peak = 1147.695 ; gain = 835.320
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+360 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:44 . Memory (MB): peak = 1147.695 ; gain = 847.820
+INFO: [Common 17-1381] The checkpoint 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.runs/synth_1/gf2mz_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file gf2mz_top_utilization_synth.rpt -pb gf2mz_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1147.695 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  1 16:55:26 2019...

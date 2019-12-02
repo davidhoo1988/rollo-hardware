@@ -1,0 +1,165 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/David/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.sim/sim_mul_dl/behav/modelsim
+T_opt
+!s110 1566988803
+VSIg?i3[ldG>BaLZWjF1[b1
+04 17 4 work GF2m_mul_digit_tb fast 0
+Z1 04 4 4 work glbl fast 0
+=1-d46e0e1fef10-5d665a02-26e-33e8
+Z2 o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;10.5;63
+R0
+T_opt1
+!s110 1567078024
+V`1VEREKa_k`<>81jzbbnH3
+04 23 4 work GF2m_mul_digit_penta_tb fast 0
+R1
+=1-d46e0e1fef10-5d67b688-5a-648c
+R2
+R3
+n@_opt1
+R4
+R0
+vGF2m_mul_digit
+Z5 !s110 1566988792
+!i10b 1
+!s100 ?fKT9fCmFWRd?YQ34DAmJ0
+IgP?M86`S=RgVKdMQio0@30
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1566988305
+8../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit.v
+F../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit.v
+L0 5
+Z7 OL;L;10.5;63
+r1
+!s85 0
+31
+Z8 !s108 1566988792.000000
+Z9 !s107 ..\..\..\..\GF2m_multiplier.srcs\sources_1\new\clog2.v|../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_tb.v|../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit.v|
+Z10 !s90 -64|-incr|-work|xil_defaultlib|../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit.v|../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_tb.v|
+!i113 0
+Z11 o-work xil_defaultlib -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+R3
+n@g@f2m_mul_digit
+vGF2m_mul_digit_penta
+Z12 !s10a 1567145618
+Z13 !s110 1568822900
+!i10b 1
+!s100 j;=MC@?bN5gadLozYz`lG3
+I@XD:NgJL`NmNJH8H^I7N30
+R6
+Z14 dC:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.sim/sim_mul_dl/behav/modelsim
+Z15 w1567145618
+Z16 8../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v
+Z17 F../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v
+L0 5
+R7
+r1
+!s85 0
+31
+Z18 !s108 1568822900.000000
+Z19 !s107 ..\..\..\..\GF2m_multiplier.srcs\sources_1\new\clog2.v|../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta_tb.v|../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v|
+Z20 !s90 -64|-incr|-work|xil_defaultlib|../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v|../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta_tb.v|
+!i113 0
+Z21 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+n@g@f2m_mul_digit_penta
+vGF2m_mul_digit_penta_tb
+!s10a 1567077979
+R13
+!i10b 1
+!s100 diJiS08fhgTbW_><fh1HQ3
+InEDdz^GOjKOgP`Tb42`DC1
+R6
+R14
+w1567077979
+8../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta_tb.v
+F../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta_tb.v
+Z22 L0 23
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 0
+R21
+R3
+n@g@f2m_mul_digit_penta_tb
+vGF2m_mul_digit_tb
+R5
+!i10b 1
+!s100 7_QYe?3ZDT9R8eYgU6l3C2
+I=bB[g1g94AJ^MJ@NePZ:J1
+R6
+R0
+w1566988720
+8../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_tb.v
+F../../../../GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_tb.v
+R22
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R3
+n@g@f2m_mul_digit_tb
+vglbl
+!s110 1568823088
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+IAl?5;D^:bf?I5A^M>WzmU1
+R6
+R14
+w1522801934
+8glbl.v
+Fglbl.v
+L0 6
+R7
+r1
+!s85 0
+31
+!s108 1568823088.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+R21
+R3
+vshift_x_by_i
+R12
+R13
+!i10b 1
+!s100 C:01:^1ODgZ8?WPCSYD4o0
+Ij9R7P][YDL>kDHcYX:1LT3
+R6
+R14
+R15
+R16
+R17
+L0 495
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 0
+R21
+R3

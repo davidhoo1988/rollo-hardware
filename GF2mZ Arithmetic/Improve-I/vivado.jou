@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Nov  4 15:20:05 2019
+# Process ID: 20452
+# Current directory: C:/Users/david/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17924 C:\Users\david\Dropbox\LRPC Code\hardware\GF2mZ Arithmetic\Improve-I\Improve-I.xpr
+# Log file: C:/Users/david/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/vivado.log
+# Journal file: C:/Users/david/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/david/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+set_property compxlib.modelsim_compiled_library_dir D:/modelsim_10.5/Xilinx_lib/64bit_vivado_lib [current_project]
+update_ip_catalog
+launch_simulation
+update_ip_catalog
+launch_simulation
+launch_simulation
