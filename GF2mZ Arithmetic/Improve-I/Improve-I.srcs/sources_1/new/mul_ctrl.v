@@ -325,24 +325,24 @@ always @(posedge clk) begin
                 C_addr <= C_addr;               
         end
 
-        POST: begin //in total DELAY+2 cycles (starting from cnt=1 to cnt=DELAY+2); load [b_45,b_46] to compute a1*b45 and [a2*b45,a2*b46]
-            if (cnt == DELAY + 2) 
+        POST: begin //in total DELAY+18 cycles (starting from cnt=1 to cnt=DELAY+18); handling the 'tail' of GF2m[z] arithmetic
+            if (cnt == DELAY + 18) 
                 cnt <= 0;
             else 
                 cnt <= cnt + 1'b1;
             flag <= 0;
-            if (cnt == DELAY + 1)
+            if (cnt == DELAY + 17)
                 POST_done <= 1;
             else 
                 POST_done <= 0;  
             PRE_done <= 0;  
             MUL_done <= 0;
-            if (cnt == DELAY + 1 && A_addr == DEPTH - 1)
+            if (cnt == DELAY + 17 && A_addr == DEPTH - 1)
                 done <= 1;
             else 
                 done <= 0;    
 
-            if (cnt == DELAY+2) begin
+            if (cnt == DELAY+18) begin
 				cache0 <= B_dia[WIDTH-0*m-1:WIDTH-1*m];
 				cache1 <= B_dia[WIDTH-1*m-1:WIDTH-2*m];
 				cache2 <= B_dia[WIDTH-2*m-1:WIDTH-3*m];
@@ -352,19 +352,19 @@ always @(posedge clk) begin
 				cache1 <= cache1;
 				cache2 <= cache2;
 
-			end
+           end
 
 
 
            
-            if (cnt == DELAY + 2)
+            if (cnt == DELAY + 18)
                 mul_start <= 1;
             else 
                 mul_start <= 0;     
 
             //mem_A controller
             A_we <= 0;
-            if (cnt == DELAY + 1) //ensure to get the mem_A data at the beginning cycle of state MUL
+            if (cnt == DELAY + 17) //ensure to get the mem_A data at the beginning cycle of state MUL
                 A_addr <= A_addr != DEPTH-1 ? A_addr + 1'b1 : 0;
             else 
                 A_addr <= A_addr;    
@@ -380,7 +380,23 @@ always @(posedge clk) begin
                 B_addrb <= B_addrb;
                 B_dob <= cache;
             end
-            else if (cnt == 2) begin //read B[1],B[2]
+            else if (cnt == 2) begin //read B[0],B[1]
+                B_wea <= 0;
+                B_addra <= 0;
+                B_doa <= 0;
+                B_web <= 0;
+                B_addrb <= 1;
+                B_dob <= 0; 
+            end
+            else if (cnt == 4) begin //write B[0],B[1] for k1
+                B_wea <= 1;
+                B_addra <= 0;
+				B_doa <= {B_dia[WIDTH-0*m-1:WIDTH-1*m], B_dia[WIDTH-1*m-1:WIDTH-2*m], cache0^B_dia[WIDTH-2*m-1:WIDTH-3*m]}; 
+                B_web <= 1;
+                B_addrb <= 1;
+                B_dob <= {cache1^B_dib[WIDTH-0*m-1:WIDTH-1*m], cache2^B_dib[WIDTH-1*m-1:WIDTH-2*m], B_dib[WIDTH-2*m-1:WIDTH-3*m]}; 
+			end
+            else if (cnt == DELAY+10) begin //read B[1],B[2]
                 B_wea <= 0;
                 B_addra <= 1;
                 B_doa <= 0;
@@ -388,15 +404,31 @@ always @(posedge clk) begin
                 B_addrb <= 2;
                 B_dob <= 0; 
             end
-			else if (cnt == 4) begin //write B[1],B[2] as: [b2 b3 b4] <- [b2 b3 b4] + [b44 b45 b46]
-                    B_wea <= 1;
-                    B_addra <= 1;
-				B_doa <= {B_dia[WIDTH-0*m-1:WIDTH-1*m], B_dia[WIDTH-1*m-1:WIDTH-2*m], cache0^B_dia[WIDTH-2*m-1:WIDTH-3*m]}; 
-                    B_web <= 1;
-                    B_addrb <= 2;
-				B_dob <= {cache1^B_dib[WIDTH-0*m-1:WIDTH-1*m], cache2^B_dib[WIDTH-1*m-1:WIDTH-2*m], B_dib[WIDTH-2*m-1:WIDTH-3*m]}; 
+            else if (cnt == DELAY+12) begin //write B[1],B[2] for k2
+                B_wea <= 1;
+                B_addra <= 1;
+				B_doa <= {B_dia[WIDTH-0*m-1:WIDTH-1*m], cache0^B_dia[WIDTH-1*m-1:WIDTH-2*m], cache1^B_dia[WIDTH-2*m-1:WIDTH-3*m]}; 
+                B_web <= 1;
+                B_addrb <= 2;
+                B_dob <= {cache2^B_dib[WIDTH-0*m-1:WIDTH-1*m], B_dib[WIDTH-1*m-1:WIDTH-2*m], B_dib[WIDTH-2*m-1:WIDTH-3*m]}; 
 			end
-            else if (cnt == DELAY+0) begin // read B[-2] at cnt = DELAY+0
+            else if (cnt == DELAY+13) begin //read B[2],B[3]
+                B_wea <= 0;
+                B_addra <= 2;
+                B_doa <= 0;
+                B_web <= 0;
+                B_addrb <= 3;
+                B_dob <= 0; 
+            end
+            else if (cnt == DELAY+15) begin //write B[2],B[3] for k3
+                B_wea <= 1;
+                B_addra <= 2;
+				B_doa <= {B_dia[WIDTH-0*m-1:WIDTH-1*m], cache0^B_dia[WIDTH-1*m-1:WIDTH-2*m], cache1^B_dia[WIDTH-2*m-1:WIDTH-3*m]}; 
+                B_web <= 1;
+                B_addrb <= 3;
+                B_dob <= {cache2^B_dib[WIDTH-0*m-1:WIDTH-1*m], B_dib[WIDTH-1*m-1:WIDTH-2*m], B_dib[WIDTH-2*m-1:WIDTH-3*m]}; 
+			end
+            else if (cnt == DELAY+16) begin // read B[-2] at cnt = DELAY+16
                 B_wea <= 0;
                 B_addra <= DEPTH-2;
                 B_doa <= 0;
@@ -404,7 +436,7 @@ always @(posedge clk) begin
                 B_addrb <= 0;
                 B_dob <= 0;
             end
-            else begin // read B[-1] at cnt = DELAY+1
+            else begin // read B[-1] at cnt = DELAY+17
                 B_wea <= 0;
                 B_addra <= DEPTH-1;
                 B_doa <= 0;
@@ -422,14 +454,40 @@ always @(posedge clk) begin
                 C_we <= 1;
                 C_do <= C_di ^ {mul21_op_c, {m{1'b0}}, {m{1'b0}}};
 			end
+            //handle case of k2  
+            else if (cnt == DELAY+4) begin
+                C_we <= 1;
+                C_do <= C_di ^ {{m{1'b0}}, mul10_op_c^mul20_op_c, mul21_op_c};
+            end
+            else if (cnt == DELAY+5) begin
+                C_we <= 1;
+                C_do <= C_di ^ {{m{1'b0}}, {m{1'b0}}, {m{1'b0}}};
+			end
+            //handle case of k3 
+            else if (cnt == DELAY+8) begin
+                C_we <= 1;
+                C_do <= C_di ^ {{m{1'b0}}, mul10_op_c^mul20_op_c, mul21_op_c};
+            end
+            else if (cnt == DELAY+9) begin
+                C_we <= 1;
+                C_do <= C_di ^ {{m{1'b0}}, {m{1'b0}}, {m{1'b0}}};
+			end
             else begin
                 C_we <= 0;
                 C_do <= 0;
             end 
             if (cnt == DELAY-2 || cnt == DELAY)
-                C_addr <= 1;
+                C_addr <= 0;
             else if (cnt == DELAY-1 || cnt == DELAY+1)
+                C_addr <= 1;
+            else if (cnt == DELAY+2 || cnt == DELAY+4)
+                C_addr <= 1;
+            else if (cnt == DELAY+3 || cnt == DELAY+5)
                 C_addr <= 2;
+            else if (cnt == DELAY+6 || cnt == DELAY+8)
+                C_addr <= 2;
+            else if (cnt == DELAY+7 || cnt == DELAY+9)
+                C_addr <= 3;            
             else 
                 C_addr <= 0;                             
         end

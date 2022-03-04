@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  -i "../../../../Verilog" \
+"../../../../Verilog/S1S2_gen.v" \
+"../../../../Verilog/comb_SA.v" \
+"../../../../Verilog/ctrl_top.v" \
+"../../../../Verilog/decrypt_top.v" \
+"../../../../Verilog/f_permutation.v" \
+"../../../../Verilog/gf2m_mul.v" \
+"../../../../Verilog/gf2mz_add.v" \
+"../../../../Verilog/gf2mz_top.v" \
+"../../../../Verilog/gs_elim_ctrl-fat.v" \
+"../../../../Verilog/gs_elim_top.v" \
+"../../../../Verilog/keccak.v" \
+"../../../../Verilog/mem_dp.v" \
+"../../../../Verilog/mem_sp.v" \
+"../../../../Verilog/mul_ctrl.v" \
+"../../../../Verilog/node.v" \
+"../../../../Verilog/padder.v" \
+"../../../../Verilog/rconst.v" \
+"../../../../Verilog/round.v" \
+"../../../../Verilog/decrypt_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

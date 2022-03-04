@@ -1,0 +1,44 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/S1S2_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S1S2_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/comb_SA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comb_SA
+INFO: [VRFC 10-2458] undeclared symbol pivot_out_1_0, assumed default net type wire [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/comb_SA.v:29886]
+INFO: [VRFC 10-2458] undeclared symbol pivot_out_2_0, assumed default net type wire [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/comb_SA.v:39381]
+INFO: [VRFC 10-2458] undeclared symbol pivot_out_3_0, assumed default net type wire [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/comb_SA.v:48876]
+INFO: [VRFC 10-2458] undeclared symbol pivot_out_4_0, assumed default net type wire [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/comb_SA.v:58371]
+INFO: [VRFC 10-2458] undeclared symbol pivot_out_5_0, assumed default net type wire [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/comb_SA.v:67866]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/ctrl_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/decrypt_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decrypt_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/f_permutation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_permutation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/gf2m_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gf2m_mul
+INFO: [VRFC 10-311] analyzing module shift_x_by_i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/gf2mz_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gf2mz_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/gf2mz_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gf2mz_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/gs_elim_ctrl-fat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gs_elim_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/gs_elim_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gs_elim_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/keccak.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/mem_dp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_dp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/mem_sp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_sp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/mul_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/node.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_AB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/padder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module padder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/rconst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rconst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/round.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module round
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/Verilog/decrypt_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decrypt_top_tb

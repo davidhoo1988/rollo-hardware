@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\David\Dropbox\LRPC Code\hardware\Gaussian_Elimination\Gaussian_Elimination.sim\sim_1\behav\modelsim
+vcomb_SA
+!i10b 1
+!s100 3PV0heT9`o_6Igd[CNLf31
+IbG734a6JYiEA1::_mzC2W1
+V?:4Oj;enVYOJ5T>Tc?50b2
+Z1 dC:\Users\David\Dropbox\LRPC Code\hardware\Gaussian_Elimination\Gaussian_Elimination.sim\sim_1\behav\modelsim
+w1584066726
+8../../../../verilog/comb_SA.v
+F../../../../verilog/comb_SA.v
+L0 1
+Z2 OL;L;10.1c;51
+r1
+!s85 0
+31
+!s108 1584068587.952000
+!s107 ../../../../verilog/comb_SA.v|
+!s90 -incr|-work|work|+incdir+../../../../verilog|../../../../verilog/comb_SA.v|
+o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s92 -work work +incdir+../../../../verilog -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+ncomb_@s@a

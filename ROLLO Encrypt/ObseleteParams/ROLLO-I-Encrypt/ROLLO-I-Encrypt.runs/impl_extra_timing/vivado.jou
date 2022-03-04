@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu May  7 12:43:59 2020
+# Process ID: 20752
+# Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/impl_extra_timing
+# Command line: vivado.exe -log ROLLO_I_Encrypt.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ROLLO_I_Encrypt.tcl -notrace
+# Log file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/impl_extra_timing/ROLLO_I_Encrypt.vdi
+# Journal file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/impl_extra_timing\vivado.jou
+#-----------------------------------------------------------
+source ROLLO_I_Encrypt.tcl -notrace

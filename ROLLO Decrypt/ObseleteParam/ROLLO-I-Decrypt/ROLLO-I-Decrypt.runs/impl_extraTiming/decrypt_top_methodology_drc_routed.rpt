@@ -1,0 +1,236 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Wed Sep 23 14:15:41 2020
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : report_methodology -file decrypt_top_methodology_drc_routed.rpt -pb decrypt_top_methodology_drc_routed.pb -rpx decrypt_top_methodology_drc_routed.rpx
+| Design       : decrypt_top
+| Device       : xc7a200tsbg484-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 40
++-----------+----------+--------------------------------------------+------------+
+| Rule      | Severity | Description                                | Violations |
++-----------+----------+--------------------------------------------+------------+
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 36         |
+| TIMING-18 | Warning  | Missing input or output delay              | 4          |
++-----------+----------+--------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S/mem_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S/mem_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S/mem_reg_10, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S/mem_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S/mem_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S/mem_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S/mem_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S/mem_reg_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S/mem_reg_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S/mem_reg_8, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S/mem_reg_9, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S1S2/mem_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#13 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S1S2/mem_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#14 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S1S2/mem_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_S1S2/mem_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_c/mem_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#17 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_c/mem_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#18 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_c/mem_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#19 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_c/mem_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#20 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_c/mem_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#21 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_c/mem_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#22 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_c/mem_reg_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#23 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_c/mem_reg_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#24 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_c/mem_reg_8, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#25 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_c/mem_reg_9, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#26 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_x/mem_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#27 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_x/mem_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#28 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_x/mem_reg_10, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#29 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_x/mem_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#30 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_x/mem_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#31 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_x/mem_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#32 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_x/mem_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#33 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_x/mem_reg_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#34 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_x/mem_reg_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#35 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_x/mem_reg_8, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#36 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mem_x/mem_reg_9, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on rst_b relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on start relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on data[0] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on finish relative to clock(s) clk
+Related violations: <none>
+
+

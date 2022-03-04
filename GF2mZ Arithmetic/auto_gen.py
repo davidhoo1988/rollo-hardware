@@ -2,7 +2,7 @@
 
 #
 # This file is part of the ROLLO hardware, which generates a digit-level
-# GF(2m) multiplier
+# GF(2m)[Z] multiplier
 # 
 # Copyright (C) 2019
 # Authors: David Jingwei Hu <davidhu@ntu.edu.sg>
@@ -22,7 +22,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Function: code generation tool for all frequently changed files
-# Usage: python autogen.py -SL 'ROLLO-I-128' -d 4 -GF2_MUL_WIDTH 16
+# Usage: python auto_gen.py -SL 'ROLLO-I-128' -d 4 -GF2_MUL_WIDTH 16
 
 import os
 import argparse
@@ -45,16 +45,16 @@ GF2_MUL_WIDTH = args.GF2_MUL_WIDTH
 
 #generate memory files: mem_A.txt mem_B.txt
 os.system("sage gen_test.sage -SL {SL} -d {d}".format(SL = SL, d = d))
-print "mem_A.txt mem_B.txt are generated."
+print ("mem_A.txt mem_B.txt are generated.")
 
 #generate gf2mz_top.v
 os.system("python gen_gf2mz_top.py -SL {SL} -d {d} -GF2_MUL_WIDTH {GF2_MUL_WIDTH} > ./verilog/gf2mz_top.v".format(SL = SL, d = d, GF2_MUL_WIDTH = GF2_MUL_WIDTH))
-print "gf2mz_top.v is generated."
+print ("gf2mz_top.v is generated.")
 
 #generate mul_ctrl.v
 os.system("python gen_mul_ctrl.py -SL {SL} -d {d} > ./verilog/mul_ctrl.v".format(SL = SL, d = d))
-print "mul_ctrl.v is generated."
+print ("mul_ctrl.v is generated.")
 
 #generate gf2m_mul.v
 os.system("python ../GF2m\ Arithmetic/gen_gf2m_mul_digit.py -SL {SL} -d {d} >./verilog/gf2m_mul.v".format(SL = SL, d = GF2_MUL_WIDTH))
-print "gf2m_mul.v is generated."
+print ("gf2m_mul.v is generated.")

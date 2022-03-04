@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_extra_timing" LaunchPart="xc7a200tsbv484-1" LaunchTime="1588826357">
+  <File Type="ROUTE-PWR" Name="ROLLO_I_Encrypt_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="ROLLO_I_Encrypt.tcl"/>
+  <File Type="PWROPT-DCP" Name="ROLLO_I_Encrypt_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="ROLLO_I_Encrypt_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="ROLLO_I_Encrypt_reports.tcl"/>
+  <File Type="BG-DRC" Name="ROLLO_I_Encrypt.drc"/>
+  <File Type="OPT-HWDEF" Name="ROLLO_I_Encrypt.hwdef"/>
+  <File Type="OPT-DCP" Name="ROLLO_I_Encrypt_opt.dcp"/>
+  <File Type="OPT-DRC" Name="ROLLO_I_Encrypt_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="ROLLO_I_Encrypt_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ROLLO_I_Encrypt_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ROLLO_I_Encrypt_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ROLLO_I_Encrypt_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ROLLO_I_Encrypt_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ROLLO_I_Encrypt_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ROLLO_I_Encrypt_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="ROLLO_I_Encrypt_physopt.dcp"/>
+  <File Type="BG-BIT" Name="ROLLO_I_Encrypt.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ROLLO_I_Encrypt_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ROLLO_I_Encrypt_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ROLLO_I_Encrypt_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="ROLLO_I_Encrypt_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ROLLO_I_Encrypt_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="ROLLO_I_Encrypt_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="ROLLO_I_Encrypt.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ROLLO_I_Encrypt_methodology_drc_routed.rpt"/>
+  <File Type="BG-BGN" Name="ROLLO_I_Encrypt.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ROLLO_I_Encrypt_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="ROLLO_I_Encrypt.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ROLLO_I_Encrypt_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="ROLLO_I_Encrypt.bin"/>
+  <File Type="ROUTE-PWR-RPX" Name="ROLLO_I_Encrypt_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ROLLO_I_Encrypt_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ROLLO_I_Encrypt_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ROLLO_I_Encrypt_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ROLLO_I_Encrypt_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ROLLO_I_Encrypt_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="ROLLO_I_Encrypt_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="ROLLO_I_Encrypt.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ROLLO_I_Encrypt_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ROLLO_I_Encrypt_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="ROLLO_I_Encrypt.nky"/>
+  <File Type="BITSTR-BMM" Name="ROLLO_I_Encrypt_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="ROLLO_I_Encrypt.mmi"/>
+  <File Type="BITSTR-LTX" Name="ROLLO_I_Encrypt.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="ROLLO_I_Encrypt.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/Verilog/define.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="IsGlobalInclude" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/clog2.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="IsGlobalInclude" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/K_Gen_Ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/RegFiles.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/c_Gen_Ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/Gaussian Elimination/comb_SA.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/SHA3/f_permutation.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/RNG/f_permutation_200.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/GF2mZ Arithmetic/gf2m_mul.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/GF2mZ Arithmetic/gf2mz_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/SHA3/keccak.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/mem_dp.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/mem_sp.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/GF2mZ Arithmetic/mul_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/Gaussian Elimination/node.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/SHA3/padder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/RNG/define.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/RNG/prng.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/SHA3/rconst.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/RNG/rconst_200.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/SHA3/round.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/RNG/round_200.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/encrypt_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/encrypt_top_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ROLLO_I_Encrypt"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/usr_constrain.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/usr_constrain.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Performance_ExtraTimingOpt" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design">
+      <Option Id="Directive">8</Option>
+    </Step>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="route_design">
+      <Option Id="Directive">1</Option>
+    </Step>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

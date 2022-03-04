@@ -11,15 +11,48 @@
 # vsim -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib -voptargs=\"+acc\" xil_defaultlib.gf2mz_top_tb xil_defaultlib.glbl 
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # 
-# ** Error: ../../../../Improve-I.srcs/sources_1/new/mul_ctrl.v(253): Bounds of part-select into 'cache' are reversed.
-# ** Error: ../../../../Improve-I.srcs/sources_1/new/mul_ctrl.v(253): LSB of part-select into 'cache' is out of bounds.
-# ** Error: ../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v(185): (vopt-2884) Out of bounds access.  Bit number -1 of part-select into 'C_di' is out of bounds.
+# ** Note: (vopt-143) Recognized 1 FSM in module "mul_ctrl(fast)".
 # 
-# ** Error: ../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v(185): LSB of part-select into 'C_di' is out of bounds.
-# ** Error: ../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v(185): (vopt-2884) Out of bounds access.  Bit number -80 of part-select into 'C_di' is out of bounds.
+# Loading work.gf2mz_top_tb(fast)
+# Loading work.gf2mz_top(fast)
+# Loading work.mem_sp(fast)
+# Loading work.mem_dp(fast)
+# Loading work.mem_sp(fast__1)
+# Loading work.gf2m_mul(fast)
+# Loading work.shift_x_by_i(fast)
+# Loading work.shift_x_by_i(fast__1)
+# Loading work.shift_x_by_i(fast__2)
+# Loading work.shift_x_by_i(fast__3)
+# Loading work.shift_x_by_i(fast__4)
+# Loading work.shift_x_by_i(fast__5)
+# Loading work.shift_x_by_i(fast__6)
+# Loading work.shift_x_by_i(fast__7)
+# Loading work.shift_x_by_i(fast__8)
+# Loading work.shift_x_by_i(fast__9)
+# Loading work.shift_x_by_i(fast__10)
+# Loading work.shift_x_by_i(fast__11)
+# Loading work.shift_x_by_i(fast__12)
+# Loading work.shift_x_by_i(fast__13)
+# Loading work.shift_x_by_i(fast__14)
+# Loading work.shift_x_by_i(fast__15)
+# Loading work.mul_ctrl(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
-# ** Error: ../../../../Improve-I.srcs/sources_1/new/gf2mz_top.v(185): LSB of part-select into 'C_di' is out of bounds.
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./gf2mz_top_tb_simulate.do PAUSED at line 9
+#           File in use by: David  Hostname: DAVID-NTU-DESKT  ProcessID: 2436
+# 
+#           Attempting to use alternate WLF file "./wlftkk7g1t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftkk7g1t
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# starting computation
+# 
+run 200us
+# runtime: 6537 cycles
+# 

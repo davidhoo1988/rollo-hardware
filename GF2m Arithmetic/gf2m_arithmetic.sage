@@ -8,6 +8,14 @@ def bin_GF2m(a): # return binary representation of a(x) over GF(2^m), MSB first
 		tmp = tmp+str(a_list[i])
 	return tmp
 
+def bin_GF2m_lsb(a): # return binary representation of a(x) over GF(2^m), LSB first
+	a_list = list(a)
+	m = len(a_list)
+	tmp = ''
+	for i in range(0,m,1):
+		tmp = tmp+str(a_list[i])
+	return tmp
+
 def shift_by_x(a, f, digit): # return a(x)*x^digit mod f
 	a_list = list(a)
 	m = len(a_list)
@@ -42,6 +50,7 @@ def bit_lv_inter_mul(a,b,f):
 	R = a.parent()
 
 	c = a_list[m-1]*b
+
 	for i in range(m-2,-1,-1):
 		if len(f_list) == 3: # if f is trionomial
 			c_list = list(c)
@@ -58,7 +67,7 @@ def bit_lv_inter_mul(a,b,f):
 			cx = R(c_list)
 
 		c = cx + a_list[i]*b
-
+		# print (str(i) + ':' + bin_GF2m(c))
 	return c
 
 
@@ -79,13 +88,16 @@ def digit_lv_inter_mul(a,b,f,digit):
 			a_list_digit.append(a_list[(blk_num-1)*digit + i])
 	
 	c = R(a_list_digit)*b	# the heading digit fraction of polynomial a, padding '0' to its MSB
+	# print ('c:' + bin_GF2m(c))
 	for i in range(blk_num-2,-1,-1):
 		c_xd = shift_by_x(c,f,digit)
+		# print ('cx:' + bin_GF2m(c_xd))
 		a_list_digit = a_list[i*digit:i*digit+digit-1 +1]
 		c = a_list_digit[0]*b
 		for j in range(1,digit):
 			c = c + a_list_digit[j]*shift_by_x(b,f,j)	
 		c = c + c_xd
+		# print (str(i) + 'bx:' + bin_GF2m(c))
 	return c
 
 
@@ -100,50 +112,70 @@ def digit_lv_inter_mul(a,b,f,digit):
 set_random_seed(12345)
 
 
-#parameters used in ROLLO-I-128
-'''m = 79
-mod = x^m+x^9+1
-m = 83
-mod = x^m + x^7 + x^4 + x^2 + 1
-F2m.<x> = GF(2**m, name='x',modulus=mod)
-'''
+#specify parameters used in ROLLO
+PARA = 'ROLLO-I-128'
 
 
 
 P.<x> = GF(2)[]
-#m = 79
-#f = x^m + x^9 + 1
-#m = 89
-#f = x^m + x^38 + 1 
-m = 83
-f = x^m + x^7 + x^4 + x^2 + 1
+if PARA == "ROLLO-I-128":
+	m = 67
+	f = x^m + x^5 + x^2 + x + 1	
+elif PARA == "ROLLO-I-192":
+	m = 79
+	f = x^m + x^9 + 1
+elif PARA == "ROLLO-I-256":
+	m = 97
+	f = x^m + x^6 + 1	
+elif PARA == "ROLLO-II-128":
+	m = 83
+	f = x^m + x^7 + x^4 + x^2 + 1
+elif PARA == "ROLLO-II-192":
+	m = 97
+	f = x^m + x^6 + 1	
+elif PARA == "ROLLO-II-256":
+	m = 97
+	f = x^m + x^6 + 1		
+
+
 R = QuotientRing(P, P.ideal(f))
 
 for iter in range(3):
-	a = R.random_element()
-	b = R.random_element()
+	a = R.random_element() # 55710511636250014552
+	b = R.random_element() # 101899833275179779702
 
+	a_replist = []
+	string = '{{:0{0}b}}'.format(m)
+	for i in string.format(55710511636250014552)[::-1]:
+		a_replist = a_replist + [i]
+	a = R(a_replist)
+
+	b_replist = []
+	string = '{{:0{0}b}}'.format(m)
+	for i in string.format(101899833275179779702)[::-1]:
+		b_replist = b_replist + [i]
+	b = R(b_replist)
 
 	if bit_lv_inter_mul(a,b,f) == a*b:
-		print 'bit level interleaved multiplication is correct!'
+		print ('bit level interleaved multiplication is correct!')
 	else:
-		print 'bit level interleaved multiplication is wrong!'
+		print ('bit level interleaved multiplication is wrong!')
 
 	test = True
 	d = floor(m/2)
-	for i in range(1,d):
+	for i in range(1,9):
 		if digit_lv_inter_mul(a,b,f,i) == a*b:
 			test = test & True
 		else:
 			test = test & False	
 
 	if test == True:
-		print 'digit level interleaved multiplication is correct!'
+		print ('digit level interleaved multiplication is correct!')
 	else:
-		print 'digit level interleaved multiplication is wrong!'
+		print ('digit level interleaved multiplication is wrong!')
 
-	print bin_GF2m(a)
-	print bin_GF2m(b)
-	print bin_GF2m(a*b)
-	print '\n\n'
+	print (bin_GF2m_lsb(a)) 
+	print (bin_GF2m_lsb(b))
+	print (bin_GF2m_lsb(a*b))
+	print ('\n\n')
 

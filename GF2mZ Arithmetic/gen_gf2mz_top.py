@@ -71,62 +71,39 @@ d = MEM_WIDTH/m'''
 ############################################################################
 #ROLLO-I setups
 if SL == 'ROLLO-I-128':
-  n = 47
-  m = 79
-  P_coeff_list = [5]
-  f_coeff_list = [9]
+  n = 83
+  m = 67
+  f_coeff_list = [5,2,1]
+
 
 elif SL == 'ROLLO-I-192':
-  n = 53
-  m = 89
-  P_coeff_list = [6,2,1]
-  f_coeff_list = [38]
+  n = 97
+  m = 79
+  f_coeff_list = [9]  
 
 elif SL == 'ROLLO-I-256': 
-  n = 67
-  m = 113
-  P_coeff_list = [5,2,1]
-  f_coeff_list = [9]
+  n = 113
+  m = 97
+  f_coeff_list = [6]
 
 #ROLLO-II setups
 elif SL == 'ROLLO-II-128':
-  n = 149
+  n = 189
   m = 83
-  P_coeff_list = [10,9,7]
   f_coeff_list = [7,4,2]
 
 elif SL == 'ROLLO-II-192':
-  n = 151
-  m = 107
-  P_coeff_list = [3]
-  f_coeff_list = [9,7,4]
+  n = 193
+  m = 97
+  f_coeff_list = [6]
 
 elif SL == 'ROLLO-II-256':
-  n = 157
-  m = 127
-  P_coeff_list = [6,5,2]
-  f_coeff_list = [1]
-
-elif SL == 'ROLLO-III-128':
-  n = 47
-  m = 101
-  P_coeff_list = [5]
-  f_coeff_list = [7,6,1]
-
-elif SL == 'ROLLO-III-192':
-  n = 59
-  m = 107
-  P_coeff_list = [7,4,2]
-  f_coeff_list = [9,7,4]
-
-elif SL == 'ROLLO-III-256':
-  n = 67
-  m = 131
-  P_coeff_list = [5,2,1]
-  f_coeff_list = [8,3,2]
+  n = 211
+  m = 97
+  f_coeff_list = [6]
 
 else:
-  print 'Iuput Errors'  
+  print ('Iuput Errors')  
   exit()
 
 #calculate the delay of GF2m multiplier
@@ -139,7 +116,7 @@ else:
 	k1 = f_coeff_list[2]	
 
 
-print """`timescale 1ns / 1ps
+print ("""`timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -196,7 +173,7 @@ wire [`CLOG2(DEPTH)-1:0] C_addr;
 wire C_we;
 
 wire ctrl_start, ctrl_done;
-wire mul_start;""".format(n = n, m = m, d = d, DELAY = DELAY)
+wire mul_start;""".format(n = n, m = m, d = d, DELAY = DELAY))
 
 tmp = "wire "
 for i in range(d):
@@ -206,7 +183,7 @@ for i in range(d):
 		else:
 			tmp += """mul{i}{j}_done; """.format(i = i, j = j)	
 	tmp += "\n"
-print tmp
+print (tmp)
 
 tmp = "wire [m-1:0]	"
 for i in range(d):
@@ -216,10 +193,10 @@ for i in range(d):
 		else:
 			tmp += "mul{i}{j}_op_a, mul{i}{j}_op_b, mul{i}{j}_op_c; ".format(i = i, j = j)	
 		tmp += "\n"
-print tmp
+print (tmp)
 
 
-print """
+print ("""
 //block RAM for A(z)
 mem_sp mem_A(
 	//input
@@ -276,9 +253,9 @@ mem_sp mem_C(
 defparam mem_C.WIDTH = WIDTH;
 defparam mem_C.DEPTH = DEPTH;
 defparam mem_C.FILE = "";
-""".format(n = n, m = m, d = d, DELAY = DELAY)
+""".format(n = n, m = m, d = d, DELAY = DELAY))
 
-print """//GF(2m) multiplier instances, d*d arrays"""
+print ("""//GF(2m) multiplier instances, d*d arrays""")
 tmp = ""
 if len(f_coeff_list) == 1:
 	for i in range(d):
@@ -322,10 +299,10 @@ defparam mul{i}{j}.d = {GF2_MUL_WIDTH};
 
 """.format(i = i, j = j, m = m, k3 = k3, k2 = k2, k1 = k1, GF2_MUL_WIDTH = GF2_MUL_WIDTH)
 
-print tmp
+print (tmp)
 
 
-print """//control logic for the multiplication of C(z) = A(z)*B(z)
+print ("""//control logic for the multiplication of C(z) = A(z)*B(z)
 mul_ctrl ctrl(
 	.clk (clk),
 	.rst_b (rst_b),
@@ -353,7 +330,7 @@ mul_ctrl ctrl(
 	.C_we (C_we),
 	.C_addr (C_addr),
 	.C_do (C_di),
-"""
+""")
 
 tmp = """	//GF2m multiplier interface
 	.mul_start(mul_start),
@@ -378,10 +355,10 @@ for i in range(d):
 	.mul{i}{j}_op_c(mul{i}{j}_op_c)
 );""".format(i = i, j = j)
 	tmp += "\n"
-print tmp
+print (tmp)
 
 
-print """defparam ctrl.WIDTH = WIDTH;
+print ("""defparam ctrl.WIDTH = WIDTH;
 defparam ctrl.DEPTH = DEPTH;
 defparam ctrl.m = m;
 defparam ctrl.d = d;
@@ -392,4 +369,4 @@ assign ctrl_start = start;
 assign done = ctrl_done;
 assign dout = {{C_di[WIDTH-1:WIDTH-m] ^ C_di[WIDTH-m-1:WIDTH-2*m] ^ C_di[WIDTH-2*m-1:WIDTH-3*m]}};
 
-endmodule""".format()
+endmodule""".format())

@@ -1,0 +1,968 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 21568
+License: Customer
+
+Current time: 	Mon Sep 21 15:40:38 SGT 2020
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 70 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	F:/Xilinx/Vivado/2018.1/tps/win64/jre
+Java executable location: 	F:/Xilinx/Vivado/2018.1/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	David
+User home directory: C:/Users/David
+User working directory: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: F:/Xilinx/Vivado
+HDI_APPROOT: F:/Xilinx/Vivado/2018.1
+RDI_DATADIR: F:/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: F:/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: C:/Users/David/AppData/Roaming/Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: C:/Users/David/AppData/Roaming/Xilinx/Vivado/2018.1/
+Vivado layouts directory: C:/Users/David/AppData/Roaming/Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	F:/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/vivado.log
+Vivado journal file location: 	C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/vivado.jou
+Engine tmp dir: 	C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/.Xil/Vivado-21568-David-NTU-Desktop
+
+GUI allocated memory:	158 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 548 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 62 MB (+62546kb) [00:00:10]
+// [Engine Memory]: 521 MB (+394574kb) [00:00:10]
+// TclEventType: PROJECT_OPEN_DIALOG
+// bv (ch):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\David\Dropbox\LRPC Code\hardware\ROLLO Sha3\rollo-sha3-512\rollo-sha3-512.xpr. Version: Vivado v2018.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/rollo-sha3-512.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 582 MB. GUI used memory: 37 MB. Current time: 9/21/20 3:40:40 PM SGT
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/rollo-sha3-512.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 588 MB (+43544kb) [00:00:16]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 645 MB (+28572kb) [00:00:21]
+// [Engine Memory]: 679 MB (+1856kb) [00:00:24]
+// Project name: rollo-sha3-512; location: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512; part: xc7a50tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 831.656 ; gain = 120.914 
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 66 MB (+537kb) [00:00:50]
+// PAPropertyPanels.initPanels (keccak.v) elapsed time: 0.2s
+// Elapsed time: 98 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, keccak_tb (keccak_tb.v), DUT : keccak (keccak.v)]", 3, true); // B (D, ch) - Node
+// [GUI Memory]: 73 MB (+4034kb) [00:02:11]
+// [GUI Memory]: 77 MB (+860kb) [00:03:43]
+// [GUI Memory]: 82 MB (+542kb) [00:03:58]
+// [GUI Memory]: 87 MB (+828kb) [00:08:38]
+// Elapsed time: 683 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ch):  Run Simulation : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 706 MB. GUI used memory: 44 MB. Current time: 9/21/20 3:53:55 PM SGT
+// Tcl Message: launch_simulation -install_path F:/modelsim64_10.1c/win64 
+// Tcl Message: INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/rollo-sha3-512.sim/sim_1/behav/modelsim' 
+// Tcl Message: Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl   # 10.1c  # do {keccak_tb_compile.do}  # ** Warning: (vlib-34) Library already exists at "modelsim_lib/work". #  # ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim". #  # ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib". #  
+// Tcl Message: # Modifying modelsim.ini # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012 # -- Skipping module f_permutation # -- Compiling module keccak # -- Compiling module mem_sp # -- Skipping module padder # -- Skipping module rconst # -- Skipping module round # -- Compiling module keccak_tb #  # Top level modules: # 	keccak_tb # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012 # -- Compiling module glbl #  # Top level modules: # 	glbl 
+// Tcl Message: INFO: [USF-ModelSim-69] 'compile' step finished in '4' seconds INFO: [USF-ModelSim-4] ModelSim::Simulate design INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/rollo-sha3-512.sim/sim_1/behav/modelsim' 
+// Tcl Message: Program launched (PID=22444) 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 855.355 ; gain = 4.801 
+// 'd' command handler elapsed time: 5 seconds
+dismissDialog("Run Simulation"); // e (ch)
+// [Engine Memory]: 720 MB (+7771kb) [00:13:39]
+// Elapsed time: 134 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, keccak_tb (keccak_tb.v)]", 2, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, keccak_tb (keccak_tb.v)]", 2, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, keccak_tb (keccak_tb.v)]", 2, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// Elapsed time: 56 seconds
+selectCodeEditor("keccak_tb.v", 77, 165); // cd (w, ch)
+// [GUI Memory]: 92 MB (+1536kb) [00:17:08]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 157 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ch):  Run Simulation : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -install_path F:/modelsim64_10.1c/win64 
+// Tcl Message: INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds INFO: [USF-ModelSim-4] ModelSim::Simulate design INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/rollo-sha3-512.sim/sim_1/behav/modelsim' 
+// Tcl Message: Program launched (PID=26500) 
+// 'd' command handler elapsed time: 3 seconds
+dismissDialog("Run Simulation"); // e (ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 727 MB. GUI used memory: 45 MB. Current time: 9/21/20 4:00:35 PM SGT
+// Elapsed time: 204 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, define.v]", 3, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, define.v]", 3, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keccak_tb.v", 1); // k (j, ch)
+// [GUI Memory]: 97 MB (+353kb) [00:23:05]
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mem_dp (mem_dp.v)]", 6, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mem_dp (mem_dp.v)]", 6, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, keccak_tb (keccak_tb.v), DUT : keccak (keccak.v)]", 5, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, keccak_tb (keccak_tb.v), DUT : keccak (keccak.v)]", 5, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// Elapsed time: 26 seconds
+selectCodeEditor("keccak.v", 157, 346); // cd (w, ch)
+selectCodeEditor("keccak.v", 157, 346, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("keccak.v", 163, 359); // cd (w, ch)
+selectCodeEditor("keccak.v", 153, 354); // cd (w, ch)
+selectCodeEditor("keccak.v", 153, 354, false, false, false, false, true); // cd (w, ch) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 47 MB. Current time: 9/21/20 4:30:36 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 5:00:36 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 5:30:36 PM SGT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 6293 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ch):  Run Simulation : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -install_path F:/modelsim64_10.1c/win64 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (e)
+// 'd' command handler elapsed time: 5 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 124 seconds
+selectButton("HStatusBar_ProgressStatusItem_Cancel", "Cancel"); // NullButton (af, ch)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aE (Q, ch)
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// Tcl Message: run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:02:12 . Memory (MB): peak = 882.652 ; gain = 4.965 
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled INFO: [Vivado 12-5357] 'compile' step aborted 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:02:12 . Memory (MB): peak = 882.652 ; gain = 4.965 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+dismissDialog("Run Simulation"); // e (ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ch):  Run Simulation : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -install_path F:/modelsim64_10.1c/win64 
+// Tcl Message: INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds INFO: [USF-ModelSim-4] ModelSim::Simulate design INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/rollo-sha3-512.sim/sim_1/behav/modelsim' 
+// Tcl Message: Program launched (PID=21008) 
+dismissDialog("Run Simulation"); // e (ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 49 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ch):  Run Simulation : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -install_path F:/modelsim64_10.1c/win64 
+// Tcl Message: INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds INFO: [USF-ModelSim-4] ModelSim::Simulate design INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/rollo-sha3-512.sim/sim_1/behav/modelsim' 
+// Tcl Message: Program launched (PID=3740) 
+// 'd' command handler elapsed time: 3 seconds
+dismissDialog("Run Simulation"); // e (ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 6:00:37 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 6:30:37 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 7:00:37 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 7:30:37 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 45 MB. Current time: 9/21/20 8:00:38 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 8:30:38 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 9:00:38 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 9:30:38 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 10:00:39 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 10:30:39 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 11:00:39 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/21/20 11:30:40 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/22/20 12:00:40 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/22/20 12:30:40 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/22/20 1:00:41 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/22/20 1:30:41 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/22/20 2:00:41 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/22/20 2:30:41 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/22/20 3:00:42 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/22/20 3:30:42 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 44 MB. Current time: 9/22/20 4:00:42 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 732 MB. GUI used memory: 44 MB. Current time: 9/22/20 4:30:43 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 733 MB. GUI used memory: 44 MB. Current time: 9/22/20 5:00:43 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 734 MB. GUI used memory: 44 MB. Current time: 9/22/20 5:30:43 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 735 MB. GUI used memory: 44 MB. Current time: 9/22/20 6:00:43 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 736 MB. GUI used memory: 44 MB. Current time: 9/22/20 6:30:44 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 738 MB. GUI used memory: 44 MB. Current time: 9/22/20 7:00:44 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 739 MB. GUI used memory: 44 MB. Current time: 9/22/20 7:30:44 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 740 MB. GUI used memory: 44 MB. Current time: 9/22/20 8:00:45 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 741 MB. GUI used memory: 44 MB. Current time: 9/22/20 8:30:45 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 742 MB. GUI used memory: 44 MB. Current time: 9/22/20 9:00:45 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 743 MB. GUI used memory: 44 MB. Current time: 9/22/20 9:30:45 AM SGT
+// Elapsed time: 57649 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 218 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keccak_tb.v", 1); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "define.v", 2); // k (j, ch)
+// Elapsed time: 13 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bv (ch):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 750 MB. GUI used memory: 46 MB. Current time: 9/22/20 9:57:48 AM SGT
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bv (ch)
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.xpr", 1); // q (O, ch)
+// Opening Vivado Project: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.xpr. Version: Vivado v2018.1 
+// bv (ch):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 757 MB (+1022kb) [18:17:27]
+// [GUI Memory]: 112 MB (+9694kb) [18:17:27]
+// [Engine Memory]: 795 MB (+27kb) [18:17:27]
+// Project name: ROLLO-I-Decrypt; location: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt; part: xc7a200tsbg484-1
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 117 MB (+78kb) [18:18:18]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 57 MB. Current time: 9/22/20 9:59:16 AM SGT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 840 MB (+5186kb) [18:28:13]
+// Elapsed time: 646 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 2); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, decrypt_top.v]", 3, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, decrypt_top.v]", 3, false, false, false, false, false, true); // B (D, ch) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 844 MB. GUI used memory: 58 MB. Current time: 9/22/20 10:08:46 AM SGT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 323 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// HMemoryUtils.trashcanNow. Engine heap size: 870 MB. GUI used memory: 58 MB. Current time: 9/22/20 10:14:06 AM SGT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decrypt_top (decrypt_top.v)]", 2, true); // B (D, ch) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decrypt_top (decrypt_top.v)]", 2); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decrypt_top (decrypt_top.v), RSR : gs_elim_top (gs_elim_top.v)]", 6, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decrypt_top (decrypt_top.v), RSR : gs_elim_top (gs_elim_top.v)]", 6, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decrypt_top (decrypt_top.v), RSR : gs_elim_top (gs_elim_top.v)]", 6, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decrypt_top (decrypt_top.v), RSR : gs_elim_top (gs_elim_top.v)]", 6, true, false, false, false, true, false); // B (D, ch) - Popup Trigger - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ch)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ch): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 15 seconds
+String[] filenames31467 = {"C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/f_permutation.v", "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/keccak.v", "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/padder.v", "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/padder1.v", "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/rconst.v", "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/round.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 22 seconds
+dismissDialog("Add Sources"); // c (ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/padder.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/keccak.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/padder1.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/rconst.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/round.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/f_permutation.v}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decrypt_top (decrypt_top.v), SHA3 : keccak (keccak.v)]", 9); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decrypt_top (decrypt_top.v), SHA3 : keccak (keccak.v)]", 9); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decrypt_top (decrypt_top.v), RSR : gs_elim_top (gs_elim_top.v)]", 6); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 16, true); // B (D, ch) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 16); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_decrypt]", 17, true); // B (D, ch) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_decrypt]", 17); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_decrypt, decrypt_top_tb (decrypt_top_tb.v)]", 19, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ch):  Run Simulation : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -install_path F:/modelsim64_10.1c/win64 -simset sim_decrypt 
+// Tcl Message: Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl   # 10.1c  # do {decrypt_top_tb_compile.do}  # ** Warning: (vlib-34) Library already exists at "modelsim_lib/work". #  # ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim". #  # ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib". #  # Modifying modelsim.ini 
+// Elapsed time: 13 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (e)
+// 'd' command handler elapsed time: 13 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aE (Q, ch)
+selectButton("HStatusBar_ProgressStatusItem_Cancel", "Cancel"); // NullButton (af, ch)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// Tcl Message: run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 1007.129 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled INFO: [Vivado 12-5357] 'compile' step aborted 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 1007.129 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+dismissDialog("Run Simulation"); // e (ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 883 MB (+1288kb) [18:39:37]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 890 MB. GUI used memory: 64 MB. Current time: 9/22/20 10:20:51 AM SGT
+// Elapsed time: 441 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ch):  Run Simulation : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -install_path F:/modelsim64_10.1c/win64 -simset sim_decrypt 
+// Tcl Message: INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds INFO: [USF-ModelSim-4] ModelSim::Simulate design INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.sim/sim_decrypt/behav/modelsim' 
+// Tcl Message: Program launched (PID=6156) 
+// 'd' command handler elapsed time: 3 seconds
+dismissDialog("Run Simulation"); // e (ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 646 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ch):  Run Simulation : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -install_path F:/modelsim64_10.1c/win64 -simset sim_decrypt 
+// Tcl Message: INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds INFO: [USF-ModelSim-4] ModelSim::Simulate design INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.sim/sim_decrypt/behav/modelsim' 
+// Tcl Message: Program launched (PID=12888) 
+// 'd' command handler elapsed time: 4 seconds
+dismissDialog("Run Simulation"); // e (ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 904 MB. GUI used memory: 65 MB. Current time: 9/22/20 10:50:51 AM SGT
+// Elapsed time: 1163 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ch): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ch)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// HMemoryUtils.trashcanNow. Engine heap size: 914 MB. GUI used memory: 58 MB. Current time: 9/22/20 10:53:16 AM SGT
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bv)
+// 'k' command handler elapsed time: 11 seconds
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ch)
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Sep 22 10:53:33 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 1045.613 ; gain = 11.031 
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah (ch): Synthesis Completed: addNotify
+// Elapsed time: 336 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bv)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aE (Q, ch)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Tue Sep 22 10:58:58 SGT 2020 ; 686440", 3, "synth_1_synth_synthesis_report_0", 0, false); // N (O, ch)
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Tue Sep 22 10:58:58 SGT 2020 ; 686440", 3); // N (O, ch)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Tue Sep 22 10:58:58 SGT 2020 ; 686440", 3, "synth_1_synth_synthesis_report_0", 0, false, false, false, false, false, true); // N (O, ch) - Double Click
+selectCodeEditor("synth_1_synth_synthesis_report_0 - synth_1", 313, 296); // D (w, ch)
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Sep 22 10:59:28 2020] Launched impl_1... Run output will be captured here: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1047.930 ; gain = 2.316 
+// Elapsed time: 12 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "warning"); // l (aP, ch)
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Implementation Completed: addNotify
+// Elapsed time: 682 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bv (ch):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 951 MB (+24513kb) [19:30:30]
+// HMemoryUtils.trashcanNow. Engine heap size: 951 MB. GUI used memory: 65 MB. Current time: 9/22/20 11:10:57 AM SGT
+// [Engine Memory]: 1,125 MB (+133053kb) [19:30:45]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,158 MB. GUI used memory: 65 MB. Current time: 9/22/20 11:11:12 AM SGT
+// [Engine Memory]: 1,336 MB (+162110kb) [19:30:50]
+// [Engine Memory]: 1,526 MB (+129258kb) [19:31:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,649 MB. GUI used memory: 65 MB. Current time: 9/22/20 11:11:27 AM SGT
+// TclEventType: SDC_CONSTRAINT_ADD
+// [Engine Memory]: 1,879 MB (+289700kb) [19:31:05]
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,881 MB. GUI used memory: 65 MB. Current time: 9/22/20 11:11:32 AM SGT
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,991 MB (+18960kb) [19:31:08]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 135 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Device 21-403] Loading part xc7a200tsbg484-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2125.605 ; gain = 25.145 
+// Tcl Message: Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2125.605 ; gain = 25.145 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 206 instances were transformed.   RAM16X1S => RAM32X1S (RAMS32): 79 instances   SRLC32E => SRL16E: 127 instances  
+// ExpRunCommands.openImplResults elapsed time: 44.4s
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 2236.211 ; gain = 1184.523 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// [Engine Memory]: 2,108 MB (+18205kb) [19:31:11]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 5.2s
+// Device view-level: 0.0
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 124 MB (+1406kb) [19:31:13]
+// [GUI Memory]: 135 MB (+4997kb) [19:31:14]
+// [GUI Memory]: 145 MB (+2776kb) [19:31:14]
+// [GUI Memory]: 154 MB (+1830kb) [19:31:15]
+// [GUI Memory]: 162 MB (+19kb) [19:31:15]
+// [GUI Memory]: 170 MB (+687kb) [19:31:15]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dO' command handler elapsed time: 51 seconds
+// Elapsed time: 52 seconds
+dismissDialog("Open Implemented Design"); // bv (ch)
+// [GUI Memory]: 182 MB (+3250kb) [19:31:17]
+// [Engine Memory]: 2,219 MB (+5495kb) [19:31:21]
+// Elapsed time: 10 seconds
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aE (Q, ch)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "impl_1_place_report_utilization_0 ; Report on utilization of resources on the targeted device (report_utilization) ; slr = false; packthru = false; hierarchical = false; hierarchical_percentages = false;  ; Tue Sep 22 11:02:01 SGT 2020 ; 9964", 15, "impl_1_place_report_utilization_0", 0, false); // N (O, ch)
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "impl_1_place_report_utilization_0 ; Report on utilization of resources on the targeted device (report_utilization) ; slr = false; packthru = false; hierarchical = false; hierarchical_percentages = false;  ; Tue Sep 22 11:02:01 SGT 2020 ; 9964", 15); // N (O, ch)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "impl_1_place_report_utilization_0 ; Report on utilization of resources on the targeted device (report_utilization) ; slr = false; packthru = false; hierarchical = false; hierarchical_percentages = false;  ; Tue Sep 22 11:02:01 SGT 2020 ; 9964", 15, "impl_1_place_report_utilization_0", 0, false, false, false, false, false, true); // N (O, ch) - Double Click
+// [GUI Memory]: 191 MB (+163kb) [19:46:43]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 138 MB. Current time: 9/22/20 11:41:37 AM SGT
+// Elapsed time: 1916 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Edit Timing Constraints]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+// Elapsed time: 40 seconds
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ; clk ; 6.25 ; 0.0 ; 3.125 ; false ; [get_ports clk] ; C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.srcs/constrs_1/new/usr_constrain.xdc ;  ; ", 0, "6.25", 2); // f (O, ch)
+editTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "5.882", 0, "Period (ns)", 2); // f (O, ch)
+selectButton(PAResourceTtoZ.XdcEditorView_APPLY_ALL_CHANGES_TO_XDC_CONSTRAINTS, "Apply"); // a (a, ch)
+// bv (ch):  Apply All XDC Constraints : addNotify
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+dismissDialog("Apply All XDC Constraints"); // bv (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// an (ch): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (an)
+// bv (ch):  Save Constraints : addNotify
+dismissDialog("Save Project"); // an (ch)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// Tcl Message: save_constraints 
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Save Constraints"); // bv (ch)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+closeView(PAResourceOtoP.PAViews_PAR_REPORT, "PAR Report"); // c
+closeView(PAResourceOtoP.PAViews_PAR_REPORT, "PAR Report"); // c
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Sep 22 11:45:05 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.runs/synth_1/runme.log [Tue Sep 22 11:45:05 2020] Launched impl_1... Run output will be captured here: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 2474.824 ; gain = 0.000 
+// 'c' command handler elapsed time: 21 seconds
+// Elapsed time: 19 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (ch): Implementation Completed: addNotify
+// [GUI Memory]: 202 MB (+664kb) [20:18:16]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 139 MB. Current time: 9/22/20 12:11:37 PM SGT
+// Elapsed time: 3108 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bv (ch):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 94 MB. Current time: 9/22/20 12:36:56 PM SGT
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,219 MB. GUI used memory: 95 MB. Current time: 9/22/20 12:36:56 PM SGT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 72 MB. Current time: 9/22/20 12:37:04 PM SGT
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 135 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2509.773 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2509.773 ; gain = 0.000 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2509.773 ; gain = 34.949 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 4.9s
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 18 seconds
+dismissDialog("Reloading"); // bv (ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 145 MB. Current time: 9/22/20 1:07:08 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 137 MB. Current time: 9/22/20 1:37:08 PM SGT
+// Elapsed time: 4270 seconds
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ; clk ; 5.882 ; 0.0 ; 2.941 ; false ; [get_ports clk] ; C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.srcs/constrs_1/new/usr_constrain.xdc ;  ; ", 0, "5.882", 2); // f (O, ch)
+editTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "5.555", 0, "Period (ns)", 2); // f (O, ch)
+selectButton(PAResourceTtoZ.XdcEditorView_APPLY_ALL_CHANGES_TO_XDC_CONSTRAINTS, "Apply"); // a (a, ch)
+// bv (ch):  Apply All XDC Constraints : addNotify
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+dismissDialog("Apply All XDC Constraints"); // bv (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// an (ch): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (an)
+// bv (ch):  Save Constraints : addNotify
+dismissDialog("Save Project"); // an (ch)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// Tcl Message: save_constraints 
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Save Constraints"); // bv (ch)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Sep 22 13:48:48 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.runs/synth_1/runme.log [Tue Sep 22 13:48:48 2020] Launched impl_1... Run output will be captured here: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 2544.816 ; gain = 0.000 
+// 'c' command handler elapsed time: 20 seconds
+// Elapsed time: 19 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (ch): Implementation Completed: addNotify
+// Elapsed time: 770 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bv (ch):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 83 MB. Current time: 9/22/20 2:01:41 PM SGT
+// Engine heap size: 2,219 MB. GUI used memory: 84 MB. Current time: 9/22/20 2:01:41 PM SGT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 80 MB. Current time: 9/22/20 2:01:48 PM SGT
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 135 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2596.949 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2596.949 ; gain = 0.000 
+// TclEventType: DRC_ADDED
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 2596.949 ; gain = 51.938 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 4.8s
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 17 seconds
+dismissDialog("Reloading"); // bv (ch)
+// [GUI Memory]: 212 MB (+15kb) [22:40:34]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 153 MB. Current time: 9/22/20 2:31:49 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 145 MB. Current time: 9/22/20 3:01:49 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 145 MB. Current time: 9/22/20 3:31:49 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 145 MB. Current time: 9/22/20 4:01:50 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 145 MB. Current time: 9/22/20 4:31:50 PM SGT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/22/20 5:01:50 PM SGT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/22/20 5:31:50 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/22/20 6:01:51 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/22/20 6:31:51 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 145 MB. Current time: 9/22/20 7:01:51 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/22/20 7:31:52 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/22/20 8:01:52 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/22/20 8:31:52 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 145 MB. Current time: 9/22/20 9:01:53 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/22/20 9:31:53 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/22/20 10:01:53 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/22/20 10:31:53 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 146 MB. Current time: 9/22/20 11:01:54 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/22/20 11:31:54 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 12:01:54 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 12:31:55 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 1:01:55 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 1:31:55 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 2:01:56 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 2:31:56 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 3:01:56 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 3:31:57 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 4:01:57 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 4:31:57 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 5:01:57 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 5:31:58 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 6:01:58 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 146 MB. Current time: 9/23/20 6:31:58 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 7:01:59 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 7:31:59 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 8:01:59 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 8:32:00 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 9:02:00 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 9:32:00 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 10:02:01 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 10:32:01 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 11:02:01 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 11:32:02 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 12:02:02 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 12:32:02 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 1:02:02 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 144 MB. Current time: 9/23/20 1:32:03 PM SGT
+// Elapsed time: 86097 seconds
+selectButton(PAResourceCommand.PACommandNames_PROJECT_SUMMARY, "project_summary"); // B (f, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SUMMARY
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_IMPL_SETTINGS, "Vivado Implementation Defaults"); // h (Q, ch)
+// Run Command: PAResourceCommand.PACommandNames_IMPL_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// C (ch): Settings: addNotify
+selectTree("PAResourceOtoP.ProgramOptionsPanelImpl_STRATEGY", "[Run Strategies, Vivado Strategies, Performance_ExtraTimingOpt]", 12, false); // TreeChooserPanel (C, ResizableWindow)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+// bv (ch):  Change Settings : addNotify
+// A (ch): Create New Run: addNotify
+dismissDialog("Change Settings"); // bv (ch)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// b (ch): Create Run: addNotify
+dismissDialog("Create New Run"); // A (ch)
+setText(PAResourceAtoD.CopyRunDialog_RUN_NAME, "impl_extraTiming"); // X (Q, b)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (b)
+// TclEventType: RUN_ADD
+// Tcl Command: 'set_property INCLUDE_IN_ARCHIVE [ get_property INCLUDE_IN_ARCHIVE [get_runs impl_1]] [get_runs impl_extraTiming]'
+// TclEventType: RUN_CURRENT
+// TclEventType: RUN_MODIFY
+// Tcl Message: create_run impl_extraTiming -parent_run synth_1 -flow {Vivado Implementation 2018} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports} 
+// Tcl Message: Run is defaulting to parent run srcset: sources_1 Run is defaulting to parent run constrset: constrs_1 Run is defaulting to parent run part: xc7a200tsbg484-1 
+// Tcl Message: current_run [get_runs impl_extraTiming] 
+// Tcl Message: set_property strategy Performance_ExtraTimingOpt [get_runs impl_extraTiming] 
+dismissDialog("Create Run"); // b (ch)
+dismissDialog("Settings"); // C (ch)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+selectButton(PAResourceCommand.PACommandNames_IMPL_SETTINGS, "Vivado Implementation Default Reports"); // h (Q, ch)
+// Run Command: PAResourceCommand.PACommandNames_IMPL_SETTINGS
+// C (ch): Settings: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+// bv (ch):  Change Settings : addNotify
+dismissDialog("Change Settings"); // bv (ch)
+dismissDialog("Settings"); // C (ch)
+// [GUI Memory]: 237 MB (+15310kb) [46:17:14]
+// [GUI Memory]: 269 MB (+20967kb) [46:17:19]
+selectTree(PAResourceOtoP.PowerResultTab_REPORT_NAVIGATION_TREE, "[Report Contents, Utilization Details]", 3, true); // h (O, ch) - Node
+selectTree(PAResourceOtoP.PowerResultTab_REPORT_NAVIGATION_TREE, "[Report Contents, Utilization Details]", 3, true, false, false, false, false, true); // h (O, ch) - Double Click - Node
+expandTree(PAResourceOtoP.PowerResultTab_REPORT_NAVIGATION_TREE, "[Report Contents, Utilization Details]", 3); // h (O, ch)
+// [GUI Memory]: 290 MB (+8558kb) [46:17:27]
+// Elapsed time: 20 seconds
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "impl_extraTiming ;  ;  ;  ; ", 5, "impl_extraTiming", 0, true); // N (O, ch) - Node
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "impl_extraTiming ;  ;  ;  ; ", 5); // N (O, ch)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_extraTiming -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Sep 23 13:58:39 2020] Launched impl_extraTiming... Run output will be captured here: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.runs/impl_extraTiming/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 2792.781 ; gain = 3.180 
+// 'c' command handler elapsed time: 18 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 162 MB. Current time: 9/23/20 2:02:03 PM SGT
+// TclEventType: RUN_COMPLETED
+// ah (ch): Implementation Completed: addNotify
+// Elapsed time: 1544 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bv (ch):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_extraTiming 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 163 MB. Current time: 9/23/20 2:24:34 PM SGT
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 135 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3107.719 ; gain = 25.246 
+// Tcl Message: Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3107.719 ; gain = 25.246 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 206 instances were transformed.   RAM16X1S => RAM32X1S (RAMS32): 79 instances   SRLC32E => SRL16E: 127 instances  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 3174.336 ; gain = 373.957 
+// TclEventType: DRC_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 5.4s
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Device view-level: 0.0
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 17 seconds
+dismissDialog("Open Implemented Design"); // bv (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 27, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (ch): Report Utilization: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Report Utilization"); // a (ch)
+// bv (ch):  Report Utilization : addNotify
+// Tcl Message: report_utilization -name utilization_1 
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 240 MB. Current time: 9/23/20 2:24:58 PM SGT
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 3349.941 ; gain = 72.457 
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 3349.941 ; gain = 72.457 
+dismissDialog("Report Utilization"); // bv (ch)
+// Device view-level: 0.0
+// Elapsed time: 160 seconds
+closeMainWindow("ROLLO-I-Decrypt - [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.xpr] - Vivado 2018.1"); // ch
+// Tcl Command: 'exit'
+// TclEventType: STOP_GUI
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2018.1 (64-bit)
+# SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Current time: Wed Sep 23 14:27:39 SGT 2020
+# Process ID: 21568
+# OS: Windows 10
+# User: David
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.frmwork.CommandFailedException:   (See C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/vivado_pid21568.debug)
+*/
+// TclEventType: STOP_PROGRESS_DIALOG
+
+// Exiting Vivado with a status code 0 at 9/25/20 7:25:17 PM SGT...
+// Elapsed time: 99:44:49

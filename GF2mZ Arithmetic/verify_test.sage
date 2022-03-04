@@ -37,17 +37,35 @@ mem_C = str(sys.argv[5])
 
 ############################################################################
 #
-#	initialize the system parameters
+#   initialize the system parameters
 #
 ############################################################################
 #ROLLO-I setups
 if SL == 'ROLLO-I-128':
-  n = 47
-  m = 79
+  n = 83
+  m = 67
 
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[47] = 1
-  P_list[5] = 1
+  P_list[83] = 1
+  P_list[7] = 1
+  P_list[4] = 1
+  P_list[2] = 1
+  P_list[0] = 1
+
+  f_list = (m+1)*[0] # sparse list for polynomial f
+  f_list[67] = 1
+  f_list[5] = 1
+  f_list[2] = 1
+  f_list[1] = 1
+  f_list[0] = 1
+
+elif SL == 'ROLLO-I-192':
+  n = 97
+  m = 79
+  
+  P_list = (n+1)*[0] # sparse list for polynomial P
+  P_list[97] = 1
+  P_list[6] = 1
   P_list[0] = 1
 
   f_list = (m+1)*[0] # sparse list for polynomial f
@@ -55,48 +73,30 @@ if SL == 'ROLLO-I-128':
   f_list[9] = 1
   f_list[0] = 1
 
-elif SL == 'ROLLO-I-192':
-  n = 53
-  m = 89
-  
-  P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[53] = 1
-  P_list[6] = 1
-  P_list[2] = 1
-  P_list[1] = 1
-  P_list[0] = 1
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[89] = 1
-  f_list[38] = 1
-  f_list[0] = 1
-
 elif SL == 'ROLLO-I-256': 
-  n = 67
-  m = 113
+  n = 113
+  m = 97
 
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[67] = 1
-  P_list[5] = 1
-  P_list[2] = 1
-  P_list[1] = 1
+  P_list[113] = 1
+  P_list[9] = 1
   P_list[0] = 1
 
   f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[113] = 1
-  f_list[9] = 1
+  f_list[97] = 1
+  f_list[6] = 1
   f_list[0] = 1
 
 #ROLLO-II setups
 elif SL == 'ROLLO-II-128':
-  n = 149
+  n = 189
   m = 83
   
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[149] = 1
-  P_list[10] = 1
-  P_list[9] = 1
-  P_list[7] = 1
+  P_list[189] = 1
+  P_list[6] = 1
+  P_list[5] = 1
+  P_list[2] = 1
   P_list[0] = 1
 
   f_list = (m+1)*[0] # sparse list for polynomial f
@@ -107,91 +107,37 @@ elif SL == 'ROLLO-II-128':
   f_list[0] = 1
 
 elif SL == 'ROLLO-II-192':
-  n = 151
-  m = 107
+  n = 193
+  m = 97
   
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[151] = 1
-  P_list[3] = 1
+  P_list[193] = 1
+  P_list[15] = 1
   P_list[0] = 1
 
   f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[107] = 1
-  f_list[9] = 1
-  f_list[7] = 1
-  f_list[4] = 1
+  f_list[97] = 1
+  f_list[6] = 1
   f_list[0] = 1
 
 elif SL == 'ROLLO-II-256':
-  n = 157
-  m = 127
+  n = 211
+  m = 97
   
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[157] = 1
-  P_list[6] = 1
-  P_list[5] = 1
-  P_list[2] = 1
+  P_list[211] = 1
+  P_list[11] = 1
+  P_list[10] = 1
+  P_list[8] = 1
   P_list[0] = 1
 
   f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[127] = 1
-  f_list[1] = 1
-  f_list[0] = 1
-
-elif SL == 'ROLLO-III-128':
-  n = 47
-  m = 101
-  
-  P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[47] = 1
-  P_list[5] = 1
-  P_list[0] = 1
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[101] = 1
-  f_list[7] = 1
+  f_list[97] = 1
   f_list[6] = 1
-  f_list[1] = 1
-  f_list[0] = 1
-
-elif SL == 'ROLLO-III-192':
-  n = 59
-  m = 107
-  
-  P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[59] = 1
-  P_list[7] = 1
-  P_list[4] = 1
-  P_list[2] = 1
-  P_list[0] = 1
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[107] = 1
-  f_list[9] = 1
-  f_list[7] = 1
-  f_list[4] = 1
-  f_list[0] = 1
-
-elif SL == 'ROLLO-III-256':
-  n = 67
-  m = 131
-  
-  P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[67] = 1
-  P_list[5] = 1
-  P_list[2] = 1
-  P_list[1] = 1
-  P_list[0] = 1
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[131] = 1
-  f_list[8] = 1
-  f_list[3] = 1
-  f_list[2] = 1
   f_list[0] = 1
 
 else:
-  print 'Input Errors'  
+  print ('Input Errors')  
   exit()
 
 depth = ceil(n/d) # memory depth
@@ -215,60 +161,62 @@ A1 = ffi_vec.random_element()
 B1 = ffi_vec.random_element()
 ############################################################################
 #
-#	extract the data from the input memory files and then verify the correctness
+#   extract the data from the input memory files and then verify the correctness
 #
 ############################################################################
-
-# read mem_A file - line wise, 4 GF(2m) coefficients in each line, every coefficient is MSB first
+  
+# read mem_A file - line wise, d GF(2m) coefficients in each line, every coefficient is LSB first
 rows = []
 with open(mem_A, "r") as f:
-	for line in f:
-		if line.startswith("//"): #strip off the comment lines
-			continue
+    for line in f:
+        if line.startswith("//"): #strip off the comment lines
+            continue
 
-		line = line.replace('\r', '') #handle the ending symbol '\r\n' in MS-Windows format
-		for i in range(d):
-			row = []
-			coeff = line[i*m:i*m+m]
-			for c in coeff:
-				row = [int(c)] + row
-			rows.append(row)
+        line = line.replace('\r', '') #handle the ending symbol '\r\n' in MS-Windows format
+
+        for i in range(d):
+            row = []
+            coeff = line[i*m:i*m+m]
+            for c in coeff:
+                row = row + [int(c)]
+            rows.append(row)
 A = ffi_vec(rows)
+
 
 # read mem_B file
 rows = []
 with open(mem_B, "r") as f:
-	for line in f:
-		if line.startswith("//"): #strip off the comment lines
-			continue
+    for line in f:
+        if line.startswith("//"): #strip off the comment lines
+            continue
 
-		line = line.replace('\r', '') #handle the ending symbol '\r\n' in MS-Windows format
-		for i in range(d):
-			row = []
-			coeff = line[i*m:i*m+m]
-			for c in coeff:
-				row = [int(c)] + row
-			rows.append(row)
+        line = line.replace('\r', '') #handle the ending symbol '\r\n' in MS-Windows format
+        for i in range(d):
+            row = []
+            coeff = line[i*m:i*m+m]
+            for c in coeff:
+                row = row + [int(c)]
+            rows.append(row)
 B = ffi_vec(rows)
 
 # read mem_C file
 rows = []
 with open(mem_C, "r") as f:
-	for line in f:
-		if line.startswith("//"): #strip off the comment lines
-			continue
+    for line in f:
+        if line.startswith("//"): #strip off the comment lines
+            continue
 
-		line = line.replace('\r', '') #handle the ending symbol '\r\n' in MS-Windows format
-		for i in range(d):
-			row = []
-			coeff = line[i*m:i*m+m]
-			for c in coeff:
-				row = [int(c)] + row
-			rows.append(row)
+        line = line.replace('\r', '') #handle the ending symbol '\r\n' in MS-Windows format
+        for i in range(d):
+            row = []
+            coeff = line[i*m:i*m+m]
+            for c in coeff:
+                row = row + [int(c)]
+            rows.append(row)
 C = ffi_vec(rows)
 
 if C == A*B:
-	print "OK"
+    print ("OK")
 else: 
-	print "ERROR"
-	exit(-1)
+    print ("ERROR")
+    exit(-1)

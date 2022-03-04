@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Dec 13 10:01:42 2020
+# Process ID: 15632
+# Current directory: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17824 C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\ROLLO-II-Encrypt.xpr
+# Log file: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/vivado.log
+# Journal file: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.xpr}
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+open_run impl_2
+open_run synth_1 -name synth_1
+save_constraints
+reset_run synth_1
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+current_design impl_2
+refresh_design
+report_utilization -name utilization_1
+reset_run synth_1
+save_constraints -force
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+report_utilization -name utilization_1

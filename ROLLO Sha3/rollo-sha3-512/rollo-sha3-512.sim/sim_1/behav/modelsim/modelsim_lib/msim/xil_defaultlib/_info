@@ -1,0 +1,170 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\David\Dropbox\LRPC Code\hardware\ROLLO Sha3\rollo-sha3-512\rollo-sha3-512.sim\sim_1\behav\modelsim
+T_opt
+VWXA<?51Gh2H[zIahTO0i53
+04 9 4 work keccak_tb fast 0
+04 4 4 work glbl fast 0
+=1-94c6916e481e-5f687808-a2-2c50
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+OL;O;10.1c;51
+vf_permutation
+IbOfA6lOVTdWAMY4FoH^1^1
+Vj`ahcLRD3nPzWV6KkE;l=3
+Z1 dC:\Users\David\Dropbox\LRPC Code\hardware\ROLLO Sha3\rollo-sha3-512\rollo-sha3-512.sim\sim_1\behav\modelsim
+w1600681226
+8../../../../../verilog/f_permutation.v
+F../../../../../verilog/f_permutation.v
+L0 19
+Z2 OL;L;10.1c;51
+r1
+31
+Z3 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../../verilog|../../../../../verilog/f_permutation.v|../../../../../verilog/keccak.v|../../../../../verilog/mem_sp.v|../../../../../verilog/padder.v|../../../../../verilog/rconst.v|../../../../../verilog/round.v|../../../../../verilog/keccak_tb.v|
+Z4 o-work xil_defaultlib -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z5 !s92 -work xil_defaultlib +incdir+../../../../../verilog -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z6 !s107 ../../../../../verilog/define.v|../../../../../verilog/clog2.v|../../../../../verilog/keccak_tb.v|../../../../../verilog/round.v|../../../../../verilog/rconst.v|../../../../../verilog/padder.v|../../../../../verilog/mem_sp.v|../../../../../verilog/keccak.v|../../../../../verilog/f_permutation.v|
+!s10a 1600681226
+!i10b 1
+!s100 BEadbU581Nc88F[[_nGzd2
+!s85 0
+!s108 1600681742.249000
+vglbl
+IW[VLR6<Sjz:J_[b[HG]gG0
+VM[9mS]S:KA1i4VeCMX35[3
+R1
+w1522801934
+8glbl.v
+Fglbl.v
+L0 6
+R2
+r1
+31
+R4
+!i10b 1
+!s100 ??YMin6;S^;eQM5I2PDA81
+!s85 0
+!s108 1600681983.476000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+vkeccak
+Ic`AlD1IoPnZha:`]PbO_E3
+VAI0U0P_28WU]QA[6eeGN:2
+R1
+w1600681972
+8../../../../../verilog/keccak.v
+F../../../../../verilog/keccak.v
+L0 28
+R2
+r1
+31
+R3
+R4
+R5
+R6
+!i10b 1
+!s100 gS?YA4>FoY6WfKQ^D2U[I0
+!s85 0
+!s108 1600681983.220000
+vkeccak_tb
+I54RGUT8ZA1EW0fHTc<l9f3
+VFkge`Tg_mQ^W=NBkFmWJ:1
+R1
+w1578469906
+8../../../../../verilog/keccak_tb.v
+F../../../../../verilog/keccak_tb.v
+L0 23
+R2
+r1
+31
+R6
+R3
+R4
+R5
+!s10a 1578469906
+!s108 1600675192.576000
+!i10b 1
+!s100 =Lz9DT>_RLH:M3fAaFd6b3
+!s85 0
+vmem_sp
+I499WZDk39zh9dHf]@MWXM2
+Vb^jl3VF4bzDQ84STObdP[3
+R1
+w1579146277
+8../../../../../verilog/mem_sp.v
+F../../../../../verilog/mem_sp.v
+L0 11
+R2
+r1
+31
+R6
+R3
+R4
+R5
+!s10a 1579146277
+!s108 1600674839.667000
+!i10b 1
+!s100 QnL6QoBJ:RcSA`0?Y;0D61
+!s85 0
+vpadder
+IKBgQVJ]36Gf4laK:8HfO52
+VQ7AzlO_H<WXBA:R@D?E3k0
+R1
+w1578987974
+8../../../../../verilog/padder.v
+F../../../../../verilog/padder.v
+L0 21
+R2
+r1
+31
+R6
+R3
+R4
+R5
+!s10a 1578987974
+!s108 1579055904.757000
+!i10b 1
+!s100 2W4F?DhQI4JnDa1CJAlB23
+!s85 0
+vrconst
+Z7 !s10a 1359097870
+IDUXIhm^];ocAHjnkC0oIY2
+VVFJbSNVQdkUQ=fiJF:k;H0
+R1
+Z8 w1359097870
+8../../../../../verilog/rconst.v
+F../../../../../verilog/rconst.v
+L0 18
+R2
+r1
+31
+Z9 !s108 1578551189.416000
+R6
+R3
+R4
+R5
+!s100 AZEoKnOQ3:^JQ[o6Y2W>f2
+!i10b 1
+!s85 0
+vround
+R7
+I94dknR@bGICZl0[^3igFf0
+VUgn68]S0JK;]RHDn]KCIf3
+R1
+R8
+8../../../../../verilog/round.v
+F../../../../../verilog/round.v
+L0 25
+R2
+r1
+31
+R9
+R6
+R3
+R4
+R5
+!s100 dDn8MD`FThZjnQ>@KbNH13
+!i10b 1
+!s85 0

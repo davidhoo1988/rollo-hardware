@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date             : Sun Dec  1 17:08:43 2019
+| Date             : Wed May  6 20:35:31 2020
 | Host             : David-NTU-Desktop running 64-bit major release  (build 9200)
 | Command          : report_power -file gf2mz_top_power_routed.rpt -pb gf2mz_top_power_summary_routed.pb -rpx gf2mz_top_power_routed.rpx
 | Design           : gf2mz_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.391        |
+| Total On-Chip Power (W)  | 0.644        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.299        |
-| Device Static (W)        | 0.092        |
+| Dynamic (W)              | 0.551        |
+| Device Static (W)        | 0.093        |
 | Effective TJA (C/W)      | 2.6          |
-| Max Ambient (C)          | 84.0         |
-| Junction Temperature (C) | 26.0         |
+| Max Ambient (C)          | 83.3         |
+| Junction Temperature (C) | 26.7         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.046 |        3 |       --- |             --- |
-| Slice Logic    |     0.044 |    11366 |       --- |             --- |
-|   LUT as Logic |     0.043 |     7356 |     63400 |           11.60 |
-|   Register     |     0.001 |     2917 |    126800 |            2.30 |
-|   Others       |     0.000 |       19 |       --- |             --- |
-| Signals        |     0.069 |     9558 |       --- |             --- |
-| Block RAM      |     0.115 |       14 |       135 |           10.37 |
-| I/O            |     0.025 |       83 |       300 |           27.67 |
-| Static Power   |     0.092 |          |           |                 |
-| Total          |     0.391 |          |           |                 |
+| Clocks         |     0.091 |        3 |       --- |             --- |
+| Slice Logic    |     0.093 |    23489 |       --- |             --- |
+|   LUT as Logic |     0.090 |    15224 |     63400 |           24.01 |
+|   Register     |     0.003 |     5540 |    126800 |            4.37 |
+|   Others       |     0.000 |       35 |       --- |             --- |
+| Signals        |     0.134 |    19566 |       --- |             --- |
+| Block RAM      |     0.190 |       20 |       135 |           14.81 |
+| I/O            |     0.043 |       83 |       300 |           27.67 |
+| Static Power   |     0.093 |          |           |                 |
+| Total          |     0.644 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,16 +71,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.282 |       0.266 |      0.016 |
-| Vccaux    |       1.800 |     0.020 |       0.002 |      0.018 |
+| Vccint    |       1.000 |     0.510 |       0.494 |      0.016 |
+| Vccaux    |       1.800 |     0.022 |       0.004 |      0.018 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.016 |       0.012 |      0.004 |
+| Vcco18    |       1.800 |     0.024 |       0.020 |      0.004 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.009 |       0.009 |      0.001 |
+| Vccbram   |       1.000 |     0.015 |       0.014 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -140,20 +140,36 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| gf2mz_top |     0.299 |
-|   ctrl    |     0.032 |
-|   mem_A   |     0.029 |
-|   mem_B   |     0.082 |
-|   mem_C   |     0.017 |
-|   mul00   |     0.017 |
+| gf2mz_top |     0.551 |
+|   ctrl    |     0.068 |
+|   mem_A   |     0.055 |
+|   mem_B   |     0.124 |
+|   mem_C   |     0.036 |
+|   mul00   |     0.016 |
 |   mul01   |     0.012 |
-|   mul02   |     0.012 |
-|   mul10   |     0.014 |
-|   mul11   |     0.008 |
-|   mul12   |     0.012 |
-|   mul20   |     0.013 |
-|   mul21   |     0.013 |
-|   mul22   |     0.012 |
+|   mul02   |     0.015 |
+|   mul03   |     0.010 |
+|   mul04   |    <0.001 |
+|   mul10   |     0.007 |
+|   mul11   |     0.007 |
+|   mul12   |     0.016 |
+|   mul13   |     0.006 |
+|   mul14   |    <0.001 |
+|   mul20   |     0.007 |
+|   mul21   |     0.016 |
+|   mul22   |     0.017 |
+|   mul23   |     0.006 |
+|   mul24   |    <0.001 |
+|   mul30   |     0.006 |
+|   mul31   |     0.017 |
+|   mul32   |     0.016 |
+|   mul33   |     0.006 |
+|   mul34   |    <0.001 |
+|   mul40   |     0.013 |
+|   mul41   |     0.014 |
+|   mul42   |     0.013 |
+|   mul43   |     0.005 |
+|   mul44   |    <0.001 |
 +-----------+-----------+
 
 

@@ -1,0 +1,121 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Tue Sep 22 13:57:44 2020
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file decrypt_top_control_sets_placed.rpt
+| Design       : decrypt_top
+| Device       : xc7a200t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    53 |
+| Unused register locations in slices containing registers |    96 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            6 |
+|      7 |            1 |
+|      8 |            5 |
+|    16+ |           40 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            5478 |         2063 |
+| No           | No                    | Yes                    |               5 |            4 |
+| No           | Yes                   | No                     |            3168 |         1143 |
+| Yes          | No                    | No                     |             530 |          129 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            5251 |         2705 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------+-----------------------------------+------------------+----------------+
+|  Clock Signal  |            Enable Signal           |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------+------------------------------------+-----------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | RSR/CTRL/r0                        | RSR/CTRL/SR[0]                    |                1 |              1 |
+|  clk_IBUF_BUFG | S1S2gen/cnt[3]_i_1__0_n_0          |                                   |                2 |              4 |
+|  clk_IBUF_BUFG | gf2mz/C_addr[3]_i_1_n_0            |                                   |                2 |              4 |
+|  clk_IBUF_BUFG | gf2mz/A_addr[3]_i_1_n_0            |                                   |                1 |              4 |
+|  clk_IBUF_BUFG | S1S2gen/mul/S1S2_addr_reg[1]       | S1S2gen/S1S2_addr[5]_i_1__0_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG | S1S2gen/S_addr[3]_i_1_n_0          |                                   |                2 |              4 |
+|  clk_IBUF_BUFG | SHA3/f_permutation_/i_reg[21]_0[0] | SHA3/f_permutation_/i_reg[1]_0[0] |                1 |              4 |
+|  clk_IBUF_BUFG | RSR/CTRL/mem_addr[6]_i_1_n_0       |                                   |                6 |              7 |
+|  clk_IBUF_BUFG | RSR/CTRL/cnt[7]_i_1_n_0            | RSR/CTRL/i___21_n_0               |                2 |              8 |
+|  clk_IBUF_BUFG | RSR/CTRL/i___12_n_0                |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | S1S2gen/idx[3]_i_1_n_0             |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/B_addrb[3]_i_1_n_0      |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | RSR/CTRL/i___11_n_0                |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | S1S2gen/mul_start_reg_n_0          | RSR/CTRL/SR[0]                    |               39 |             79 |
+|  clk_IBUF_BUFG | S1S2gen/shift_reg[394]_i_2_n_0     | S1S2gen/shift_reg[78]_i_1_n_0     |               27 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul00/start_en               | gf2mz/ctrl/SR[0]                  |               59 |             79 |
+|  clk_IBUF_BUFG | S1S2gen/mul/start_en               | S1S2gen/mul/c[78]_i_1__12_n_0     |               62 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul01/start_en               | gf2mz/ctrl/SR[0]                  |               66 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul02/start_en               | gf2mz/ctrl/SR[0]                  |               64 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul21/start_en               | gf2mz/ctrl/SR[0]                  |               70 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul22/start_en               | gf2mz/ctrl/SR[0]                  |               65 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul23/start_en               | gf2mz/ctrl/SR[0]                  |               63 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul24/start_en               | gf2mz/ctrl/SR[0]                  |               65 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul30/start_en               | gf2mz/ctrl/SR[0]                  |               69 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul31/start_en               | gf2mz/ctrl/SR[0]                  |               68 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul33/start_en               | gf2mz/ctrl/SR[0]                  |               67 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul20/start_en               | gf2mz/ctrl/SR[0]                  |               69 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul34/start_en               | gf2mz/ctrl/SR[0]                  |               66 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul12/start_en               | gf2mz/ctrl/SR[0]                  |               66 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul13/start_en               | gf2mz/ctrl/SR[0]                  |               69 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul40/start_en               | gf2mz/ctrl/SR[0]                  |               65 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul03/start_en               | gf2mz/ctrl/SR[0]                  |               66 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul41/start_en               | gf2mz/ctrl/SR[0]                  |               68 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul42/start_en               | gf2mz/ctrl/SR[0]                  |               62 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul43/start_en               | gf2mz/ctrl/SR[0]                  |               64 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul04/start_en               | gf2mz/ctrl/SR[0]                  |               68 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul44/start_en               | gf2mz/ctrl/SR[0]                  |               66 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul10/start_en               | gf2mz/ctrl/SR[0]                  |               59 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul11/start_en               | gf2mz/ctrl/SR[0]                  |               61 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul14/start_en               | gf2mz/ctrl/SR[0]                  |               64 |             79 |
+|  clk_IBUF_BUFG |                                    | SHA3/padder_/out[575]_i_1_n_0     |               22 |             79 |
+|  clk_IBUF_BUFG | gf2mz/mul32/start_en               | gf2mz/ctrl/SR[0]                  |               64 |             79 |
+|  clk_IBUF_BUFG | S1S2gen/S1S2_dout[157]_i_1_n_0     | S1S2gen/S1S2_dout[78]_i_1_n_0     |               26 |             79 |
+|  clk_IBUF_BUFG | S1S2gen/S1S2_dout[157]_i_1_n_0     |                                   |               26 |             80 |
+|  clk_IBUF_BUFG |                                    | gf2mz/ctrl/B_doa[394]_i_1_n_0     |               44 |            158 |
+|  clk_IBUF_BUFG |                                    | ctrl_top/S1S2_addr_reg[3]         |               29 |            162 |
+|  clk_IBUF_BUFG | S1S2gen/shift_reg[394]_i_2_n_0     | S1S2gen/shift_reg[394]_i_1_n_0    |              124 |            316 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/cache4[78]_i_1_n_0      |                                   |               74 |            395 |
+|  clk_IBUF_BUFG |                                    | gf2mz/ctrl/B_doa[236]_i_1_n_0     |              344 |            634 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/E[0]                    | RSR/CTRL/SR[0]                    |              241 |           1027 |
+|  clk_IBUF_BUFG | SHA3/f_permutation_/update         | RSR/CTRL/SR[0]                    |              547 |           1600 |
+|  clk_IBUF_BUFG |                                    | RSR/CTRL/SR[0]                    |              708 |           2140 |
+|  clk_IBUF_BUFG |                                    |                                   |             2376 |           6477 |
++----------------+------------------------------------+-----------------------------------+------------------+----------------+
+
+

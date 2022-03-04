@@ -1,0 +1,534 @@
+m255
+K3
+z0
+13
+cModel Technology
+Z0 dC:\Users\David\Dropbox\ROLLO\hardware\ROLLO Decrypt\NewParam\ROLLO-II-Decrypt\ROLLO-II-Decrypt.sim\sim_decrypt\behav\modelsim
+T_opt
+VmYkn;Ie=@^HKI6A=8P[a93
+Z1 04 14 4 work decrypt_top_tb fast 0
+Z2 04 4 4 work glbl fast 0
+=1-94c6916e481e-5fec4fc4-2ae-4a9c
+Z3 o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+OL;O;10.1c;51
+R0
+T_opt1
+!s110 1617019327
+VIEYaeP=D99QWbDK[[IlLo1
+R1
+R2
+=1-6c2b59f052b9-6061c1be-5-61e0
+R3
+Z4 tCvgOpt 0
+n@_opt1
+OL;O;10.5;63
+vcomb_SA
+Z5 !s110 1617019315
+!i10b 1
+!s100 o<aImLE2>?DVo0CnfDg;W0
+IdFkULzMj831Pn931RHALU1
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 dC:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.sim/sim_decrypt/behav/modelsim
+w1609300886
+8../../../../Verilog/comb_SA.v
+F../../../../Verilog/comb_SA.v
+L0 1
+Z8 OL;L;10.5;63
+r1
+!s85 0
+31
+Z9 !s108 1617019314.000000
+Z10 !s107 ../../../../Verilog/decrypt_top_tb.v|../../../../Verilog/S1S2_gen_tb.v|../../../../Verilog/gf2mz_top_tb.v|../../../../Verilog/gs_elim_ctrl-thin.v|../../../../Verilog/f_permutation.v|../../../../Verilog/round.v|../../../../Verilog/rconst.v|../../../../Verilog/padder1.v|../../../../Verilog/keccak.v|../../../../Verilog/padder.v|../../../../Verilog/node.v|../../../../Verilog/gs_elim_top.v|../../../../Verilog/comb_SA.v|../../../../Verilog/mem_sp.v|../../../../Verilog/ctrl_top.v|../../../../Verilog/decrypt_top.v|../../../../Verilog/define.v|../../../../Verilog/mem_dp.v|../../../../Verilog/gf2mz_top.v|../../../../Verilog/mul_ctrl.v|../../../../Verilog/clog2.v|../../../../Verilog/gf2m_mul.v|../../../../Verilog/S1S2_gen.v|
+Z11 !s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../Verilog|../../../../Verilog/S1S2_gen.v|../../../../Verilog/gf2m_mul.v|../../../../Verilog/clog2.v|../../../../Verilog/mul_ctrl.v|../../../../Verilog/gf2mz_top.v|../../../../Verilog/mem_dp.v|../../../../Verilog/define.v|../../../../Verilog/decrypt_top.v|../../../../Verilog/ctrl_top.v|../../../../Verilog/mem_sp.v|../../../../Verilog/comb_SA.v|../../../../Verilog/gs_elim_top.v|../../../../Verilog/node.v|../../../../Verilog/padder.v|../../../../Verilog/keccak.v|../../../../Verilog/padder1.v|../../../../Verilog/rconst.v|../../../../Verilog/round.v|../../../../Verilog/f_permutation.v|../../../../Verilog/gs_elim_ctrl-thin.v|../../../../Verilog/gf2mz_top_tb.v|../../../../Verilog/S1S2_gen_tb.v|../../../../Verilog/decrypt_top_tb.v|
+!i113 0
+Z12 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 -work xil_defaultlib +incdir+../../../../Verilog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+ncomb_@s@a
+vctrl_top
+Z14 !s110 1617019314
+!i10b 1
+!s100 0<NiK]JBR4oOh@hkD_:UG2
+IkBBUfnYS[QHh;bPW2@4hM1
+R6
+R7
+w1609125162
+8../../../../Verilog/ctrl_top.v
+F../../../../Verilog/ctrl_top.v
+Z15 L0 23
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vdecrypt_top
+R14
+!i10b 1
+!s100 [eS7aN=acj988N;7R9[9P2
+I`_P8J<MG5bcOEi5cKJ0W]3
+R6
+R7
+w1617019243
+8../../../../Verilog/decrypt_top.v
+F../../../../Verilog/decrypt_top.v
+Z16 L0 26
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vdecrypt_top_tb
+Z17 !s110 1617019316
+!i10b 1
+!s100 NUidm2UEV3JD6j8PL7R[l1
+I`WD0nhbUUZG1ELJjBmNhA2
+R6
+R7
+w1609211413
+8../../../../Verilog/decrypt_top_tb.v
+F../../../../Verilog/decrypt_top_tb.v
+L0 5
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vf_permutation
+R5
+!i10b 1
+!s100 RHiQYPfVJ2kj2To7YI`8<3
+I7TedL8S<2XGY<2A8:ColJ3
+R6
+R7
+w1600739716
+8../../../../Verilog/f_permutation.v
+F../../../../Verilog/f_permutation.v
+L0 19
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vgf2m_mul
+R14
+!i10b 1
+!s100 gCa>noV3KIz2c40Q@eT570
+I;3aU;g?X2;zdBY7G`KM?I3
+R6
+R7
+Z18 w1609300646
+Z19 8../../../../Verilog/gf2m_mul.v
+Z20 F../../../../Verilog/gf2m_mul.v
+L0 5
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vgf2mz_top
+R14
+!i10b 1
+!s100 XCHYY6eG7QCV93CLbOFl32
+INEzfcBiCjeah@[SE;`DkJ1
+R6
+R7
+w1609302163
+8../../../../Verilog/gf2mz_top.v
+F../../../../Verilog/gf2mz_top.v
+Z21 L0 25
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vgf2mz_top_tb
+R17
+!i10b 1
+!s100 Y7`PSNhXMPNd[^eKGzXFA0
+Io=De3Y5o@Y^6fN4FI??Cm0
+R6
+R7
+w1599635020
+8../../../../Verilog/gf2mz_top_tb.v
+F../../../../Verilog/gf2mz_top_tb.v
+R15
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vglbl
+R17
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+IAl?5;D^:bf?I5A^M>WzmU1
+R6
+R7
+w1522801934
+8glbl.v
+Fglbl.v
+L0 6
+R8
+r1
+!s85 0
+31
+!s108 1617019316.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+R12
+R4
+vgs_elim_ctrl
+R17
+!i10b 1
+!s100 ;?do3TAiWTYzSZ>^7S=PA0
+IDmYWAHl2=?Wi2aoON^k0l0
+R6
+R7
+w1609132708
+8../../../../Verilog/gs_elim_ctrl-thin.v
+F../../../../Verilog/gs_elim_ctrl-thin.v
+L0 5
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vgs_elim_top
+R5
+!i10b 1
+!s100 >]zLbT1Yd`0d6b7J4gM8:2
+I>V?DzMLhhhfE<F4BF[SQf3
+R6
+R7
+w1608879790
+8../../../../Verilog/gs_elim_top.v
+F../../../../Verilog/gs_elim_top.v
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vkeccak
+R5
+!i10b 1
+!s100 0hD4g@TZj^4[]Bm4D?ljm2
+IQ5W<]11NhTW[58lTH43Id0
+R6
+R7
+w1600741671
+8../../../../Verilog/keccak.v
+F../../../../Verilog/keccak.v
+L0 28
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vmem_dp
+R14
+!i10b 1
+!s100 jYVS@<boSRkNPG66mdSKC2
+INa[baV`KFzF=kaF@TP<aa2
+R6
+R7
+w1571553190
+8../../../../Verilog/mem_dp.v
+F../../../../Verilog/mem_dp.v
+Z22 L0 11
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vmem_sp
+R14
+!i10b 1
+!s100 eMPDi[n6X>YOOgRG97EBg0
+IP`i1ae>TiM5=FPD=;93Wh0
+R6
+R7
+w1571553171
+8../../../../Verilog/mem_sp.v
+F../../../../Verilog/mem_sp.v
+R22
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vmul_ctrl
+R14
+!i10b 1
+!s100 ajh<6of2H]mCHFSV6Oe1k2
+IogMN[3`WXzW?LD[RfhM@n2
+R6
+R7
+w1609300645
+8../../../../Verilog/mul_ctrl.v
+F../../../../Verilog/mul_ctrl.v
+L0 24
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vpadder
+R5
+!i10b 1
+!s100 Gd_6I3`0c6a<?k18E<Vj_3
+IkT5CalJ4C`E37S7R;4N=V0
+R6
+R7
+w1578987974
+8../../../../Verilog/padder.v
+F../../../../Verilog/padder.v
+L0 21
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vpadder1
+R5
+!i10b 1
+!s100 zcL9kIQASQGJLik;?ghZI3
+IN:DC718?Hg^ObQ_`N=GL[1
+R6
+R7
+Z23 w1359097870
+8../../../../Verilog/padder1.v
+F../../../../Verilog/padder1.v
+R21
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vprocessor_AB
+R5
+!i10b 1
+!s100 ;WdCi^O>f?c=Y@=d]1D9=0
+IL30;H2No;8cR?:o5o3F5B1
+R6
+R7
+w1596179489
+8../../../../Verilog/node.v
+F../../../../Verilog/node.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+nprocessor_@a@b
+vrconst
+R5
+!i10b 1
+!s100 FR:5V7@DVYS<STV3E<kKJ0
+IYPJ:ND[VTk?;0HzIGaUMf0
+R6
+R7
+R23
+8../../../../Verilog/rconst.v
+F../../../../Verilog/rconst.v
+L0 18
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vround
+R5
+!i10b 1
+!s100 A4]daLmf>8kRjIAO5F[??3
+IGRW_mR2QNCO5=J2D_V0oN1
+R6
+R7
+R23
+8../../../../Verilog/round.v
+F../../../../Verilog/round.v
+R21
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+vS1S2_gen
+R14
+!i10b 1
+!s100 maA3`HAMNWSjClDSfi8U61
+IF?37?6;aXP4BncaTkK<h;0
+R6
+R7
+w1609126696
+8../../../../Verilog/S1S2_gen.v
+F../../../../Verilog/S1S2_gen.v
+R16
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+n@s1@s2_gen
+vS1S2_gen_tb
+R17
+!i10b 1
+!s100 <8mf1zM??Vjg47Z5:WPgD2
+IbMzUd7Fm@gMWhZ^LE`4ZV2
+R6
+R7
+w1600070608
+8../../../../Verilog/S1S2_gen_tb.v
+F../../../../Verilog/S1S2_gen_tb.v
+R15
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4
+n@s1@s2_gen_tb
+vshift_x_by_i
+R14
+!i10b 1
+!s100 ]iTdYN5g8k]7a>M>DY39N2
+I1CD0Q42Q24UE9YH5POWgE3
+R6
+R7
+R18
+R19
+R20
+L0 315
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R4

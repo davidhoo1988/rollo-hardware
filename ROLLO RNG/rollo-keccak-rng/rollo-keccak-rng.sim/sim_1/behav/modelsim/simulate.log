@@ -1,0 +1,55 @@
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {prng_tb_simulate.do} 
+# vsim -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib -voptargs=\"+acc\" xil_defaultlib.prng_tb xil_defaultlib.glbl 
+# Loading work.prng_tb(fast)
+# Loading work.prng(fast)
+# Loading work.f_permutation_200(fast)
+# Loading work.rconst_200(fast)
+# Loading work.round_200(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# starting computation
+# 
+# runtime: 18 cycles
+# 
+# runtime: 19 cycles
+# 
+# runtime: 19 cycles
+# 
+# runtime: 19 cycles
+# 
+# runtime: 19 cycles
+# 
+restart
+# Loading work.prng_tb(fast)
+# Loading work.prng(fast)
+# Loading work.f_permutation_200(fast)
+# Loading work.rconst_200(fast)
+# Loading work.round_200(fast)
+# Loading work.glbl(fast)
+do wave.do
+run 1us
+# starting computation
+# 
+# runtime: 18 cycles
+# 
+# runtime: 19 cycles
+# 
+# runtime: 19 cycles
+# 
+# runtime: 19 cycles
+# 
+# runtime: 19 cycles
+# 

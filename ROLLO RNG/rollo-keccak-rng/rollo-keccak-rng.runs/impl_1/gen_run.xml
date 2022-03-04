@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a15tfgg484-1" LaunchTime="1579422542">
+  <File Type="PWROPT-DCP" Name="prng_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="prng_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="prng.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="prng_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="prng_reports.tcl"/>
+  <File Type="BG-DRC" Name="prng.drc"/>
+  <File Type="OPT-DCP" Name="prng_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="prng.hwdef"/>
+  <File Type="OPT-DRC" Name="prng_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="prng_placed.dcp"/>
+  <File Type="PLACE-IO" Name="prng_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="prng_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="prng_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="prng_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="prng_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="prng_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="prng_physopt.dcp"/>
+  <File Type="BG-BIT" Name="prng.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="prng_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="prng_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="prng_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="prng_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="prng_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="prng.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="prng_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="prng.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="prng_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="prng.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="prng_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="prng.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="prng_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="prng_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="prng_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="prng_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="prng_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="prng_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="prng_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="prng.vdi"/>
+  <File Type="ROUTE-CLK" Name="prng_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="prng_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="prng_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="prng.nky"/>
+  <File Type="BITSTR-BMM" Name="prng_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="prng.mmi"/>
+  <File Type="BITSTR-LTX" Name="prng.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="prng.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../verilog/f_permutation_200.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../verilog/rconst_200.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../verilog/round_200.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../verilog/define.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../verilog/clog2.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../verilog/prng.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../verilog/prng_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="prng"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/usr_constrain.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/usr_constrain.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Performance_ExtraTimingOpt" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design">
+      <Option Id="Directive">8</Option>
+    </Step>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="route_design">
+      <Option Id="Directive">1</Option>
+    </Step>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

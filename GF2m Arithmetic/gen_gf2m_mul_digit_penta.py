@@ -24,11 +24,11 @@ k2 = args.k2
 k1 = args.k1
 d = args.d
 
-print "`timescale 1ns / 1ps"
-print ""
-print """`include "clog2.v" """ + "\n"
+print ("`timescale 1ns / 1ps")
+print ("")
+print ("""`include "clog2.v" """ + "\n")
 
-print """module gf2m_mul #(parameter WIDTH = {0}, k3 = {1}, k2 = {2}, k1 = {3}, d = {4})(
+print ("""module gf2m_mul #(parameter WIDTH = {0}, k3 = {1}, k2 = {2}, k1 = {3}, d = {4})(
 	input wire clk,
 	input wire rst_b,
 	input wire start,
@@ -37,37 +37,51 @@ print """module gf2m_mul #(parameter WIDTH = {0}, k3 = {1}, k2 = {2}, k1 = {3}, 
 
 	output reg done,
 	output wire [WIDTH-1:0] op_c
-    );""".format(WIDTH, k3, k2, k1, d)
+    );""".format(WIDTH, k3, k2, k1, d))
 
-print "parameter DIGIT_N = WIDTH/d + 1;"
-print "parameter WIDTH_A = d*(WIDTH/d)+d;"
+print ("parameter DIGIT_N = WIDTH/d + 1;")
+print ("parameter WIDTH_A = d*(WIDTH/d)+d;")
 
-print ""
+print ("")
 
-print "wire [WIDTH-1:0] cx1, cx;"
-tmp = "wire [WIDTH-1:0] bx, "
+print ("wire [WIDTH-1:0] cx1, cx;")
+tmp = ("wire [WIDTH-1:0] bx, ")
 for i in range(d):
 	if i != d-1:
 		tmp += "bx{0}, ".format(i)
 	else:
 		tmp += "bx{0};".format(i)	
-print tmp; # wire [WIDTH-1:0] bx, bx0, bx1, bx2, bx3, bx4, bx5, bx6, bx7;
+print (tmp); # wire [WIDTH-1:0] bx, bx0, bx1, bx2, bx3, bx4, bx5, bx6, bx7;
 
-print ""
+print ("")
 
-print "reg [WIDTH_A-1:0] a; //shift register to load/shift a(x)"
-print "reg [WIDTH-1:0] b; // keep b(x)"
-print "reg [WIDTH-1:0] c; //result register for a(x)*b(x)"
+print ("reg [WIDTH_A-1:0] a; //shift register to load/shift a(x)")
+print ("reg [WIDTH-1:0] b; // keep b(x)")
+print ("reg [WIDTH-1:0] c; //result register for a(x)*b(x)")
 
-print ""
+print ("")
 
 
-print "reg start_en;"
-print "reg [`CLOG2(DIGIT_N)-1:0] cnt;"
+print ("reg start_en;")
+print ("reg [`CLOG2(DIGIT_N)-1:0] cnt;")
 
-print ""
+print ("")
 
-print """//control signal
+print ("wire [WIDTH-1:0] op_a_BigEndian, op_b_BigEndian, op_c_BigEndian;")
+print ("""genvar w;
+/* reorder byte ~ ~ */
+generate
+  for(w=0; w<WIDTH; w=w+1)
+    begin : L0
+          assign op_a_BigEndian[WIDTH-1-w] = op_a[w];
+          assign op_b_BigEndian[WIDTH-1-w] = op_b[w];
+          assign op_c[WIDTH-1-w] = op_c_BigEndian[w];
+    end
+endgenerate""")
+
+print ("")
+
+print ("""//control signal
 always @(posedge clk) begin
 	if (!rst_b)
 		start_en <= 1'b0;
@@ -101,15 +115,15 @@ always @(posedge clk) begin
 end
 
 
-"""
+""")
 
-print """//arithmetic 
+print ("""//arithmetic 
 always @(posedge clk) begin
 	if (!rst_b) 
 		// reset
 		a <= {WIDTH_A{1'b0}};
 	else if (start) 
-		a <= op_a;
+		a <= op_a_BigEndian;
 	else if (start_en) //shift by digit
 		a <= {a[WIDTH_A-d-1:0],{d{1'b0}}};
 	else 
@@ -121,7 +135,7 @@ always @(posedge clk) begin
 		// reset
 		b <= {WIDTH{1'b0}};
 	else if (start) 
-		b <= op_b;
+		b <= op_b_BigEndian;
 	else 
 		b <= b;	
 end
@@ -139,11 +153,11 @@ always @(posedge clk) begin
 end
 
 
-"""
+""")
 
-print "//fraction(a(x))*b(x) mod f(x)"
+print ("//fraction(a(x))*b(x) mod f(x)")
 for i in range(1,d):
-	print """shift_x_by_i shift_{0}(
+	print ("""shift_x_by_i shift_{0}(
 		.a(a[WIDTH_A-{1}]),
 		.p(b),
 		.px(bx{0})
@@ -154,17 +168,17 @@ defparam shift_{0}.k2 = k2;
 defparam shift_{0}.k1 = k1;
 defparam shift_{0}.i = {0};
 
-	""".format(i,d-i)
-print "assign bx0 = a[WIDTH_A-{0}] ? b : {{WIDTH{{1'b0}}}};".format(d)
+	""".format(i,d-i))
+print ("assign bx0 = a[WIDTH_A-{0}] ? b : {{WIDTH{{1'b0}}}};".format(d))
 tmp = "assign bx = "
 for i in range(d):
 	if i != d-1:
 		tmp += "bx{0} ^ ".format(i)
 	else:
 		tmp += "bx{0};".format(d-1)
-print tmp
+print (tmp)
 
-print """//c(x)x^d mod f(x)
+print ("""//c(x)x^d mod f(x)
 shift_x_by_i shift_{0}(
 	.a(1'b1),
 	.p(c),
@@ -177,35 +191,35 @@ defparam shift_{0}.k1 = k1;
 defparam shift_{0}.i = {0};
 
 
-assign op_c = c;
+assign op_c_BigEndian = c;
 
 
 endmodule
 
 
-""".format(d)
+""".format(d))
 
 #create module shift_x_by_i
-print """module shift_x_by_i #(parameter WIDTH = {0}, k3 = {1}, k2 = {2}, k1 = {3}, i = {4})(
+print ("""module shift_x_by_i #(parameter WIDTH = {0}, k3 = {1}, k2 = {2}, k1 = {3}, i = {4})(
 	input wire a,
 	input wire [WIDTH-1:0] p, //polynomial p(x), represented in big-endian notation
 	output wire [WIDTH-1:0] px //output a * p(x)x^i mod f(x)
-	);""".format(WIDTH, k3, k2, k1, d)
-print ""
+	);""".format(WIDTH, k3, k2, k1, d))
+print ("")
 
-print "wire [WIDTH-1:0] px1, px_k1, px_k2, px_k3;"
-print ""
+print ("wire [WIDTH-1:0] px1, px_k1, px_k2, px_k3;")
+print ("")
 
-print "assign px1 = {p[WIDTH-i-1:0], p[WIDTH-1:WIDTH-i]};"
-print "assign px_k1 = {px1[WIDTH-1:k1+i], {px1[k1+i-1:k1]^p[WIDTH-1:WIDTH-i]}, px1[k1-1:0]}; //add k1 terms"
-print "assign px_k2 = {px_k1[WIDTH-1:k2+i], {px_k1[k2+i-1:k2]^p[WIDTH-1:WIDTH-i]}, px_k1[k2-1:0]}; //add k2 terms"
-print "assign px_k3 = {px_k2[WIDTH-1:k3+i], {px_k2[k3+i-1:k3]^p[WIDTH-1:WIDTH-i]}, px_k2[k3-1:0]}; //add k3 terms"
-print ""
-print "assign px = a ? px_k3 : {WIDTH{1'b0}};"
+print ("assign px1 = {p[WIDTH-i-1:0], p[WIDTH-1:WIDTH-i]};")
+print ("assign px_k1 = {px1[WIDTH-1:k1+i], {px1[k1+i-1:k1]^p[WIDTH-1:WIDTH-i]}, px1[k1-1:0]}; //add k1 terms")
+print ("assign px_k2 = {px_k1[WIDTH-1:k2+i], {px_k1[k2+i-1:k2]^p[WIDTH-1:WIDTH-i]}, px_k1[k2-1:0]}; //add k2 terms")
+print ("assign px_k3 = {px_k2[WIDTH-1:k3+i], {px_k2[k3+i-1:k3]^p[WIDTH-1:WIDTH-i]}, px_k2[k3-1:0]}; //add k3 terms")
+print ("")
+print ("assign px = a ? px_k3 : {WIDTH{1'b0}};")
 
-print ""
+print ("")
 
-print "endmodule"
+print ("endmodule")
 
 
 

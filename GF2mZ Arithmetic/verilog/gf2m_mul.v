@@ -2,7 +2,7 @@
 
 `include "clog2.v" 
 
-module gf2m_mul #(parameter WIDTH = 79, k = 9, d = 16)(
+module gf2m_mul #(parameter WIDTH = 67, k3 = 5, k2 = 2, k1 = 1, d = 16)(
 	input wire clk,
 	input wire rst_b,
 	input wire start,
@@ -24,6 +24,18 @@ reg [WIDTH-1:0] c; //result register for a(x)*b(x)
 
 reg start_en;
 reg [`CLOG2(DIGIT_N)-1:0] cnt;
+
+wire [WIDTH-1:0] op_a_BigEndian, op_b_BigEndian, op_c_BigEndian;
+genvar w;
+/* reorder byte ~ ~ */
+generate
+  for(w=0; w<WIDTH; w=w+1)
+    begin : L0
+          assign op_a_BigEndian[WIDTH-1-w] = op_a[w];
+          assign op_b_BigEndian[WIDTH-1-w] = op_b[w];
+          assign op_c[WIDTH-1-w] = op_c_BigEndian[w];
+    end
+endgenerate
 
 //control signal
 always @(posedge clk) begin
@@ -66,7 +78,7 @@ always @(posedge clk) begin
 		// reset
 		a <= {WIDTH_A{1'b0}};
 	else if (start) 
-		a <= op_a;
+		a <= op_a_BigEndian;
 	else if (start_en) //shift by digit
 		a <= {a[WIDTH_A-d-1:0],{d{1'b0}}};
 	else 
@@ -78,7 +90,7 @@ always @(posedge clk) begin
 		// reset
 		b <= {WIDTH{1'b0}};
 	else if (start) 
-		b <= op_b;
+		b <= op_b_BigEndian;
 	else 
 		b <= b;	
 end
@@ -104,7 +116,9 @@ shift_x_by_i shift_1(
 		.px(bx1)
 		);
 defparam shift_1.WIDTH = WIDTH;
-defparam shift_1.k = k;
+defparam shift_1.k3 = k3;
+defparam shift_1.k2 = k2;
+defparam shift_1.k1 = k1;
 defparam shift_1.i = 1;
 
 	
@@ -114,7 +128,9 @@ shift_x_by_i shift_2(
 		.px(bx2)
 		);
 defparam shift_2.WIDTH = WIDTH;
-defparam shift_2.k = k;
+defparam shift_2.k3 = k3;
+defparam shift_2.k2 = k2;
+defparam shift_2.k1 = k1;
 defparam shift_2.i = 2;
 
 	
@@ -124,7 +140,9 @@ shift_x_by_i shift_3(
 		.px(bx3)
 		);
 defparam shift_3.WIDTH = WIDTH;
-defparam shift_3.k = k;
+defparam shift_3.k3 = k3;
+defparam shift_3.k2 = k2;
+defparam shift_3.k1 = k1;
 defparam shift_3.i = 3;
 
 	
@@ -134,7 +152,9 @@ shift_x_by_i shift_4(
 		.px(bx4)
 		);
 defparam shift_4.WIDTH = WIDTH;
-defparam shift_4.k = k;
+defparam shift_4.k3 = k3;
+defparam shift_4.k2 = k2;
+defparam shift_4.k1 = k1;
 defparam shift_4.i = 4;
 
 	
@@ -144,7 +164,9 @@ shift_x_by_i shift_5(
 		.px(bx5)
 		);
 defparam shift_5.WIDTH = WIDTH;
-defparam shift_5.k = k;
+defparam shift_5.k3 = k3;
+defparam shift_5.k2 = k2;
+defparam shift_5.k1 = k1;
 defparam shift_5.i = 5;
 
 	
@@ -154,7 +176,9 @@ shift_x_by_i shift_6(
 		.px(bx6)
 		);
 defparam shift_6.WIDTH = WIDTH;
-defparam shift_6.k = k;
+defparam shift_6.k3 = k3;
+defparam shift_6.k2 = k2;
+defparam shift_6.k1 = k1;
 defparam shift_6.i = 6;
 
 	
@@ -164,7 +188,9 @@ shift_x_by_i shift_7(
 		.px(bx7)
 		);
 defparam shift_7.WIDTH = WIDTH;
-defparam shift_7.k = k;
+defparam shift_7.k3 = k3;
+defparam shift_7.k2 = k2;
+defparam shift_7.k1 = k1;
 defparam shift_7.i = 7;
 
 	
@@ -174,7 +200,9 @@ shift_x_by_i shift_8(
 		.px(bx8)
 		);
 defparam shift_8.WIDTH = WIDTH;
-defparam shift_8.k = k;
+defparam shift_8.k3 = k3;
+defparam shift_8.k2 = k2;
+defparam shift_8.k1 = k1;
 defparam shift_8.i = 8;
 
 	
@@ -184,7 +212,9 @@ shift_x_by_i shift_9(
 		.px(bx9)
 		);
 defparam shift_9.WIDTH = WIDTH;
-defparam shift_9.k = k;
+defparam shift_9.k3 = k3;
+defparam shift_9.k2 = k2;
+defparam shift_9.k1 = k1;
 defparam shift_9.i = 9;
 
 	
@@ -194,7 +224,9 @@ shift_x_by_i shift_10(
 		.px(bx10)
 		);
 defparam shift_10.WIDTH = WIDTH;
-defparam shift_10.k = k;
+defparam shift_10.k3 = k3;
+defparam shift_10.k2 = k2;
+defparam shift_10.k1 = k1;
 defparam shift_10.i = 10;
 
 	
@@ -204,7 +236,9 @@ shift_x_by_i shift_11(
 		.px(bx11)
 		);
 defparam shift_11.WIDTH = WIDTH;
-defparam shift_11.k = k;
+defparam shift_11.k3 = k3;
+defparam shift_11.k2 = k2;
+defparam shift_11.k1 = k1;
 defparam shift_11.i = 11;
 
 	
@@ -214,7 +248,9 @@ shift_x_by_i shift_12(
 		.px(bx12)
 		);
 defparam shift_12.WIDTH = WIDTH;
-defparam shift_12.k = k;
+defparam shift_12.k3 = k3;
+defparam shift_12.k2 = k2;
+defparam shift_12.k1 = k1;
 defparam shift_12.i = 12;
 
 	
@@ -224,7 +260,9 @@ shift_x_by_i shift_13(
 		.px(bx13)
 		);
 defparam shift_13.WIDTH = WIDTH;
-defparam shift_13.k = k;
+defparam shift_13.k3 = k3;
+defparam shift_13.k2 = k2;
+defparam shift_13.k1 = k1;
 defparam shift_13.i = 13;
 
 	
@@ -234,7 +272,9 @@ shift_x_by_i shift_14(
 		.px(bx14)
 		);
 defparam shift_14.WIDTH = WIDTH;
-defparam shift_14.k = k;
+defparam shift_14.k3 = k3;
+defparam shift_14.k2 = k2;
+defparam shift_14.k1 = k1;
 defparam shift_14.i = 14;
 
 	
@@ -244,7 +284,9 @@ shift_x_by_i shift_15(
 		.px(bx15)
 		);
 defparam shift_15.WIDTH = WIDTH;
-defparam shift_15.k = k;
+defparam shift_15.k3 = k3;
+defparam shift_15.k2 = k2;
+defparam shift_15.k1 = k1;
 defparam shift_15.i = 15;
 
 	
@@ -257,26 +299,32 @@ shift_x_by_i shift_16(
 	.px(cx)
 	);
 defparam shift_16.WIDTH = WIDTH;
-defparam shift_16.k = k;
+defparam shift_16.k3 = k3;
+defparam shift_16.k2 = k2;
+defparam shift_16.k1 = k1;
 defparam shift_16.i = 16;
 
 
-assign op_c = c;
+assign op_c_BigEndian = c;
 
 
 endmodule
 
 
 
-module shift_x_by_i #(parameter WIDTH = 79, k = 9, i = 16)(
+module shift_x_by_i #(parameter WIDTH = 67, k3 = 5, k2 = 2, k1 = 1, i = 16)(
 	input wire a,
 	input wire [WIDTH-1:0] p, //polynomial p(x), represented in big-endian notation
 	output wire [WIDTH-1:0] px //output a * p(x)x^i mod f(x)
 	);
 
-wire [WIDTH-1:0] px1;
+wire [WIDTH-1:0] px1, px_k1, px_k2, px_k3;
 
 assign px1 = {p[WIDTH-i-1:0], p[WIDTH-1:WIDTH-i]};
-assign px = a ? {px1[WIDTH-1:k+i], {px1[k+i-1:k]^p[WIDTH-1:WIDTH-i]}, px1[k-1:0]}: {WIDTH{1'b0}};
+assign px_k1 = {px1[WIDTH-1:k1+i], {px1[k1+i-1:k1]^p[WIDTH-1:WIDTH-i]}, px1[k1-1:0]}; //add k1 terms
+assign px_k2 = {px_k1[WIDTH-1:k2+i], {px_k1[k2+i-1:k2]^p[WIDTH-1:WIDTH-i]}, px_k1[k2-1:0]}; //add k2 terms
+assign px_k3 = {px_k2[WIDTH-1:k3+i], {px_k2[k3+i-1:k3]^p[WIDTH-1:WIDTH-i]}, px_k2[k3-1:0]}; //add k3 terms
+
+assign px = a ? px_k3 : {WIDTH{1'b0}};
 
 endmodule

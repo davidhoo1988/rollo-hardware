@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Dec 11 18:31:46 2020
+# Process ID: 17476
+# Current directory: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11828 C:\Users\Hu Jingwei\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-I-Encrypt\ROLLO-I-Encrypt.xpr
+# Log file: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/vivado.log
+# Journal file: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs impl_extra_timing -jobs 4
+wait_on_run impl_extra_timing
+export_ip_user_files -of_objects  [get_files {{C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/Verilog/RNG/define.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/Verilog/RNG/define.v}}
+close_design
+open_run impl_extra_timing
+report_utilization -name utilization_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_extra_timing]
+reset_run synth_1
+save_constraints -force
+launch_runs impl_extra_timing -jobs 4
+wait_on_run impl_extra_timing
+refresh_design
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_extra_timing -jobs 4
+wait_on_run impl_extra_timing
+reset_run synth_1
+launch_runs impl_extra_timing -jobs 4
+wait_on_run impl_extra_timing
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_extra_timing -jobs 4
+wait_on_run impl_extra_timing
+open_run impl_extra_timing
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+launch_runs impl_extra_timing -jobs 4
+wait_on_run impl_extra_timing
+open_run impl_extra_timing
+report_utilization -name utilization_1

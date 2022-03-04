@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/define.v" "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/clog2.v" \
+"../../../../Verilog/define.v" \
+"../../../../Verilog/clog2.v" \
+"../../../../Verilog/K_Gen_Ctrl.v" \
+"../../../../Verilog/RegFiles.v" \
+"../../../../Verilog/c_Gen_Ctrl.v" \
+"../../../../Verilog/Gaussian Elimination/comb_SA.v" \
+"../../../../Verilog/encrypt_top.v" \
+"../../../../Verilog/SHA3/f_permutation.v" \
+"../../../../Verilog/RNG/f_permutation_200.v" \
+"../../../../Verilog/GF2mZ Arithmetic/gf2m_mul.v" \
+"../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v" \
+"../../../../Verilog/SHA3/keccak.v" \
+"../../../../Verilog/mem_dp.v" \
+"../../../../Verilog/mem_sp.v" \
+"../../../../Verilog/GF2mZ Arithmetic/mul_ctrl.v" \
+"../../../../Verilog/Gaussian Elimination/node.v" \
+"../../../../Verilog/SHA3/padder.v" \
+"../../../../Verilog/RNG/prng.v" \
+"../../../../Verilog/SHA3/rconst.v" \
+"../../../../Verilog/RNG/rconst_200.v" \
+"../../../../Verilog/SHA3/round.v" \
+"../../../../Verilog/RNG/round_200.v" \
+"../../../../Verilog/encrypt_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,302 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Dec 13 10:01:42 2020
+# Process ID: 15632
+# Current directory: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17824 C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\ROLLO-II-Encrypt.xpr
+# Log file: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/vivado.log
+# Journal file: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 850.770 ; gain = 147.430
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbv484-1
+INFO: [Netlist 29-17] Analyzing 563 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7a200tsbv484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.srcs/constrs_1/new/usr_constrain.xdc]
+Finished Parsing XDC File [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.srcs/constrs_1/new/usr_constrain.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1480.777 ; gain = 577.066
+reset_run synth_1
+launch_runs impl_2 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_2'
+[Sun Dec 13 10:47:39 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log
+[Sun Dec 13 10:47:39 2020] Launched impl_2...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1939.461 ; gain = 419.262
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-2994] overwriting previous definition of module comb_SA [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v:1]
+WARNING: [HDL 9-2994] overwriting previous definition of module mem_dp [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_dp.v:11]
+WARNING: [HDL 9-2994] overwriting previous definition of module mem_sp [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_sp.v:11]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'comb_SA()' found in library 'xil_defaultlib'
+Duplicate found at line 1 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA-Original.v
+	(Active) Duplicate found at line 1 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mem_dp()' found in library 'xil_defaultlib'
+Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/SHA3/mem_dp.v
+	(Active) Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_dp.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mem_sp()' found in library 'xil_defaultlib'
+Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/SHA3/mem_sp.v
+	(Active) Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_sp.v
+[Sun Dec 13 10:54:08 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.586 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-2994] overwriting previous definition of module comb_SA [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v:1]
+WARNING: [HDL 9-2994] overwriting previous definition of module mem_dp [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_dp.v:11]
+WARNING: [HDL 9-2994] overwriting previous definition of module mem_sp [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_sp.v:11]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'comb_SA()' found in library 'xil_defaultlib'
+Duplicate found at line 1 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA-Original.v
+	(Active) Duplicate found at line 1 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mem_dp()' found in library 'xil_defaultlib'
+Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/SHA3/mem_dp.v
+	(Active) Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_dp.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mem_sp()' found in library 'xil_defaultlib'
+Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/SHA3/mem_sp.v
+	(Active) Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_sp.v
+[Sun Dec 13 10:55:32 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.586 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-2994] overwriting previous definition of module comb_SA [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v:1]
+WARNING: [HDL 9-2994] overwriting previous definition of module mem_dp [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_dp.v:11]
+WARNING: [HDL 9-2994] overwriting previous definition of module mem_sp [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_sp.v:11]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'comb_SA()' found in library 'xil_defaultlib'
+Duplicate found at line 1 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA-Original.v
+	(Active) Duplicate found at line 1 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mem_dp()' found in library 'xil_defaultlib'
+Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/SHA3/mem_dp.v
+	(Active) Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_dp.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mem_sp()' found in library 'xil_defaultlib'
+Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/SHA3/mem_sp.v
+	(Active) Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_sp.v
+[Sun Dec 13 11:00:19 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.586 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-2994] overwriting previous definition of module comb_SA [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v:1]
+WARNING: [HDL 9-2994] overwriting previous definition of module mem_dp [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_dp.v:11]
+WARNING: [HDL 9-2994] overwriting previous definition of module mem_sp [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_sp.v:11]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'comb_SA()' found in library 'xil_defaultlib'
+Duplicate found at line 1 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA-Original.v
+	(Active) Duplicate found at line 1 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mem_dp()' found in library 'xil_defaultlib'
+Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/SHA3/mem_dp.v
+	(Active) Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_dp.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mem_sp()' found in library 'xil_defaultlib'
+Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/SHA3/mem_sp.v
+	(Active) Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_sp.v
+[Sun Dec 13 11:01:03 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.586 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-2994] overwriting previous definition of module comb_SA [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v:1]
+WARNING: [HDL 9-2994] overwriting previous definition of module mem_dp [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_dp.v:11]
+WARNING: [HDL 9-2994] overwriting previous definition of module mem_sp [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_sp.v:11]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'comb_SA()' found in library 'xil_defaultlib'
+Duplicate found at line 1 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA-Original.v
+	(Active) Duplicate found at line 1 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mem_dp()' found in library 'xil_defaultlib'
+Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/SHA3/mem_dp.v
+	(Active) Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_dp.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mem_sp()' found in library 'xil_defaultlib'
+Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/SHA3/mem_sp.v
+	(Active) Duplicate found at line 11 of file C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/mem_sp.v
+[Sun Dec 13 11:01:47 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.586 ; gain = 0.000
+launch_runs impl_2 -jobs 8
+[Sun Dec 13 11:08:17 2020] Launched impl_2...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.586 ; gain = 0.000
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 713 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2086.309 ; gain = 23.766
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2086.309 ; gain = 23.766
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 63 instances were transformed.
+  SRLC32E => SRL16E: 63 instances
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 2151.594 ; gain = 205.008
+open_report: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 2377.996 ; gain = 224.824
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbv484-1
+INFO: [Netlist 29-17] Analyzing 713 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.srcs/constrs_1/new/usr_constrain.xdc]
+Finished Parsing XDC File [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.srcs/constrs_1/new/usr_constrain.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2653.734 ; gain = 272.219
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1
+
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_2'
+[Sun Dec 13 11:54:09 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log
+[Sun Dec 13 11:54:09 2020] Launched impl_2...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 2657.965 ; gain = 0.305
+current_design impl_2
+refresh_design
+INFO: [Netlist 29-17] Analyzing 724 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2703.809 ; gain = 0.000
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2703.809 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 2703.809 ; gain = 45.844
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2781.039 ; gain = 35.586
+report_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2781.039 ; gain = 35.586
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1
+
+save_constraints -force
+launch_runs impl_2 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_2'
+[Sun Dec 13 12:48:50 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log
+[Sun Dec 13 12:48:50 2020] Launched impl_2...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 2903.059 ; gain = 7.250
+refresh_design
+INFO: [Netlist 29-17] Analyzing 726 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2959.457 ; gain = 0.000
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2959.457 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 2959.457 ; gain = 55.957
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 3008.953 ; gain = 26.707
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1
+
+launch_runs impl_2 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_2'
+[Sun Dec 13 14:00:38 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log
+[Sun Dec 13 14:00:38 2020] Launched impl_2...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 3013.363 ; gain = 3.543
+refresh_design
+INFO: [Netlist 29-17] Analyzing 823 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3066.957 ; gain = 0.000
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3066.957 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3066.957 ; gain = 48.574
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3118.551 ; gain = 25.570
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1
+
+launch_runs impl_2 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_2'
+[Sun Dec 13 14:31:11 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log
+[Sun Dec 13 14:31:11 2020] Launched impl_2...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 3122.234 ; gain = 3.320
+refresh_design
+INFO: [Netlist 29-17] Analyzing 724 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3131.617 ; gain = 0.000
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3131.617 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 3131.617 ; gain = 9.305
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3180.922 ; gain = 19.859
+exit
+ERROR: [Common 17-190] Invalid Tcl eval of 'current_design synth_1' during processing of event '303'.

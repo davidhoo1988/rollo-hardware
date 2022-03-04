@@ -1,0 +1,60 @@
+# A bookmarks file was found in the current directory with 1 bookmark
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {comb_SA_tb_simulate.do} 
+# vsim -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib -voptargs=\"+acc\" xil_defaultlib.comb_SA_tb xil_defaultlib.glbl 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.comb_SA_tb(fast)
+# Loading work.comb_SA(fast)
+# Loading work.processor_A(fast)
+# Loading work.processor_B(fast)
+# Loading work.mem(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3017) ../../../../verilog/comb_SA_tb.v(29): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /comb_SA_tb/DUT
+# ** Warning: (vsim-3722) ../../../../verilog/comb_SA_tb.v(29): [TFMPC] - Missing connection for port 'dout_and'.
+# 
+# A bookmarks file was found in the current directory with 1 bookmark
+# 1
+# 1
+# Bookmark(s) were restored for window "Wave"
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+restart
+# Loading work.comb_SA_tb(fast)
+# Loading work.comb_SA(fast)
+# Loading work.processor_A(fast)
+# Loading work.processor_B(fast)
+# Loading work.mem(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3017) ../../../../verilog/comb_SA_tb.v(29): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /comb_SA_tb/DUT
+# ** Warning: (vsim-3722) ../../../../verilog/comb_SA_tb.v(29): [TFMPC] - Missing connection for port 'dout_and'.
+# 
+do wave.do
+run 1us
+restart
+# Loading work.comb_SA_tb(fast)
+# Loading work.comb_SA(fast)
+# Loading work.processor_A(fast)
+# Loading work.processor_B(fast)
+# Loading work.mem(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3017) ../../../../verilog/comb_SA_tb.v(29): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /comb_SA_tb/DUT
+# ** Warning: (vsim-3722) ../../../../verilog/comb_SA_tb.v(29): [TFMPC] - Missing connection for port 'dout_and'.
+# 
+run 1us
+# No bookmark changes exist in window "Wave"

@@ -2,20 +2,26 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Mon Nov  4 15:20:05 2019
-# Process ID: 20452
-# Current directory: C:/Users/david/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17924 C:\Users\david\Dropbox\LRPC Code\hardware\GF2mZ Arithmetic\Improve-I\Improve-I.xpr
-# Log file: C:/Users/david/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/vivado.log
-# Journal file: C:/Users/david/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I\vivado.jou
+# Start of session at: Fri Nov 27 10:08:40 2020
+# Process ID: 24044
+# Current directory: C:/Users/David/Dropbox/ROLLO/hardware/GF2mZ Arithmetic/Improve-I
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18052 C:\Users\David\Dropbox\ROLLO\hardware\GF2mZ Arithmetic\Improve-I\Improve-I.xpr
+# Log file: C:/Users/David/Dropbox/ROLLO/hardware/GF2mZ Arithmetic/Improve-I/vivado.log
+# Journal file: C:/Users/David/Dropbox/ROLLO/hardware/GF2mZ Arithmetic/Improve-I\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/david/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
+open_project {C:/Users/David/Dropbox/ROLLO/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
 update_compile_order -fileset sources_1
-launch_simulation
-set_property compxlib.modelsim_compiled_library_dir D:/modelsim_10.5/Xilinx_lib/64bit_vivado_lib [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top gf2mz_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_xc7a200
+launch_runs synth_xc7a200 -jobs 8
+wait_on_run synth_xc7a200
 update_ip_catalog
-launch_simulation
-update_ip_catalog
-launch_simulation
-launch_simulation
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64

@@ -1,0 +1,1127 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 15632
+License: Customer
+
+Current time: 	Sun Dec 13 10:02:25 SGT 2020
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 75 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	F:/Xilinx/Vivado/2018.1/tps/win64/jre
+Java executable location: 	F:/Xilinx/Vivado/2018.1/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	David
+User home directory: C:/Users/David
+User working directory: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: F:/Xilinx/Vivado
+HDI_APPROOT: F:/Xilinx/Vivado/2018.1
+RDI_DATADIR: F:/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: F:/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: C:/Users/David/AppData/Roaming/Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: C:/Users/David/AppData/Roaming/Xilinx/Vivado/2018.1/
+Vivado layouts directory: C:/Users/David/AppData/Roaming/Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	F:/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/vivado.log
+Vivado journal file location: 	C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/vivado.jou
+Engine tmp dir: 	C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/.Xil/Vivado-15632-David-NTU-Desktop
+
+GUI allocated memory:	157 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 525 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 51 MB (+51297kb) [00:00:10]
+// [Engine Memory]: 515 MB (+388663kb) [00:00:10]
+// bv (ch):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\ROLLO-II-Encrypt.xpr. Version: Vivado v2018.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 62 MB (+8902kb) [00:00:11]
+// Tcl Message: open_project {C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 564 MB. GUI used memory: 37 MB. Current time: 12/13/20 10:02:27 AM SGT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 574 MB (+34202kb) [00:00:16]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 638 MB (+37362kb) [00:00:22]
+// [Engine Memory]: 671 MB (+1577kb) [00:00:23]
+// [GUI Memory]: 68 MB (+2332kb) [00:00:24]
+// Project name: ROLLO-II-Encrypt; location: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt; part: xc7a200tsbv484-1
+// [Engine Memory]: 716 MB (+11699kb) [00:00:26]
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 850.770 ; gain = 147.430 
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (encrypt_top.v) elapsed time: 0.2s
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v)]", 5, true); // B (D, ch) - Node
+// [GUI Memory]: 76 MB (+5462kb) [00:00:39]
+// [GUI Memory]: 83 MB (+2419kb) [00:00:41]
+// [GUI Memory]: 88 MB (+935kb) [00:02:54]
+// [GUI Memory]: 92 MB (+134kb) [00:07:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 721 MB. GUI used memory: 49 MB. Current time: 12/13/20 10:32:27 AM SGT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 97 MB (+632kb) [00:36:00]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 727 MB. GUI used memory: 49 MB. Current time: 12/13/20 10:38:57 AM SGT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 2336 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v)]", 5, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), SHA3 : keccak (keccak.v)]", 10, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 12, true); // B (D, ch) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 12); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 12, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 12, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// [Engine Memory]: 752 MB (+190kb) [00:39:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 752 MB. GUI used memory: 51 MB. Current time: 12/13/20 10:42:02 AM SGT
+// Elapsed time: 36 seconds
+selectCodeEditor("gf2mz_top.v", 240, 417); // cd (w, ch)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 12, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v), mul00 : gf2m_mul (gf2m_mul.v)]", 13, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 102 MB (+175kb) [00:42:02]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 106 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 12, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 12, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "encrypt_top.v", 1); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gf2mz_top.v", 2); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "encrypt_top.v", 1); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gf2mz_top.v", 2); // k (j, ch)
+// Elapsed time: 11 seconds
+selectCodeEditor("gf2mz_top.v", 207, 427); // cd (w, ch)
+selectCodeEditor("gf2mz_top.v", 696, 465); // cd (w, ch)
+// Elapsed time: 86 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v)]", 4); // B (D, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v)]", 4); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v)]", 5, true); // B (D, ch) - Node
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, ch)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 17, false); // u (O, ch)
+// bi (ch): Synthesis is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_OPEN_DESIGN, "Open Design"); // a (bi)
+// bv (ch):  Open Synthesized Design : addNotify
+dismissDialog("Synthesis is Out-of-date"); // bi (ch)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a200tsbv484-1 
+// [Engine Memory]: 816 MB (+27958kb) [00:44:27]
+// HMemoryUtils.trashcanNow. Engine heap size: 819 MB. GUI used memory: 53 MB. Current time: 12/13/20 10:46:42 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 890 MB. GUI used memory: 52 MB. Current time: 12/13/20 10:46:57 AM SGT
+// [Engine Memory]: 1,012 MB (+162491kb) [00:44:47]
+// [Engine Memory]: 1,182 MB (+125474kb) [00:44:52]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,211 MB. GUI used memory: 52 MB. Current time: 12/13/20 10:47:08 AM SGT
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,335 MB (+98339kb) [00:44:57]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 563 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Device 21-403] Loading part xc7a200tsbv484-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.srcs/constrs_1/new/usr_constrain.xdc] Finished Parsing XDC File [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.srcs/constrs_1/new/usr_constrain.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// ExpRunCommands.openSynthResults elapsed time: 33.2s
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1480.777 ; gain = 577.066 
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+// [GUI Memory]: 108 MB (+710kb) [00:45:01]
+// Elapsed time: 34 seconds
+dismissDialog("Open Synthesized Design"); // bv (ch)
+// [GUI Memory]: 125 MB (+12399kb) [00:45:06]
+// [Engine Memory]: 1,403 MB (+750kb) [00:45:06]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 28, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_2 -jobs 8 
+// [Engine Memory]: 1,540 MB (+69833kb) [00:45:12]
+// RouteApi::initDelayMediator elapsed time: 14.6s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// HMemoryUtils.trashcanNow. Engine heap size: 1,822 MB. GUI used memory: 90 MB. Current time: 12/13/20 10:47:27 AM SGT
+// [Engine Memory]: 1,822 MB (+215492kb) [00:45:16]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Dec 13 10:47:39 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log [Sun Dec 13 10:47:39 2020] Launched impl_2... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/impl_2/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1939.461 ; gain = 419.262 
+// Elapsed time: 21 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// ah (ch): Synthesis Failed: addNotify
+// Elapsed time: 204 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// [GUI Memory]: 132 MB (+667kb) [00:48:52]
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ch)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [HDL 9-806] Syntax error near ,. [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/K_Gen_Ctrl.v:4]. ]", 2); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [HDL 9-806] Syntax error near ,. [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/K_Gen_Ctrl.v:4]. ]", 2, true); // ah (O, ch) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\Verilog\K_Gen_Ctrl.v;-;;-;16;-;line;-;4;-;;-;16;-;"); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [HDL 9-806] Syntax error near ,. [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/K_Gen_Ctrl.v:4]. , [HDL 9-806] Syntax error near ,. [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/RegFiles.v:4]. ]", 3, false); // ah (O, ch)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\Verilog\RegFiles.v;-;;-;16;-;line;-;4;-;;-;16;-;"); // ah (O, ch)
+// Elapsed time: 19 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [HDL 9-870] Macro <N> is not defined. [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/K_Gen_Ctrl.v:4]. ]", 1, false); // ah (O, ch)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\Verilog\K_Gen_Ctrl.v;-;;-;16;-;line;-;4;-;;-;16;-;"); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [HDL 9-870] Macro <N> is not defined. [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/K_Gen_Ctrl.v:4]. ]", 1, false); // ah (O, ch)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\Verilog\K_Gen_Ctrl.v;-;;-;16;-;line;-;4;-;;-;16;-;"); // ah (O, ch)
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (cM, ch)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 78 MB. Current time: 12/13/20 10:51:54 AM SGT
+// Engine heap size: 1,831 MB. GUI used memory: 80 MB. Current time: 12/13/20 10:51:54 AM SGT
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bv (ch):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bv (ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 114 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_FAILED
+// Tcl Message: [Sun Dec 13 10:54:08 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.586 ; gain = 0.000 
+// 'k' command handler elapsed time: 19 seconds
+// Elapsed time: 19 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// Elapsed time: 17 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details. ]", 4, false, false, false, false, true, false); // ah (O, ch) - Popup Trigger
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // Z (K, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceItoN.MsgTreePanel_DISCARD_USER_CREATED_MESSAGES, "Discard User Created Messages"); // ac (K, Popup.HeavyWeightWindow)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [HDL 9-870] Macro <N> is not defined. [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/K_Gen_Ctrl.v:4]. ]", 1, false); // ah (O, ch)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\Verilog\K_Gen_Ctrl.v;-;;-;16;-;line;-;4;-;;-;16;-;"); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [HDL 9-806] Syntax error near ,. [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/K_Gen_Ctrl.v:4]. ]", 2, false); // ah (O, ch)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\Verilog\K_Gen_Ctrl.v;-;;-;16;-;line;-;4;-;;-;16;-;"); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [HDL 9-806] Syntax error near ,. [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/K_Gen_Ctrl.v:4]. ]", 2, false); // ah (O, ch)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\Verilog\K_Gen_Ctrl.v;-;;-;16;-;line;-;4;-;;-;16;-;"); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [HDL 9-806] Syntax error near ,. [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/K_Gen_Ctrl.v:4]. ]", 2, false, false, false, false, false, true); // ah (O, ch) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cM, ch)
+// k (ch): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ch)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (ch)
+selectCodeEditor("gf2mz_top.v", 703, 177); // cd (w, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v)]", 5, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v)]", 5, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v)]", 5, true); // B (D, ch) - Node
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false, false, false, false, true, false); // u (O, ch) - Popup Trigger
+selectMenuItem(PAResourceEtoH.FlowNavigatorTreePanel_RESET_SYNTHESIS_RUN, "Reset Synthesis Run"); // ac (ai, ch)
+// q (ch): Reset Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a (q)
+// q (ch): Reset Runs: addNotify
+// bv (q):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.5s
+dismissDialog("Resetting Runs"); // bv (q)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bv (ch):  Resetting Runs : addNotify
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Elapsed time: 12 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bv)
+// 'k' command handler elapsed time: 12 seconds
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Dec 13 10:55:32 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.586 ; gain = 0.000 
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_FAILED
+// ah (ch): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ch)
+selectCodeEditor("encrypt_top.v", 277, 137); // cd (w, ch)
+// Elapsed time: 31 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include]", 1); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, define.v]", 3, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, define.v]", 3, false, false, false, false, false, true); // B (D, ch) - Double Click
+// Elapsed time: 26 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog]", 4); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog]", 4); // B (D, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 5); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 5); // B (D, ch)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v)]", 7); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), K_Gen_Ctrl : K_Gen_Ctrl (K_Gen_Ctrl.v)]", 8, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), K_Gen_Ctrl : K_Gen_Ctrl (K_Gen_Ctrl.v)]", 8, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), K_Gen_Ctrl : K_Gen_Ctrl (K_Gen_Ctrl.v)]", 8, false, false, false, false, false, true); // B (D, ch) - Double Click
+// Elapsed time: 72 seconds
+selectCodeEditor("K_Gen_Ctrl.v", 473, 66); // cd (w, ch)
+selectCodeEditor("K_Gen_Ctrl.v", 470, 68); // cd (w, ch)
+selectCodeEditor("K_Gen_Ctrl.v", 490, 67); // cd (w, ch)
+selectCodeEditor("K_Gen_Ctrl.v", 317, 183); // cd (w, ch)
+selectCodeEditor("K_Gen_Ctrl.v", 257, 149); // cd (w, ch)
+selectCodeEditor("K_Gen_Ctrl.v", 94, 157); // cd (w, ch)
+selectCodeEditor("K_Gen_Ctrl.v", 498, 71); // cd (w, ch)
+// Elapsed time: 44 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "define.v", 3); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "K_Gen_Ctrl.v", 4); // k (j, ch)
+selectCodeEditor("K_Gen_Ctrl.v", 223, 63); // cd (w, ch)
+selectCodeEditor("K_Gen_Ctrl.v", 38, 38); // cd (w, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1766] cannot open include file clog2.v [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/GF2mZ Arithmetic/gf2m_mul.v:3]. ]", 3, false); // ah (O, ch)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\Verilog\GF2mZ Arithmetic\gf2m_mul.v;-;;-;16;-;line;-;3;-;;-;16;-;"); // ah (O, ch)
+// Elapsed time: 11 seconds
+selectCodeEditor("gf2m_mul.v", 163, 49); // cd (w, ch)
+selectCodeEditor("gf2m_mul.v", 140, 45); // cd (w, ch)
+selectCodeEditor("gf2m_mul.v", 44, 52); // cd (w, ch)
+selectCodeEditor("gf2m_mul.v", 3, 45); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Dec 13 11:00:19 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.586 ; gain = 0.000 
+// 'k' command handler elapsed time: 18 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_FAILED
+// ah (ch): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1766] cannot open include file define.v [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/GF2mZ Arithmetic/gf2mz_top.v:22]. ]", 3, true); // ah (O, ch) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\Verilog\GF2mZ Arithmetic\gf2mz_top.v;-;;-;16;-;line;-;22;-;;-;16;-;"); // ah (O, ch)
+selectCodeEditor("gf2mz_top.v", 170, 229); // cd (w, ch)
+selectCodeEditor("gf2mz_top.v", 149, 225); // cd (w, ch)
+selectCodeEditor("gf2mz_top.v", 142, 220); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Dec 13 11:01:03 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.586 ; gain = 0.000 
+// 'k' command handler elapsed time: 18 seconds
+// [GUI Memory]: 143 MB (+4218kb) [00:58:51]
+// Elapsed time: 18 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_FAILED
+// ah (ch): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1766] cannot open include file define.v [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/Verilog/GF2mZ Arithmetic/mul_ctrl.v:21]. ]", 3, true); // ah (O, ch) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-II-Encrypt\Verilog\GF2mZ Arithmetic\mul_ctrl.v;-;;-;16;-;line;-;21;-;;-;16;-;"); // ah (O, ch)
+selectCodeEditor("mul_ctrl.v", 142, 49); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Dec 13 11:01:47 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.586 ; gain = 0.000 
+// 'k' command handler elapsed time: 18 seconds
+// Elapsed time: 19 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_COMPLETED
+// ah (ch): Synthesis Completed: addNotify
+// Elapsed time: 370 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_2 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Dec 13 11:08:17 2020] Launched impl_2... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/impl_2/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.586 ; gain = 0.000 
+// 'c' command handler elapsed time: 18 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 150 MB (+140kb) [01:08:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 69 MB. Current time: 12/13/20 11:21:58 AM SGT
+// TclEventType: RUN_COMPLETED
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// ah (ch): Implementation Completed: addNotify
+// Elapsed time: 1848 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bv (ch):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_2 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 67 MB. Current time: 12/13/20 11:39:15 AM SGT
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 713 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2086.309 ; gain = 23.766 
+// Tcl Message: Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2086.309 ; gain = 23.766 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 63 instances were transformed.   SRLC32E => SRL16E: 63 instances  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 2151.594 ; gain = 205.008 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 6.4s
+// [GUI Memory]: 158 MB (+386kb) [01:37:09]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Device view-level: 0.0
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 175 MB (+9359kb) [01:37:12]
+// 'dO' command handler elapsed time: 18 seconds
+// M (ch): Critical Messages: addNotify
+// Elapsed time: 19 seconds
+dismissDialog("Open Implemented Design"); // bv (ch)
+// [GUI Memory]: 184 MB (+232kb) [01:37:13]
+// Elapsed time: 20 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (ch)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// [GUI Memory]: 196 MB (+2531kb) [01:50:31]
+// Elapsed time: 788 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 17, false); // u (O, ch)
+// bv (ch):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a200tsbv484-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 139 MB. Current time: 12/13/20 11:52:59 AM SGT
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 713 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.srcs/constrs_1/new/usr_constrain.xdc] Finished Parsing XDC File [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.srcs/constrs_1/new/usr_constrain.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2653.734 ; gain = 272.219 
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Open Synthesized Design"); // bv (ch)
+// Elapsed time: 20 seconds
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ; clk ; 5.555 ; 0.0 ; 2.778 ; false ; [get_ports clk] ; C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.srcs/constrs_1/new/usr_constrain.xdc ;  ; ", 0, "5.555", 2); // f (O, ch)
+editTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "5.882", 0, "Period (ns)", 2); // f (O, ch)
+// Elapsed time: 13 seconds
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ; clk ; 5.882 ; 0.0 ; 2.941 ; false ; [get_ports clk] ; C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.srcs/constrs_1/new/usr_constrain.xdc ;  ; ", 0, "5.882", 2); // f (O, ch)
+selectButton(PAResourceTtoZ.XdcEditorView_APPLY_ALL_CHANGES_TO_XDC_CONSTRAINTS, "Apply"); // a (a, ch)
+editTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "5.714", 0, "Period (ns)", 2); // f (O, ch)
+// bv (ch):  Apply All XDC Constraints : addNotify
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+dismissDialog("Apply All XDC Constraints"); // bv (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 28, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// an (ch): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (an)
+// bv (ch):  Save Constraints : addNotify
+dismissDialog("Save Project"); // an (ch)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// Tcl Message: save_constraints 
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Save Constraints"); // bv (ch)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_2 
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_2 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Dec 13 11:54:09 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log [Sun Dec 13 11:54:09 2020] Launched impl_2... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/impl_2/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 2657.965 ; gain = 0.305 
+// 'c' command handler elapsed time: 20 seconds
+// Elapsed time: 19 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 207 MB (+1638kb) [01:56:58]
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 220 MB (+2295kb) [02:04:19]
+// [GUI Memory]: 232 MB (+831kb) [02:10:19]
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (ch): Implementation Completed: addNotify
+// Elapsed time: 1660 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bv (ch):  Reloading : addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: current_design impl_2 
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 117 MB. Current time: 12/13/20 12:21:54 PM SGT
+// Engine heap size: 1,831 MB. GUI used memory: 118 MB. Current time: 12/13/20 12:21:54 PM SGT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 115 MB. Current time: 12/13/20 12:22:02 PM SGT
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 724 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2703.809 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2703.809 ; gain = 0.000 
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 2703.809 ; gain = 45.844 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 6.1s
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Device view-level: 0.0
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 20 seconds
+dismissDialog("Reloading"); // bv (ch)
+// Elapsed time: 793 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 37, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (ch): Report Utilization: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Report Utilization"); // a (ch)
+// Tcl Message: report_utilization -name utilization_1 
+// bv (ch):  Report Utilization : addNotify
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 186 MB. Current time: 12/13/20 12:35:30 PM SGT
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2781.039 ; gain = 35.586 
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2781.039 ; gain = 35.586 
+dismissDialog("Report Utilization"); // bv (ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 157 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v)]", 7, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v)]", 7, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v)]", 7); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v), mul00 : gf2m_mul (gf2m_mul.v)]", 15); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 14); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), GS : comb_SA (comb_SA.v)]", 10, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), GS : comb_SA (comb_SA.v), AB_0_5 : processor_AB (node.v)]", 16, false, false, false, false, false, true); // B (D, ch) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 243 MB (+12kb) [02:39:03]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 255 MB (+63kb) [02:41:13]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 565 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), GS : comb_SA (comb_SA.v)]", 10); // B (D, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Edit Timing Constraints]", 31, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ; clk ; 5.714 ; 0.0 ; 2.857 ; false ; [get_ports clk] ; C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.srcs/constrs_1/new/usr_constrain.xdc ;  ; ", 0, "5.714", 2); // f (O, ch)
+editTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "5.882", 0, "Period (ns)", 2); // f (O, ch)
+selectButton(PAResourceTtoZ.XdcEditorView_APPLY_ALL_CHANGES_TO_XDC_CONSTRAINTS, "Apply"); // a (a, ch)
+// bv (ch):  Apply All XDC Constraints : addNotify
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+dismissDialog("Apply All XDC Constraints"); // bv (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 28, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// an (ch): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (an)
+// o (ch): Save Implemented Design: addNotify
+dismissDialog("Save Project"); // an (ch)
+selectButton(PAResourceOtoP.OverwriteConstraintsDialog_OVERWRITE, "Overwrite"); // a (o)
+// bv (ch):  Save Constraints : addNotify
+dismissDialog("Save Implemented Design"); // o (ch)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// Tcl Message: save_constraints -force 
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Save Constraints"); // bv (ch)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_2 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Dec 13 12:48:50 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log [Sun Dec 13 12:48:50 2020] Launched impl_2... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/impl_2/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 2903.059 ; gain = 7.250 
+// Elapsed time: 19 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 187 MB. Current time: 12/13/20 1:05:34 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 186 MB. Current time: 12/13/20 1:35:35 PM SGT
+// ah (ch): Implementation Completed: addNotify
+// Elapsed time: 3122 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bv (ch):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 133 MB. Current time: 12/13/20 1:40:56 PM SGT
+// Engine heap size: 1,831 MB. GUI used memory: 134 MB. Current time: 12/13/20 1:40:56 PM SGT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 129 MB. Current time: 12/13/20 1:41:04 PM SGT
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 726 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2959.457 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2959.457 ; gain = 0.000 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 2959.457 ; gain = 55.957 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 5.1s
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 19 seconds
+dismissDialog("Reloading"); // bv (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 37, false); // u (O, ch)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (ch): Report Utilization: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Report Utilization"); // a (ch)
+// bv (ch):  Report Utilization : addNotify
+// Tcl Message: report_utilization -name utilization_1 
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 202 MB. Current time: 12/13/20 1:41:23 PM SGT
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bv)
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 3008.953 ; gain = 26.707 
+dismissDialog("Report Utilization"); // bv (ch)
+// Elapsed time: 109 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 14, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v), mul14 : gf2m_mul (gf2m_mul.v)]", 24, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 14, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 14, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectCodeEditor("gf2mz_top.v", 372, 353); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Timing Constraints", 4); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gf2mz_top.v", 5); // k (j, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), c_Gen_Ctrl : c_Gen_Ctrl (c_Gen_Ctrl.v)]", 13, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 14, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v), mul14 : gf2m_mul (gf2m_mul.v)]", 24, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 14, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 14, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectCodeEditor("gf2mz_top.v", 362, 298); // cd (w, ch)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 14, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v), mul14 : gf2m_mul (gf2m_mul.v)]", 24, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 984 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 14, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, encrypt_top_tb (encrypt_top_tb.v), DUT : ROLLO_II_Encrypt (encrypt_top.v), gf2mz : gf2mz_top (gf2mz_top.v)]", 14, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 28, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_2 -jobs 8 
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 270 MB (+1424kb) [03:58:26]
+// Tcl Message: [Sun Dec 13 14:00:38 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log [Sun Dec 13 14:00:38 2020] Launched impl_2... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/impl_2/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 3013.363 ; gain = 3.543 
+// Elapsed time: 20 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// [GUI Memory]: 284 MB (+951kb) [03:59:36]
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 302 MB (+3790kb) [04:04:16]
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 317 MB (+599kb) [04:08:57]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 199 MB. Current time: 12/13/20 2:11:25 PM SGT
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (ch): Implementation Completed: addNotify
+// Elapsed time: 1247 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bv (ch):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 147 MB. Current time: 12/13/20 2:21:28 PM SGT
+// Engine heap size: 1,831 MB. GUI used memory: 148 MB. Current time: 12/13/20 2:21:28 PM SGT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 143 MB. Current time: 12/13/20 2:21:36 PM SGT
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 823 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3066.957 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3066.957 ; gain = 0.000 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3066.957 ; gain = 48.574 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 5.3s
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 17 seconds
+dismissDialog("Reloading"); // bv (ch)
+// Elapsed time: 110 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 37, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (ch): Report Utilization: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Report Utilization"); // a (ch)
+// bv (ch):  Report Utilization : addNotify
+// Tcl Message: report_utilization -name utilization_1 
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 218 MB. Current time: 12/13/20 2:23:39 PM SGT
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3118.551 ; gain = 25.570 
+dismissDialog("Report Utilization"); // bv (ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 431 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 28, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_2 -jobs 8 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Dec 13 14:31:11 2020] Launched synth_1... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/synth_1/runme.log [Sun Dec 13 14:31:11 2020] Launched impl_2... Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.runs/impl_2/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 3122.234 ; gain = 3.320 
+// Elapsed time: 19 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 207 MB. Current time: 12/13/20 2:53:40 PM SGT
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (ch): Implementation Completed: addNotify
+// Elapsed time: 1519 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bv (ch):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 1,831 MB. GUI used memory: 154 MB. Current time: 12/13/20 2:56:33 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 153 MB. Current time: 12/13/20 2:56:33 PM SGT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 149 MB. Current time: 12/13/20 2:56:41 PM SGT
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 724 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3131.617 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3131.617 ; gain = 0.000 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 3131.617 ; gain = 9.305 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 5.3s
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 17 seconds
+dismissDialog("Reloading"); // bv (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 37, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (ch): Report Utilization: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Report Utilization"); // a (ch)
+// bv (ch):  Report Utilization : addNotify
+// Tcl Message: report_utilization -name utilization_1 
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,831 MB. GUI used memory: 223 MB. Current time: 12/13/20 2:56:58 PM SGT
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3180.922 ; gain = 19.859 
+dismissDialog("Report Utilization"); // bv (ch)
+// Elapsed time: 223 seconds
+closeMainWindow("ROLLO-II-Encrypt - [C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/ROLLO-II-Encrypt.xpr] - Vivado 2018.1"); // ch
+// Tcl Command: 'exit'
+// TclEventType: STOP_GUI
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2018.1 (64-bit)
+# SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Current time: Sun Dec 13 15:00:42 SGT 2020
+# Process ID: 15632
+# OS: Windows 10
+# User: David
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.frmwork.CommandFailedException:   (See C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-II-Encrypt/vivado_pid15632.debug)
+*/
+// TclEventType: STOP_PROGRESS_DIALOG
+
+// Exiting Vivado with a status code 0 at 12/17/20 3:53:18 PM SGT...
+// Elapsed time: 101:51:03

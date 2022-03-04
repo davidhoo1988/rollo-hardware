@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Sep  8 14:36:12 2020
+# Process ID: 28812
+# Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29644 C:\Users\David\Dropbox\LRPC Code\hardware\GF2mZ Arithmetic\Improve-I\Improve-I.xpr
+# Log file: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/vivado.log
+# Journal file: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 839.633 ; gain = 132.246
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'F:/modelsim64_10.1c/Xilinx_lib/64bit_vivado_lib/modelsim.ini' copied to run dir:'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'gf2mz_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {gf2mz_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module gf2m_mul
+# -- Compiling module shift_x_by_i
+# -- Compiling module gf2mz_top
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Compiling module mul_ctrl
+# -- Compiling module gf2mz_top_tb
+# 
+# Top level modules:
+# 	gf2mz_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Program launched (PID=28184)
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 891.133 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  9 14:43:11 2020...

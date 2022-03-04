@@ -38,10 +38,10 @@ SL = args.SL # security parameters derived from the NIST recommended categorizat
 d = args.d # number of GF(2m) elements stored in each cell of the memory
 
 
-#SL = 'ROLLO-I-128'
-#d = 3
+# SL = 'ROLLO-I-128'
+# d = 3
 
-#set_random_seed(12345)
+set_random_seed(12345)
 
 #determine the security parameters used according to the SL option
 ############################################################################
@@ -51,12 +51,30 @@ d = args.d # number of GF(2m) elements stored in each cell of the memory
 ############################################################################
 #ROLLO-I setups
 if SL == 'ROLLO-I-128':
-  n = 47
-  m = 79
+  n = 83
+  m = 67
 
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[47] = 1
-  P_list[5] = 1
+  P_list[83] = 1
+  P_list[7] = 1
+  P_list[4] = 1
+  P_list[2] = 1
+  P_list[0] = 1
+
+  f_list = (m+1)*[0] # sparse list for polynomial f
+  f_list[67] = 1
+  f_list[5] = 1
+  f_list[2] = 1
+  f_list[1] = 1
+  f_list[0] = 1
+
+elif SL == 'ROLLO-I-192':
+  n = 97
+  m = 79
+  
+  P_list = (n+1)*[0] # sparse list for polynomial P
+  P_list[97] = 1
+  P_list[6] = 1
   P_list[0] = 1
 
   f_list = (m+1)*[0] # sparse list for polynomial f
@@ -64,48 +82,30 @@ if SL == 'ROLLO-I-128':
   f_list[9] = 1
   f_list[0] = 1
 
-elif SL == 'ROLLO-I-192':
-  n = 53
-  m = 89
-  
-  P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[53] = 1
-  P_list[6] = 1
-  P_list[2] = 1
-  P_list[1] = 1
-  P_list[0] = 1
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[89] = 1
-  f_list[38] = 1
-  f_list[0] = 1
-
 elif SL == 'ROLLO-I-256': 
-  n = 67
-  m = 113
+  n = 113
+  m = 97
 
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[67] = 1
-  P_list[5] = 1
-  P_list[2] = 1
-  P_list[1] = 1
+  P_list[113] = 1
+  P_list[9] = 1
   P_list[0] = 1
 
   f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[113] = 1
-  f_list[9] = 1
+  f_list[97] = 1
+  f_list[6] = 1
   f_list[0] = 1
 
 #ROLLO-II setups
 elif SL == 'ROLLO-II-128':
-  n = 149
+  n = 189
   m = 83
   
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[149] = 1
-  P_list[10] = 1
-  P_list[9] = 1
-  P_list[7] = 1
+  P_list[189] = 1
+  P_list[6] = 1
+  P_list[5] = 1
+  P_list[2] = 1
   P_list[0] = 1
 
   f_list = (m+1)*[0] # sparse list for polynomial f
@@ -116,91 +116,37 @@ elif SL == 'ROLLO-II-128':
   f_list[0] = 1
 
 elif SL == 'ROLLO-II-192':
-  n = 151
-  m = 107
+  n = 193
+  m = 97
   
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[151] = 1
-  P_list[3] = 1
+  P_list[193] = 1
+  P_list[15] = 1
   P_list[0] = 1
 
   f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[107] = 1
-  f_list[9] = 1
-  f_list[7] = 1
-  f_list[4] = 1
+  f_list[97] = 1
+  f_list[6] = 1
   f_list[0] = 1
 
 elif SL == 'ROLLO-II-256':
-  n = 157
-  m = 127
+  n = 211
+  m = 97
   
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[157] = 1
-  P_list[6] = 1
-  P_list[5] = 1
-  P_list[2] = 1
+  P_list[211] = 1
+  P_list[11] = 1
+  P_list[10] = 1
+  P_list[8] = 1
   P_list[0] = 1
 
   f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[127] = 1
-  f_list[1] = 1
-  f_list[0] = 1
-
-elif SL == 'ROLLO-III-128':
-  n = 47
-  m = 101
-  
-  P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[47] = 1
-  P_list[5] = 1
-  P_list[0] = 1
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[101] = 1
-  f_list[7] = 1
+  f_list[97] = 1
   f_list[6] = 1
-  f_list[1] = 1
-  f_list[0] = 1
-
-elif SL == 'ROLLO-III-192':
-  n = 59
-  m = 107
-  
-  P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[59] = 1
-  P_list[7] = 1
-  P_list[4] = 1
-  P_list[2] = 1
-  P_list[0] = 1
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[107] = 1
-  f_list[9] = 1
-  f_list[7] = 1
-  f_list[4] = 1
-  f_list[0] = 1
-
-elif SL == 'ROLLO-III-256':
-  n = 67
-  m = 131
-  
-  P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[67] = 1
-  P_list[5] = 1
-  P_list[2] = 1
-  P_list[1] = 1
-  P_list[0] = 1
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[131] = 1
-  f_list[8] = 1
-  f_list[3] = 1
-  f_list[2] = 1
   f_list[0] = 1
 
 else:
-  print 'Iuput Errors'  
+  print ('Iuput Errors')  
   exit()
 
 depth = ceil(n/d) # memory depth
@@ -223,20 +169,20 @@ ffi_vec = QuotientRing(PR_F_2m, PR_F_2m.ideal(P))
 A = ffi_vec.random_element()
 B = ffi_vec.random_element()
 
-#output polynomials A/B to file (depth addresses, each address has m*d bits data (i.e., d GF2m elements, each of which is represented in MSB first mode))
+#output polynomials A/B to file (depth addresses, each address has m*d bits data (i.e., d GF2m elements, each of which is represented in LSB first mode))
 fo = open("./verilog/mem_A.txt", "w+")
 for i in range(depth):
   if (i < depth-1) or (i == depth-1 and n%d == 0):
     for j in range(d):
         #output each GF(2m) coefficient of A[i] in BIN form bin(ffi_elt.integer_representation())[2:]]
         string = '{{:0{0}b}}'.format(m) # one GF(2m) coefficient takes up m bits
-        fo.write(string.format(A[i*d+j].integer_representation()))
+        fo.write(string.format(A[i*d+j].integer_representation())[::-1])
     fo.write("\n")
   else:
     r = n%d
     for j in range(r):
       string = '{{:0{0}b}}'.format(m) # one GF(2m) coefficient takes up m bits
-      fo.write(string.format(A[i*d+j].integer_representation())) 
+      fo.write(string.format(A[i*d+j].integer_representation())[::-1]) 
     for j in range(d-r):
       string = '{{:0{0}b}}'.format(m) # one GF(2m) coefficient takes up m bits
       fo.write(string.format(0))   
@@ -249,36 +195,35 @@ for i in range(depth):
     for j in range(d):
         #output each GF(2m) coefficient of B[i] in BIN form bin(ffi_elt.integer_representation())[2:]]
         string = '{{:0{0}b}}'.format(m) # one GF(2m) coefficient takes up m bits
-        fo.write(string.format(B[i*d+j].integer_representation()))
+        fo.write(string.format(B[i*d+j].integer_representation())[::-1])
     fo.write("\n")
   else:
     r = n%d
     for j in range(r):
       string = '{{:0{0}b}}'.format(m) # one GF(2m) coefficient takes up m bits
-      fo.write(string.format(B[i*d+j].integer_representation()))       
+      fo.write(string.format(B[i*d+j].integer_representation())[::-1])       
     for j in range(d-r):
       string = '{{:0{0}b}}'.format(m) # one GF(2m) coefficient takes up m bits
       fo.write(string.format(0))   
 fo.close()
 
-'''
+
 #output polynomial A*B to file
 C = A*B
-fo = open("mem_C.txt", "w+")
+fo = open("./verilog/mem_C.txt", "w+")
 for i in range(depth):
   if (i < depth-1) or (i == depth-1 and n%d == 0):
     for j in range(d):
         #output each GF(2m) coefficient of B[i] in BIN form bin(ffi_elt.integer_representation())[2:]]
         string = '{{:0{0}b}}'.format(m) # one GF(2m) coefficient takes up m bits
-        fo.write(string.format(C[i*d+j].integer_representation()))
+        fo.write(string.format(C[i*d+j].integer_representation())[::-1])
     fo.write("\n")
   else:
     r = n%d
     for j in range(r):
       string = '{{:0{0}b}}'.format(m) # one GF(2m) coefficient takes up m bits
-      fo.write(string.format(C[i*d+j].integer_representation()))       
+      fo.write(string.format(C[i*d+j].integer_representation())[::-1])       
     for j in range(d-r):
       string = '{{:0{0}b}}'.format(m) # one GF(2m) coefficient takes up m bits
       fo.write(string.format(0))   
 fo.close()
-'''

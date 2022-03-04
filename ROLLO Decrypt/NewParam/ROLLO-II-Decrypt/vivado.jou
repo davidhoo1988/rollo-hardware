@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Apr 13 13:53:25 2021
+# Process ID: 17572
+# Current directory: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27004 C:\Users\Hu Jingwei\Dropbox\ROLLO\hardware\ROLLO Decrypt\NewParam\ROLLO-II-Decrypt\ROLLO-II-Decrypt.xpr
+# Log file: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/vivado.log
+# Journal file: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.xpr}
+launch_simulation -install_path D:/modelsim_10.5/win64 -simset sim_decrypt

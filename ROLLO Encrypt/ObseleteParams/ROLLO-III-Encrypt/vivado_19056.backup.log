@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon May 18 10:16:52 2020
+# Process ID: 19056
+# Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4912 C:\Users\David\Dropbox\LRPC Code\hardware\ROLLO Encrypt\ROLLO-III-Encrypt\ROLLO-III-Encrypt.xpr
+# Log file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/vivado.log
+# Journal file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/ROLLO-III-Encrypt.xpr}
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-127] bad constraints for run 'synth_1'
+CRITICAL WARNING: [Project 1-127] bad constraints for run 'impl_2'
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/ROLLO-III-Encrypt.ip_user_files'.
+WARNING: [Project 1-264] Active simulation fileset with name 'sim_1' not found.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 906.445 ; gain = 144.418
+launch_runs synth_1 -jobs 8
+[Mon May 18 10:17:55 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/ROLLO-III-Encrypt.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 906.734 ; gain = 0.289
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 18 10:54:33 2020...

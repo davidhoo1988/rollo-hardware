@@ -22,7 +22,7 @@
 `include "define.v"
 `include "clog2.v"
 
-module gf2mz_top #(parameter n = 47, m = 79, d = 3, FILE_A = "mem_A.txt", FILE_B = "mem_B.txt")(
+module gf2mz_top #(parameter n = 83, m = 67, d = 5, FILE_A = "mem_A.txt", FILE_B = "mem_B.txt")(
 	input wire 				clk,
 	input wire				rst_b,
 	input wire 				start,
@@ -56,19 +56,37 @@ wire C_we;
 
 wire ctrl_start, ctrl_done;
 wire mul_start;
-wire mul00_done, mul01_done, mul02_done, 
-mul10_done, mul11_done, mul12_done, 
-mul20_done, mul21_done, mul22_done; 
+wire mul00_done, mul01_done, mul02_done, mul03_done, mul04_done, 
+mul10_done, mul11_done, mul12_done, mul13_done, mul14_done, 
+mul20_done, mul21_done, mul22_done, mul23_done, mul24_done, 
+mul30_done, mul31_done, mul32_done, mul33_done, mul34_done, 
+mul40_done, mul41_done, mul42_done, mul43_done, mul44_done; 
 
 wire [m-1:0]	mul00_op_a, mul00_op_b, mul00_op_c,
 mul01_op_a, mul01_op_b, mul01_op_c,
 mul02_op_a, mul02_op_b, mul02_op_c,
+mul03_op_a, mul03_op_b, mul03_op_c,
+mul04_op_a, mul04_op_b, mul04_op_c,
 mul10_op_a, mul10_op_b, mul10_op_c,
 mul11_op_a, mul11_op_b, mul11_op_c,
 mul12_op_a, mul12_op_b, mul12_op_c,
+mul13_op_a, mul13_op_b, mul13_op_c,
+mul14_op_a, mul14_op_b, mul14_op_c,
 mul20_op_a, mul20_op_b, mul20_op_c,
 mul21_op_a, mul21_op_b, mul21_op_c,
-mul22_op_a, mul22_op_b, mul22_op_c; 
+mul22_op_a, mul22_op_b, mul22_op_c,
+mul23_op_a, mul23_op_b, mul23_op_c,
+mul24_op_a, mul24_op_b, mul24_op_c,
+mul30_op_a, mul30_op_b, mul30_op_c,
+mul31_op_a, mul31_op_b, mul31_op_c,
+mul32_op_a, mul32_op_b, mul32_op_c,
+mul33_op_a, mul33_op_b, mul33_op_c,
+mul34_op_a, mul34_op_b, mul34_op_c,
+mul40_op_a, mul40_op_b, mul40_op_c,
+mul41_op_a, mul41_op_b, mul41_op_c,
+mul42_op_a, mul42_op_b, mul42_op_c,
+mul43_op_a, mul43_op_b, mul43_op_c,
+mul44_op_a, mul44_op_b, mul44_op_c; 
 
 
 //block RAM for A(z)
@@ -140,8 +158,10 @@ gf2m_mul mul00 (
 	.op_c (mul00_op_c)
 	);
 
-defparam mul00.WIDTH = 79;
-defparam mul00.k = 9;
+defparam mul00.WIDTH = 67;
+defparam mul00.k3 = 5;
+defparam mul00.k2 = 2;
+defparam mul00.k1 = 1;
 defparam mul00.d = 16;
 
 gf2m_mul mul01 (
@@ -155,8 +175,10 @@ gf2m_mul mul01 (
 	.op_c (mul01_op_c)
 	);
 
-defparam mul01.WIDTH = 79;
-defparam mul01.k = 9;
+defparam mul01.WIDTH = 67;
+defparam mul01.k3 = 5;
+defparam mul01.k2 = 2;
+defparam mul01.k1 = 1;
 defparam mul01.d = 16;
 
 gf2m_mul mul02 (
@@ -170,9 +192,45 @@ gf2m_mul mul02 (
 	.op_c (mul02_op_c)
 	);
 
-defparam mul02.WIDTH = 79;
-defparam mul02.k = 9;
+defparam mul02.WIDTH = 67;
+defparam mul02.k3 = 5;
+defparam mul02.k2 = 2;
+defparam mul02.k1 = 1;
 defparam mul02.d = 16;
+
+gf2m_mul mul03 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul03_op_a),
+	.op_b (mul03_op_b),
+
+	.done (mul03_done),
+	.op_c (mul03_op_c)
+	);
+
+defparam mul03.WIDTH = 67;
+defparam mul03.k3 = 5;
+defparam mul03.k2 = 2;
+defparam mul03.k1 = 1;
+defparam mul03.d = 16;
+
+gf2m_mul mul04 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul04_op_a),
+	.op_b (mul04_op_b),
+
+	.done (mul04_done),
+	.op_c (mul04_op_c)
+	);
+
+defparam mul04.WIDTH = 67;
+defparam mul04.k3 = 5;
+defparam mul04.k2 = 2;
+defparam mul04.k1 = 1;
+defparam mul04.d = 16;
 
 gf2m_mul mul10 (
 	.clk (clk),
@@ -185,8 +243,10 @@ gf2m_mul mul10 (
 	.op_c (mul10_op_c)
 	);
 
-defparam mul10.WIDTH = 79;
-defparam mul10.k = 9;
+defparam mul10.WIDTH = 67;
+defparam mul10.k3 = 5;
+defparam mul10.k2 = 2;
+defparam mul10.k1 = 1;
 defparam mul10.d = 16;
 
 gf2m_mul mul11 (
@@ -200,8 +260,10 @@ gf2m_mul mul11 (
 	.op_c (mul11_op_c)
 	);
 
-defparam mul11.WIDTH = 79;
-defparam mul11.k = 9;
+defparam mul11.WIDTH = 67;
+defparam mul11.k3 = 5;
+defparam mul11.k2 = 2;
+defparam mul11.k1 = 1;
 defparam mul11.d = 16;
 
 gf2m_mul mul12 (
@@ -215,9 +277,45 @@ gf2m_mul mul12 (
 	.op_c (mul12_op_c)
 	);
 
-defparam mul12.WIDTH = 79;
-defparam mul12.k = 9;
+defparam mul12.WIDTH = 67;
+defparam mul12.k3 = 5;
+defparam mul12.k2 = 2;
+defparam mul12.k1 = 1;
 defparam mul12.d = 16;
+
+gf2m_mul mul13 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul13_op_a),
+	.op_b (mul13_op_b),
+
+	.done (mul13_done),
+	.op_c (mul13_op_c)
+	);
+
+defparam mul13.WIDTH = 67;
+defparam mul13.k3 = 5;
+defparam mul13.k2 = 2;
+defparam mul13.k1 = 1;
+defparam mul13.d = 16;
+
+gf2m_mul mul14 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul14_op_a),
+	.op_b (mul14_op_b),
+
+	.done (mul14_done),
+	.op_c (mul14_op_c)
+	);
+
+defparam mul14.WIDTH = 67;
+defparam mul14.k3 = 5;
+defparam mul14.k2 = 2;
+defparam mul14.k1 = 1;
+defparam mul14.d = 16;
 
 gf2m_mul mul20 (
 	.clk (clk),
@@ -230,8 +328,10 @@ gf2m_mul mul20 (
 	.op_c (mul20_op_c)
 	);
 
-defparam mul20.WIDTH = 79;
-defparam mul20.k = 9;
+defparam mul20.WIDTH = 67;
+defparam mul20.k3 = 5;
+defparam mul20.k2 = 2;
+defparam mul20.k1 = 1;
 defparam mul20.d = 16;
 
 gf2m_mul mul21 (
@@ -245,8 +345,10 @@ gf2m_mul mul21 (
 	.op_c (mul21_op_c)
 	);
 
-defparam mul21.WIDTH = 79;
-defparam mul21.k = 9;
+defparam mul21.WIDTH = 67;
+defparam mul21.k3 = 5;
+defparam mul21.k2 = 2;
+defparam mul21.k1 = 1;
 defparam mul21.d = 16;
 
 gf2m_mul mul22 (
@@ -260,9 +362,215 @@ gf2m_mul mul22 (
 	.op_c (mul22_op_c)
 	);
 
-defparam mul22.WIDTH = 79;
-defparam mul22.k = 9;
+defparam mul22.WIDTH = 67;
+defparam mul22.k3 = 5;
+defparam mul22.k2 = 2;
+defparam mul22.k1 = 1;
 defparam mul22.d = 16;
+
+gf2m_mul mul23 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul23_op_a),
+	.op_b (mul23_op_b),
+
+	.done (mul23_done),
+	.op_c (mul23_op_c)
+	);
+
+defparam mul23.WIDTH = 67;
+defparam mul23.k3 = 5;
+defparam mul23.k2 = 2;
+defparam mul23.k1 = 1;
+defparam mul23.d = 16;
+
+gf2m_mul mul24 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul24_op_a),
+	.op_b (mul24_op_b),
+
+	.done (mul24_done),
+	.op_c (mul24_op_c)
+	);
+
+defparam mul24.WIDTH = 67;
+defparam mul24.k3 = 5;
+defparam mul24.k2 = 2;
+defparam mul24.k1 = 1;
+defparam mul24.d = 16;
+
+gf2m_mul mul30 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul30_op_a),
+	.op_b (mul30_op_b),
+
+	.done (mul30_done),
+	.op_c (mul30_op_c)
+	);
+
+defparam mul30.WIDTH = 67;
+defparam mul30.k3 = 5;
+defparam mul30.k2 = 2;
+defparam mul30.k1 = 1;
+defparam mul30.d = 16;
+
+gf2m_mul mul31 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul31_op_a),
+	.op_b (mul31_op_b),
+
+	.done (mul31_done),
+	.op_c (mul31_op_c)
+	);
+
+defparam mul31.WIDTH = 67;
+defparam mul31.k3 = 5;
+defparam mul31.k2 = 2;
+defparam mul31.k1 = 1;
+defparam mul31.d = 16;
+
+gf2m_mul mul32 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul32_op_a),
+	.op_b (mul32_op_b),
+
+	.done (mul32_done),
+	.op_c (mul32_op_c)
+	);
+
+defparam mul32.WIDTH = 67;
+defparam mul32.k3 = 5;
+defparam mul32.k2 = 2;
+defparam mul32.k1 = 1;
+defparam mul32.d = 16;
+
+gf2m_mul mul33 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul33_op_a),
+	.op_b (mul33_op_b),
+
+	.done (mul33_done),
+	.op_c (mul33_op_c)
+	);
+
+defparam mul33.WIDTH = 67;
+defparam mul33.k3 = 5;
+defparam mul33.k2 = 2;
+defparam mul33.k1 = 1;
+defparam mul33.d = 16;
+
+gf2m_mul mul34 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul34_op_a),
+	.op_b (mul34_op_b),
+
+	.done (mul34_done),
+	.op_c (mul34_op_c)
+	);
+
+defparam mul34.WIDTH = 67;
+defparam mul34.k3 = 5;
+defparam mul34.k2 = 2;
+defparam mul34.k1 = 1;
+defparam mul34.d = 16;
+
+gf2m_mul mul40 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul40_op_a),
+	.op_b (mul40_op_b),
+
+	.done (mul40_done),
+	.op_c (mul40_op_c)
+	);
+
+defparam mul40.WIDTH = 67;
+defparam mul40.k3 = 5;
+defparam mul40.k2 = 2;
+defparam mul40.k1 = 1;
+defparam mul40.d = 16;
+
+gf2m_mul mul41 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul41_op_a),
+	.op_b (mul41_op_b),
+
+	.done (mul41_done),
+	.op_c (mul41_op_c)
+	);
+
+defparam mul41.WIDTH = 67;
+defparam mul41.k3 = 5;
+defparam mul41.k2 = 2;
+defparam mul41.k1 = 1;
+defparam mul41.d = 16;
+
+gf2m_mul mul42 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul42_op_a),
+	.op_b (mul42_op_b),
+
+	.done (mul42_done),
+	.op_c (mul42_op_c)
+	);
+
+defparam mul42.WIDTH = 67;
+defparam mul42.k3 = 5;
+defparam mul42.k2 = 2;
+defparam mul42.k1 = 1;
+defparam mul42.d = 16;
+
+gf2m_mul mul43 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul43_op_a),
+	.op_b (mul43_op_b),
+
+	.done (mul43_done),
+	.op_c (mul43_op_c)
+	);
+
+defparam mul43.WIDTH = 67;
+defparam mul43.k3 = 5;
+defparam mul43.k2 = 2;
+defparam mul43.k1 = 1;
+defparam mul43.d = 16;
+
+gf2m_mul mul44 (
+	.clk (clk),
+	.rst_b (rst_b),
+	.start (mul_start),
+	.op_a (mul44_op_a),
+	.op_b (mul44_op_b),
+
+	.done (mul44_done),
+	.op_c (mul44_op_c)
+	);
+
+defparam mul44.WIDTH = 67;
+defparam mul44.k3 = 5;
+defparam mul44.k2 = 2;
+defparam mul44.k1 = 1;
+defparam mul44.d = 16;
 
 
 //control logic for the multiplication of C(z) = A(z)*B(z)
@@ -296,7 +604,7 @@ mul_ctrl ctrl(
 
 	//GF2m multiplier interface
 	.mul_start(mul_start),
-	.mul_done(mul00_done & mul01_done & mul02_done & mul10_done & mul11_done & mul12_done & mul20_done & mul21_done & mul22_done),
+	.mul_done(mul00_done & mul01_done & mul02_done & mul03_done & mul04_done & mul10_done & mul11_done & mul12_done & mul13_done & mul14_done & mul20_done & mul21_done & mul22_done & mul23_done & mul24_done & mul30_done & mul31_done & mul32_done & mul33_done & mul34_done & mul40_done & mul41_done & mul42_done & mul43_done & mul44_done),
 
 	.mul00_op_a(mul00_op_a),
 	.mul00_op_b(mul00_op_b),
@@ -307,6 +615,12 @@ mul_ctrl ctrl(
 	.mul02_op_a(mul02_op_a),
 	.mul02_op_b(mul02_op_b),
 	.mul02_op_c(mul02_op_c),
+	.mul03_op_a(mul03_op_a),
+	.mul03_op_b(mul03_op_b),
+	.mul03_op_c(mul03_op_c),
+	.mul04_op_a(mul04_op_a),
+	.mul04_op_b(mul04_op_b),
+	.mul04_op_c(mul04_op_c),
 
 	.mul10_op_a(mul10_op_a),
 	.mul10_op_b(mul10_op_b),
@@ -317,6 +631,12 @@ mul_ctrl ctrl(
 	.mul12_op_a(mul12_op_a),
 	.mul12_op_b(mul12_op_b),
 	.mul12_op_c(mul12_op_c),
+	.mul13_op_a(mul13_op_a),
+	.mul13_op_b(mul13_op_b),
+	.mul13_op_c(mul13_op_c),
+	.mul14_op_a(mul14_op_a),
+	.mul14_op_b(mul14_op_b),
+	.mul14_op_c(mul14_op_c),
 
 	.mul20_op_a(mul20_op_a),
 	.mul20_op_b(mul20_op_b),
@@ -326,7 +646,45 @@ mul_ctrl ctrl(
 	.mul21_op_c(mul21_op_c),
 	.mul22_op_a(mul22_op_a),
 	.mul22_op_b(mul22_op_b),
-	.mul22_op_c(mul22_op_c)
+	.mul22_op_c(mul22_op_c),
+	.mul23_op_a(mul23_op_a),
+	.mul23_op_b(mul23_op_b),
+	.mul23_op_c(mul23_op_c),
+	.mul24_op_a(mul24_op_a),
+	.mul24_op_b(mul24_op_b),
+	.mul24_op_c(mul24_op_c),
+
+	.mul30_op_a(mul30_op_a),
+	.mul30_op_b(mul30_op_b),
+	.mul30_op_c(mul30_op_c),
+	.mul31_op_a(mul31_op_a),
+	.mul31_op_b(mul31_op_b),
+	.mul31_op_c(mul31_op_c),
+	.mul32_op_a(mul32_op_a),
+	.mul32_op_b(mul32_op_b),
+	.mul32_op_c(mul32_op_c),
+	.mul33_op_a(mul33_op_a),
+	.mul33_op_b(mul33_op_b),
+	.mul33_op_c(mul33_op_c),
+	.mul34_op_a(mul34_op_a),
+	.mul34_op_b(mul34_op_b),
+	.mul34_op_c(mul34_op_c),
+
+	.mul40_op_a(mul40_op_a),
+	.mul40_op_b(mul40_op_b),
+	.mul40_op_c(mul40_op_c),
+	.mul41_op_a(mul41_op_a),
+	.mul41_op_b(mul41_op_b),
+	.mul41_op_c(mul41_op_c),
+	.mul42_op_a(mul42_op_a),
+	.mul42_op_b(mul42_op_b),
+	.mul42_op_c(mul42_op_c),
+	.mul43_op_a(mul43_op_a),
+	.mul43_op_b(mul43_op_b),
+	.mul43_op_c(mul43_op_c),
+	.mul44_op_a(mul44_op_a),
+	.mul44_op_b(mul44_op_b),
+	.mul44_op_c(mul44_op_c)
 );
 
 defparam ctrl.WIDTH = WIDTH;

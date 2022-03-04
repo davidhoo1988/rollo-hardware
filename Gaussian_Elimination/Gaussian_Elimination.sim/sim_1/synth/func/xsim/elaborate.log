@@ -1,0 +1,5 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 4ae46f5f977c4f8d90a22665cf042262 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot comb_SA_tb_func_synth xil_defaultlib.comb_SA_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.comb_SA_tb in library work located at xsim.dir/work.

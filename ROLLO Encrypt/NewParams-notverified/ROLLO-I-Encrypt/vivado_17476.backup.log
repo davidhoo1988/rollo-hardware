@@ -1,0 +1,202 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Dec 11 18:31:46 2020
+# Process ID: 17476
+# Current directory: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11828 C:\Users\Hu Jingwei\Dropbox\ROLLO\hardware\ROLLO Encrypt\NewParams\ROLLO-I-Encrypt\ROLLO-I-Encrypt.xpr
+# Log file: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/vivado.log
+# Journal file: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Hu Jingwei/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 922.910 ; gain = 187.219
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbv484-1
+INFO: [Netlist 29-17] Analyzing 375 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7a200tsbv484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.srcs/constrs_1/new/usr_constrain.xdc]
+Finished Parsing XDC File [C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.srcs/constrs_1/new/usr_constrain.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1527.430 ; gain = 564.250
+reset_run synth_1
+launch_runs impl_extra_timing -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_extra_timing'
+[Fri Dec 11 19:41:39 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/synth_1/runme.log
+[Fri Dec 11 19:41:39 2020] Launched impl_extra_timing...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/impl_extra_timing/runme.log
+export_ip_user_files -of_objects  [get_files {{C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/Verilog/RNG/define.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/Verilog/RNG/define.v}}
+close_design
+open_run impl_extra_timing
+INFO: [Netlist 29-17] Analyzing 658 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2086.055 ; gain = 12.227
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2086.055 ; gain = 12.227
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  SRLC32E => SRL16E: 17 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 2146.188 ; gain = 141.910
+open_report: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2245.586 ; gain = 98.117
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2409.848 ; gain = 27.891
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_extra_timing]
+reset_run synth_1
+save_constraints -force
+launch_runs impl_extra_timing -jobs 4
+[Fri Dec 11 20:09:06 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/synth_1/runme.log
+[Fri Dec 11 20:09:06 2020] Launched impl_extra_timing...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/impl_extra_timing/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 688 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2482.859 ; gain = 0.000
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2482.859 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 2482.859 ; gain = 57.047
+open_report: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2505.758 ; gain = 22.898
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2530.563 ; gain = 24.805
+reset_run synth_1
+launch_runs impl_extra_timing -jobs 4
+[Fri Dec 11 20:37:07 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/synth_1/runme.log
+[Fri Dec 11 20:37:07 2020] Launched impl_extra_timing...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/impl_extra_timing/runme.log
+reset_run synth_1
+launch_runs impl_extra_timing -jobs 4
+[Fri Dec 11 20:39:27 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/synth_1/runme.log
+[Fri Dec 11 20:39:27 2020] Launched impl_extra_timing...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/impl_extra_timing/runme.log
+close_design
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Dec 11 20:44:08 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/synth_1/runme.log
+launch_runs impl_extra_timing -jobs 4
+[Fri Dec 11 20:50:18 2020] Launched impl_extra_timing...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/impl_extra_timing/runme.log
+open_run impl_extra_timing
+INFO: [Netlist 29-17] Analyzing 835 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2557.156 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2557.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  SRLC32E => SRL16E: 32 instances
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2557.156 ; gain = 0.000
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2571.746 ; gain = 14.590
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Dec 11 21:00:30 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbv484-1
+INFO: [Netlist 29-17] Analyzing 835 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.srcs/constrs_1/new/usr_constrain.xdc]
+Finished Parsing XDC File [C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.srcs/constrs_1/new/usr_constrain.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 2584.359 ; gain = 0.000
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2584.359 ; gain = 0.000
+launch_runs impl_extra_timing -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+[Fri Dec 11 21:07:44 2020] Launched impl_extra_timing...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/impl_extra_timing/runme.log
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2584.359 ; gain = 0.000
+open_run impl_extra_timing
+INFO: [Netlist 29-17] Analyzing 835 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2845.828 ; gain = 20.688
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2845.828 ; gain = 20.688
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  SRLC32E => SRL16E: 32 instances
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 2911.613 ; gain = 327.254
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 3072.938 ; gain = 43.637
+report_utilization: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 3072.938 ; gain = 43.637
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 11 21:23:38 2020...

@@ -1,9 +1,37 @@
-# ** License Issue: License request for msimviewer feature failed
-# ** License Issue: Cannot checkout an uncounted license within a Windows Terminal Services guest session. (D:\modelsim_10.5\win64\LICENSE.TXT)
-# ** License Issue: Cannot checkout an uncounted license within a Windows Terminal Services guest session. (D:\modelsim_10.5\win64\LICENSE.TXT)
-# ** License Issue: Cannot checkout an uncounted license within a Windows Terminal Services guest session. (D:\modelsim_10.5\win64\LICENSE.TXT)
-# ** License Issue: Cannot checkout an uncounted license within a Windows Terminal Services guest session. (D:\modelsim_10.5\win64\LICENSE.TXT)
-# ** License Issue: Cannot checkout an uncounted license within a Windows Terminal Services guest session. (D:\modelsim_10.5\win64\LICENSE.TXT)
-# ** License Issue: Cannot checkout an uncounted license within a Windows Terminal Services guest session. (D:\modelsim_10.5\win64\LICENSE.TXT)
-# ** License Issue: Cannot find license file. (C:\flexlm\license.dat)
-# ** Error: Failure to license for viewer. Unable to checkout 'msimviewer' license feature.
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {GF2m_mul_digit_penta_tb_simulate.do} 
+# vsim -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib -voptargs=\"+acc\" xil_defaultlib.GF2m_mul_digit_penta_tb xil_defaultlib.glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading work.GF2m_mul_digit_penta_tb(fast)
+# Loading work.GF2m_mul_digit_penta(fast)
+# Loading work.shift_x_by_i(fast)
+# Loading work.shift_x_by_i(fast__1)
+# Loading work.shift_x_by_i(fast__2)
+# Loading work.shift_x_by_i(fast__3)
+# Loading work.shift_x_by_i(fast__4)
+# Loading work.shift_x_by_i(fast__5)
+# Loading work.shift_x_by_i(fast__6)
+# Loading work.shift_x_by_i(fast__7)
+# Loading work.shift_x_by_i(fast__8)
+# Loading work.shift_x_by_i(fast__9)
+# Loading work.shift_x_by_i(fast__10)
+# Loading work.shift_x_by_i(fast__11)
+# Loading work.shift_x_by_i(fast__12)
+# Loading work.shift_x_by_i(fast__13)
+# Loading work.shift_x_by_i(fast__14)
+# Loading work.shift_x_by_i(fast__15)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree

@@ -1,0 +1,119 @@
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {encrypt_top_tb_simulate.do} 
+# vsim -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib -voptargs=\"+acc\" xil_defaultlib.encrypt_top_tb xil_defaultlib.glbl 
+# Loading work.encrypt_top_tb(fast)
+# Loading work.ROLLO_II_Encrypt(fast)
+# Loading work.K_Gen_Ctrl(fast)
+# Loading work.RegFiles(fast)
+# Loading work.comb_SA(fast)
+# Loading work.processor_AB(fast)
+# Loading work.prng(fast)
+# Loading work.f_permutation_200(fast)
+# Loading work.rconst_200(fast)
+# Loading work.round_200(fast)
+# Loading work.keccak(fast)
+# Loading work.padder(fast)
+# Loading work.f_permutation(fast)
+# Loading work.rconst(fast)
+# Loading work.round(fast)
+# Loading work.c_Gen_Ctrl(fast)
+# Loading work.gf2mz_top(fast)
+# Loading work.gf2m_mul(fast)
+# Loading work.shift_x_by_i(fast)
+# Loading work.shift_x_by_i(fast__1)
+# Loading work.shift_x_by_i(fast__2)
+# Loading work.shift_x_by_i(fast__3)
+# Loading work.shift_x_by_i(fast__4)
+# Loading work.shift_x_by_i(fast__5)
+# Loading work.shift_x_by_i(fast__6)
+# Loading work.shift_x_by_i(fast__7)
+# Loading work.shift_x_by_i(fast__8)
+# Loading work.shift_x_by_i(fast__9)
+# Loading work.shift_x_by_i(fast__10)
+# Loading work.shift_x_by_i(fast__11)
+# Loading work.shift_x_by_i(fast__12)
+# Loading work.shift_x_by_i(fast__13)
+# Loading work.shift_x_by_i(fast__14)
+# Loading work.shift_x_by_i(fast__15)
+# Loading work.mul_ctrl(fast)
+# Loading work.mem_sp(fast)
+# Loading work.mem_sp(fast__1)
+# Loading work.mem_sp(fast__2)
+# Loading work.mem_dp(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) ../../../../Verilog/encrypt_top.v(228): [PCDPC] - Port size (415 or 415) does not match connection size (32) for port 'e2_din'. The port definition is at: ../../../../Verilog/c_Gen_Ctrl.v(23).
+# 
+#         Region: /encrypt_top_tb/DUT/c_Gen_Ctrl
+# 1
+# 1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: David  Hostname: DAVID-NTU-DESKT  ProcessID: 21756
+# 
+#           Attempting to use alternate WLF file "./wlftzt6i24".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftzt6i24
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+restart
+
+# Loading work.encrypt_top_tb(fast)
+# Loading work.ROLLO_II_Encrypt(fast)
+# Loading work.K_Gen_Ctrl(fast)
+# Loading work.RegFiles(fast)
+# Loading work.comb_SA(fast)
+# Loading work.processor_AB(fast)
+# Loading work.prng(fast)
+# Loading work.f_permutation_200(fast)
+# Loading work.rconst_200(fast)
+# Loading work.round_200(fast)
+# Loading work.keccak(fast)
+# Loading work.padder(fast)
+# Loading work.f_permutation(fast)
+# Loading work.rconst(fast)
+# Loading work.round(fast)
+# Loading work.c_Gen_Ctrl(fast)
+# Loading work.gf2mz_top(fast)
+# Loading work.gf2m_mul(fast)
+# Loading work.shift_x_by_i(fast)
+# Loading work.shift_x_by_i(fast__1)
+# Loading work.shift_x_by_i(fast__2)
+# Loading work.shift_x_by_i(fast__3)
+# Loading work.shift_x_by_i(fast__4)
+# Loading work.shift_x_by_i(fast__5)
+# Loading work.shift_x_by_i(fast__6)
+# Loading work.shift_x_by_i(fast__7)
+# Loading work.shift_x_by_i(fast__8)
+# Loading work.shift_x_by_i(fast__9)
+# Loading work.shift_x_by_i(fast__10)
+# Loading work.shift_x_by_i(fast__11)
+# Loading work.shift_x_by_i(fast__12)
+# Loading work.shift_x_by_i(fast__13)
+# Loading work.shift_x_by_i(fast__14)
+# Loading work.shift_x_by_i(fast__15)
+# Loading work.mul_ctrl(fast)
+# Loading work.mem_sp(fast)
+# Loading work.mem_sp(fast__1)
+# Loading work.mem_sp(fast__2)
+# Loading work.mem_dp(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) ../../../../Verilog/encrypt_top.v(228): [PCDPC] - Port size (415 or 415) does not match connection size (32) for port 'e2_din'. The port definition is at: ../../../../Verilog/c_Gen_Ctrl.v(23).
+# 
+#         Region: /encrypt_top_tb/DUT/c_Gen_Ctrl
+do wave.do
+run 85us
+run 2us
+# 
+# runtime: 8540 cycles
+# 

@@ -2,8 +2,8 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Sun Dec  1 16:53:34 2019
-# Process ID: 20324
+# Start of session at: Wed May  6 20:10:17 2020
+# Process ID: 25136
 # Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.runs/synth_1
 # Command line: vivado.exe -log gf2mz_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gf2mz_top.tcl
 # Log file: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.runs/synth_1/gf2mz_top.vds

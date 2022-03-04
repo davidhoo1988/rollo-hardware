@@ -1,0 +1,43 @@
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Skipping module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Skipping module ROLLO_III_Encrypt
+# -- Compiling module encrypt_top_tb
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module keccak_tb
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module padder1
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# 	keccak_tb
+# 	padder1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl

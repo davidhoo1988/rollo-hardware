@@ -60,22 +60,22 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {33-285} -limit 100
+set_msg_config -id {33-288} -limit 100
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param messaging.defaultLimit 2500
   set_param simulator.modelsimInstallPath F:/modelsim64_10.1c/win64
-  create_project -in_memory -part xc7a100tfgg676-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.runs/impl_ExtraTimingOpt/gf2mz_top.dcp}
   set_property webtalk.parent_dir {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.cache/wt} [current_project]
   set_property parent.project_path {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr} [current_project]
   set_property ip_output_repo {{C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.runs/synth_1/gf2mz_top.dcp}}
-  read_xdc {{C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.srcs/constrs_1/new/user_constrain.xdc}}
-  link_design -top gf2mz_top -part xc7a100tfgg676-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

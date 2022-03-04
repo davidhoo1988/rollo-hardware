@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Sep 25 10:11:04 2020
+# Process ID: 19964
+# Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15204 C:\Users\David\Dropbox\LRPC Code\hardware\ROLLO Decrypt\ROLLO-II-Decrypt\ROLLO-II-Decrypt.xpr
+# Log file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/vivado.log
+# Journal file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+file mkdir C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1
+file mkdir C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1
+file mkdir C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new
+file mkdir C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new
+file mkdir C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new
+file mkdir C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new
+file mkdir C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new
+file mkdir C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1
+file mkdir {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new}
+close [ open {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new/usr_constrain.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new/usr_constrain.xdc}}
+set_property target_constrs_file {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new/usr_constrain.xdc} [current_fileset -constrset]
+close_design
+open_run synth_1 -name synth_1
+create_clock -period 5.555 -name clk -waveform {0.000 2.778} [get_ports clk]
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+open_run impl_1
+create_run impl_2 -parent_run synth_1 -flow {Vivado Implementation 2018} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports}
+current_run [get_runs impl_2]
+set_property strategy Performance_ExtraTimingOpt [get_runs impl_2]
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+set_param messaging.defaultLimit 10000
+open_run impl_2
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+save_constraints
+reset_run synth_1
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+report_utilization -name utilization_1

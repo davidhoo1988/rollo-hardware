@@ -1,0 +1,172 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\David\Dropbox\LRPC Code\hardware\Gaussian_Elimination\Gaussian_Elimination.sim\sim_1\synth\func\modelsim
+vcomb_SA
+Z1 !s10a 1584067979
+IMKV[1<Jd^Ei[Qe9>d]J6O2
+Vd7C:>CF89J^57_?;P]bn82
+Z2 dC:\Users\David\Dropbox\LRPC Code\hardware\Gaussian_Elimination\Gaussian_Elimination.sim\sim_1\synth\func\modelsim
+Z3 w1584067746
+Z4 8comb_SA_tb_func_synth.v
+Z5 Fcomb_SA_tb_func_synth.v
+L0 17
+Z6 OL;L;10.1c;51
+r1
+31
+Z7 !s108 1584067748.894000
+Z8 !s107 comb_SA_tb_func_synth.v|
+Z9 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../../verilog|comb_SA_tb_func_synth.v|
+Z10 o-work xil_defaultlib -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z11 !s92 -work xil_defaultlib +incdir+../../../../../verilog -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+ncomb_@s@a
+!i10b 1
+!s100 FAi74z=4T`j@GhXGCEmL83
+!s85 0
+vglbl
+R1
+IiW5h`c5bO1U;O1i0^dmI^1
+VM[9mS]S:KA1i4VeCMX35[3
+R2
+R3
+R4
+R5
+L0 514
+R6
+r1
+31
+R7
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 J=4HJS2=QL4^n?X`D8o3E1
+!s85 0
+vprocessor_A
+R1
+I>MH0C]KaXPReJNbRS0C6[1
+VLgIngYF:`iQ30^Zci:jO72
+R2
+R3
+R4
+R5
+L0 206
+R6
+r1
+31
+R7
+R8
+R9
+R10
+R11
+nprocessor_@a
+!i10b 1
+!s100 Wna2zSEE`=0cUVi[a]ATF3
+!s85 0
+vprocessor_A_0
+R1
+IVL48i<daeS_gA`jN9S_]Z0
+V1R?]49n3K@moe8QIQX?]G3
+R2
+R3
+R4
+R5
+L0 271
+R6
+r1
+31
+R7
+R8
+R9
+R10
+R11
+nprocessor_@a_0
+!i10b 1
+!s100 FH94GW7OW8SNM=A]cWcND1
+!s85 0
+vprocessor_A_1
+R1
+I`Ij?Kh<15lPj0zZ8?Hza91
+V>?<4Th;SZYYbSndUB92Jc0
+R2
+R3
+R4
+R5
+L0 336
+R6
+r1
+31
+R7
+R8
+R9
+R10
+R11
+nprocessor_@a_1
+!i10b 1
+!s100 ;=cJP^B=7MFG]^[H46DU:2
+!s85 0
+vprocessor_B
+R1
+I5N5SkiOR>j3JiVYEI@4m`0
+VdCIL]m?3M74geQIJgzcmf2
+R2
+R3
+R4
+R5
+L0 372
+R6
+r1
+31
+R7
+R8
+R9
+R10
+R11
+nprocessor_@b
+!i10b 1
+!s100 8Ne]l2aO6iLl1fHQ=7CeG0
+!s85 0
+vprocessor_B_2
+R1
+IE^FD64h?TF4R?O99GIUj32
+V8@oSJ8=B?>mUU=R:zHg0c1
+R2
+R3
+R4
+R5
+L0 417
+R6
+r1
+31
+R7
+R8
+R9
+R10
+R11
+nprocessor_@b_2
+!i10b 1
+!s100 zK6@kJNeeCIciM4[bJLmG3
+!s85 0
+vprocessor_B_3
+R1
+IfUj3:PdK]7No_Qa5cSEj=2
+VfLbfMg=C]L4zoYcj@aakX2
+R2
+R3
+R4
+R5
+L0 462
+R6
+r1
+31
+R7
+R8
+R9
+R10
+R11
+nprocessor_@b_3
+!i10b 1
+!s100 SA`X@^C91U_bOQXAd5YKh1
+!s85 0

@@ -44,68 +44,67 @@ d = args.d
 #   initialize the system parameters
 #
 ############################################################################
-#ROLLO-I setups
 if SL == 'ROLLO-I-128':
-  n = 47
-  m = 79
+  n = 83
+  m = 67
 
-  P_list = (n+1)*[0] # sparse list for polynomial P(z)
-  P_list[47] = 1
-  P_list[5] = 1
+  P_list = (n+1)*[0] # sparse list for polynomial P
+  P_list[83] = 1
+  P_list[7] = 1
+  P_list[4] = 1
+  P_list[2] = 1
   P_list[0] = 1
-  P_coeff_list = [5]
+  P_coeff_list = [7,4,2]
 
-  f_list = (m+1)*[0] # sparse list for polynomial f(x)
+  f_list = (m+1)*[0] # sparse list for polynomial f
+  f_list[67] = 1
+  f_list[5] = 1
+  f_list[2] = 1
+  f_list[1] = 1
+  f_list[0] = 1
+
+elif SL == 'ROLLO-I-192':
+  n = 97
+  m = 79
+  
+  P_list = (n+1)*[0] # sparse list for polynomial P
+  P_list[97] = 1
+  P_list[6] = 1
+  P_list[0] = 1
+  P_coeff_list = [6]
+
+  f_list = (m+1)*[0] # sparse list for polynomial f
   f_list[79] = 1
   f_list[9] = 1
   f_list[0] = 1
 
-elif SL == 'ROLLO-I-192':
-  n = 53
-  m = 89
-  
-  P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[53] = 1
-  P_list[6] = 1
-  P_list[2] = 1
-  P_list[1] = 1
-  P_list[0] = 1
-  P_coeff_list = [6,2,1]
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[89] = 1
-  f_list[38] = 1
-  f_list[0] = 1
-
 elif SL == 'ROLLO-I-256': 
-  n = 67
-  m = 113
+  n = 113
+  m = 97
 
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[67] = 1
-  P_list[5] = 1
-  P_list[2] = 1
-  P_list[1] = 1
+  P_list[113] = 1
+  P_list[9] = 1
   P_list[0] = 1
-  P_coeff_list = [5,2,1]
+  P_coeff_list = [9]
 
   f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[113] = 1
-  f_list[9] = 1
+  f_list[97] = 1
+  f_list[6] = 1
   f_list[0] = 1
 
 #ROLLO-II setups
 elif SL == 'ROLLO-II-128':
-  n = 149
+  n = 189
   m = 83
   
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[149] = 1
-  P_list[10] = 1
-  P_list[9] = 1
-  P_list[7] = 1
+  P_list[189] = 1
+  P_list[6] = 1
+  P_list[5] = 1
+  P_list[2] = 1
   P_list[0] = 1
-  P_coeff_list = [10,9,7]
+  P_coeff_list = [6,5,2]
 
   f_list = (m+1)*[0] # sparse list for polynomial f
   f_list[83] = 1
@@ -115,102 +114,48 @@ elif SL == 'ROLLO-II-128':
   f_list[0] = 1
 
 elif SL == 'ROLLO-II-192':
-  n = 151
-  m = 107
+  n = 193
+  m = 97
   
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[151] = 1
-  P_list[3] = 1
+  P_list[193] = 1
+  P_list[15] = 1
   P_list[0] = 1
-  P_coeff_list = [3]
+  P_coeff_list = [15]
 
   f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[107] = 1
-  f_list[9] = 1
-  f_list[7] = 1
-  f_list[4] = 1
+  f_list[97] = 1
+  f_list[6] = 1
   f_list[0] = 1
 
 elif SL == 'ROLLO-II-256':
-  n = 157
-  m = 127
+  n = 211
+  m = 97
   
   P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[157] = 1
-  P_list[6] = 1
-  P_list[5] = 1
-  P_list[2] = 1
+  P_list[211] = 1
+  P_list[11] = 1
+  P_list[10] = 1
+  P_list[8] = 1
   P_list[0] = 1
-  P_coeff_list = [6,5,2]
+  P_coeff_list = [11,10,8]
 
   f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[127] = 1
-  f_list[1] = 1
-  f_list[0] = 1
-
-elif SL == 'ROLLO-III-128':
-  n = 47
-  m = 101
-  
-  P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[47] = 1
-  P_list[5] = 1
-  P_list[0] = 1
-  P_coeff_list = [5]
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[101] = 1
-  f_list[7] = 1
+  f_list[97] = 1
   f_list[6] = 1
-  f_list[1] = 1
-  f_list[0] = 1
-
-elif SL == 'ROLLO-III-192':
-  n = 59
-  m = 107
-  
-  P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[59] = 1
-  P_list[7] = 1
-  P_list[4] = 1
-  P_list[2] = 1
-  P_list[0] = 1
-  P_coeff_list = [7,4,2]
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[107] = 1
-  f_list[9] = 1
-  f_list[7] = 1
-  f_list[4] = 1
-  f_list[0] = 1
-
-elif SL == 'ROLLO-III-256':
-  n = 67
-  m = 131
-  
-  P_list = (n+1)*[0] # sparse list for polynomial P
-  P_list[67] = 1
-  P_list[5] = 1
-  P_list[2] = 1
-  P_list[1] = 1
-  P_list[0] = 1
-  P_coeff_list = [5,2,1]
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[131] = 1
-  f_list[8] = 1
-  f_list[3] = 1
-  f_list[2] = 1
   f_list[0] = 1
 
 else:
-  print 'Iuput Errors'  
+  print ('Iuput Errors')  
   exit()
 
-delta = n%d #the remaining GF(2m) coefficients (< d) in the last memory cell
+if n%d == 0:
+  delta = d
+else:  
+  delta = n%d # the remaining GF(2m) coefficients (1,2,...,d-1,d) in the last memory cell
 
 
-print"""`timescale 1ns / 1ps
+print("""`timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company:  
 // Engineer: 
@@ -264,7 +209,7 @@ module mul_ctrl #(parameter WIDTH = 8, DEPTH = 64, m = 79, d = 3, DELAY = 6)(
 	//GF2m multiplier interface
 	output reg 					    mul_start,
     input wire                      mul_done,
-"""
+""")
 
 tmp = ""
 for i in range(d):
@@ -279,13 +224,13 @@ for i in range(d):
 	output wire [m-1:0] 			mul{i}{j}_op_b,
     input wire [m-1:0]              mul{i}{j}_op_c
 	);""".format(i = i, j = j)
-print tmp
+print (tmp)
 
-print """
+print ("""
 reg [`CLOG2(DELAY+18)-1:0] cnt; //log2(DELAY+18)-bit timer
 reg flag; //used to handle the exception transition from MUL to POST
 
-wire [WIDTH-1:0] cache; //used for updating B(z) to B(z)z^d in mem_B"""
+wire [WIDTH-1:0] cache; //used for updating B(z) to B(z)z^d in mem_B""")
 
 tmp = "reg [m-1:0] "
 for i in range(d):
@@ -293,9 +238,9 @@ for i in range(d):
 		tmp += "cache{i}, ".format(i = i)
 	else:
 		tmp += "cache{i};\n".format(i = i)	
-print tmp
+print (tmp)
 
-print "wire [WIDTH-1:0] mul_r;"
+print ("wire [WIDTH-1:0] mul_r;")
 
 tmp = "wire [m-1:0] "
 for i in range(d):
@@ -303,9 +248,9 @@ for i in range(d):
 		tmp += "mul_r{i}, ".format(i = i)
 	else:
 		tmp += "mul_r{i};".format(i = i)	
-print tmp
+print (tmp)
 
-print """//----------------------------------------------------------
+print ("""//----------------------------------------------------------
 // FSM state signal Declaration
 //----------------------------------------------------------		
 parameter 		INIT = 3'd0, //do nothing, then get prepared
@@ -361,7 +306,7 @@ always @(*) begin
             next_state = INIT;        
     endcase
 end
-"""
+""")
 
 tmp = """//----------------------------------------------------------
 //3rd sequential block, the sequential FSM output
@@ -398,7 +343,7 @@ tmp += """
             C_addr <= 0;
             C_do <= 0;
         end"""
-print tmp
+print (tmp)
 
 tmp = """
         PRE: begin      //takes 3 cycles
@@ -459,7 +404,7 @@ tmp += """			end
             C_addr <= 0;
             C_do <= 0;
         end"""
-print tmp
+print (tmp)
 
 tmp = """
         MUL: begin
@@ -512,13 +457,15 @@ tmp += """            end
             if (cnt == DELAY - 1) begin //read/write new data from RAM B at cnt == DELAY, it implicitly suggests DELAY >= 2   
                 if (flag && B_addrb == DEPTH-1) begin
                     B_wea <= 1;
-                    B_doa <= {{cache[WIDTH-1:WIDTH-{delta}*m], """.format(delta = delta)
+                    B_doa <= {{cache[WIDTH-1:WIDTH-{delta}*m]""".format(delta = delta)
 for i in range(d-delta):
+    if i == 0:
+        tmp += ", "
     if i != d-delta-1:
         tmp += "{m{1'b0}}, "
     else:
-        tmp += "{m{1'b0}}};"                    
-                    
+        tmp += "{m{1'b0}}"                    
+tmp += "};"                    
 tmp += """
                 end     
                 else if (B_addra != DEPTH-1 && B_addra != DEPTH-2) begin
@@ -557,7 +504,7 @@ tmp += """
             else 
                 C_addr <= C_addr;               
         end"""
-print tmp
+print (tmp)
 
 
 if len(P_coeff_list) == 1:
@@ -592,7 +539,7 @@ if len(P_coeff_list) == 1:
     for i in range(d):
         tmp +=  "\t\t\t\tcache{i} <= cache{i};\n".format(i = i)  
 
-    print tmp   
+    print (tmp)   
 
     tmp = """			end
 
@@ -655,7 +602,7 @@ if len(P_coeff_list) == 1:
     		tmp += "B_dib[WIDTH-{i}*m-1:WIDTH-{j}*m], ".format(i = i, j = i+1)
     	else:
     		tmp += "B_dib[WIDTH-{i}*m-1:WIDTH-{j}*m]}}; ".format(i = i, j = i+1)	
-    print tmp
+    print (tmp)
 else:
     #print "pentanomial"  
     k3 = P_coeff_list[0]
@@ -690,7 +637,7 @@ else:
 """
     for i in range(d):
         tmp +=  "\t\t\t\tcache{i} <= cache{i};\n".format(i = i)  
-    print tmp   
+    print (tmp)   
 
     tmp = """           end
 
@@ -754,7 +701,7 @@ else:
             tmp += "B_dib[WIDTH-{i}*m-1:WIDTH-{j}*m], ".format(i = i, j = i+1)
         else:
             tmp += "B_dib[WIDTH-{i}*m-1:WIDTH-{j}*m]}}; ".format(i = i, j = i+1)    
-    print tmp + "\n\t\t\tend"
+    print (tmp + "\n\t\t\tend")
 
     #handle case k2
     tmp = """            else if (cnt == DELAY+10) begin //read B[{i}],B[{j}]
@@ -789,7 +736,7 @@ else:
             tmp += "B_dib[WIDTH-{i}*m-1:WIDTH-{j}*m], ".format(i = i, j = i+1)
         else:
             tmp += "B_dib[WIDTH-{i}*m-1:WIDTH-{j}*m]}}; ".format(i = i, j = i+1)    
-    print tmp + "\n\t\t\tend"
+    print (tmp + "\n\t\t\tend")
 
     #handle case k3
     tmp = """            else if (cnt == DELAY+13) begin //read B[{i}],B[{j}]
@@ -824,13 +771,13 @@ else:
             tmp += "B_dib[WIDTH-{i}*m-1:WIDTH-{j}*m], ".format(i = i, j = i+1)
         else:
             tmp += "B_dib[WIDTH-{i}*m-1:WIDTH-{j}*m]}}; ".format(i = i, j = i+1)    
-    print tmp
+    print (tmp)
 
 if len(P_coeff_list) == 1:
   i = 0
 else:
   i = 16  
-print"""			end
+print("""			end
             else if (cnt == DELAY+{i}) begin // read B[-2] at cnt = DELAY+{i}
                 B_wea <= 0;
                 B_addra <= DEPTH-2;
@@ -847,7 +794,7 @@ print"""			end
                 B_addrb <= 0;
                 B_dob <= 0;
             end
-""".format(i = i, j = i+1)
+""".format(i = i, j = i+1))
 
 # hard part to handle mem_C
 tmp = """            //mem_C controller  
@@ -903,9 +850,9 @@ if len(P_coeff_list) == 1:
 
                
     tmp += "\n\t\t\tend" 
-    print tmp
+    print (tmp)
 
-    print """            else begin
+    print ("""            else begin
                 C_we <= 0;
                 C_do <= 0;
             end 
@@ -915,7 +862,7 @@ if len(P_coeff_list) == 1:
                 C_addr <= {j};
             else 
                 C_addr <= 0;                             
-        end""".format(i = k/d, j = k/d+1)
+        end""".format(i = k/d, j = k/d+1))
 
 else: #print "pentanomial" 
     k3 = P_coeff_list[0]
@@ -966,7 +913,7 @@ else: #print "pentanomial"
 
                
     tmp += "\n\t\t\tend" 
-    print tmp 
+    print (tmp) 
 
     #handle case of k2  
     tmp = """            //handle case of k2  
@@ -1018,7 +965,7 @@ else: #print "pentanomial"
 
                
     tmp += "\n\t\t\tend" 
-    print tmp 
+    print (tmp) 
 
     # handle case of k3
     tmp = """            //handle case of k3 
@@ -1070,9 +1017,9 @@ else: #print "pentanomial"
 
                
     tmp += "\n\t\t\tend" 
-    print tmp 
+    print (tmp) 
 
-    print """            else begin
+    print ("""            else begin
                 C_we <= 0;
                 C_do <= 0;
             end 
@@ -1090,11 +1037,11 @@ else: #print "pentanomial"
                 C_addr <= {j3};            
             else 
                 C_addr <= 0;                             
-        end""".format(i1 = k1/d, j1 = k1/d+1, i2 = k2/d, j2 = k2/d+1, i3 = k3/d, j3 = k3/d+1)    
+        end""".format(i1 = k1/d, j1 = k1/d+1, i2 = k2/d, j2 = k2/d+1, i3 = k3/d, j3 = k3/d+1))    
 
 
 
-print """        
+print ("""        
 		default: begin
         	PRE_done <= 0;
         	MUL_done <= 0;
@@ -1102,11 +1049,11 @@ print """
             done <= 0;
             mul_start <= 0;
             cnt <= 0;
-            flag <= 0;"""
+            flag <= 0;""")
 for i in range(d):
-    print "\t\t\tcache{i} <= 0;".format(i = i)
+    print ("\t\t\tcache{i} <= 0;".format(i = i))
 
-print """
+print ("""
             A_we <= 0;
             A_addr <= 0;
             A_do <= 0;
@@ -1124,18 +1071,27 @@ print """
         end
     endcase
 end
-"""
+""")
 
 tmp = ""
 for i in range(d):
 	for j in range(d):
 		tmp += """assign mul{i}{j}_op_a = A_di[WIDTH-{i}*m-1:WIDTH-{k}*m];\n""".format(i = i, j = j, k = i+1)
 	tmp += "\n"
-print tmp
+print (tmp)
 
 #hard part, handling mul_op_b
 tmp = ""
-if delta == d-1: # delta = d-1
+if delta == d: # delta = d
+  for i in range(d):
+    for j in range(d):
+      if i > j:
+        tmp += """assign mul{i}{j}_op_b = B_dia[WIDTH-{p}*m-1:WIDTH-{q}*m];\n""".format(i = i, j = j, p = d-i+j, q = d-i+j+1)
+      else:
+        tmp += """assign mul{i}{j}_op_b = B_dib[WIDTH-{p}*m-1:WIDTH-{q}*m];\n""".format(i = i, j = j, p = j-i, q = j-i+1)          
+    tmp += "\n" 
+
+elif delta == d-1: # delta = d-1
 	for i in range(d):
 		for j in range(d):
 			if i > j:
@@ -1204,7 +1160,7 @@ else: # delta != d-1
 
 
 
-print tmp
+print (tmp)
             
 
 for i in range(d):
@@ -1214,7 +1170,7 @@ for i in range(d):
 			tmp += "mul{j}{i}_op_c ^ ".format(i = i, j = j)
 		else:
 			tmp += "mul{j}{i}_op_c;".format(i = i, j = j)	
-	print tmp
+	print (tmp)
 
 tmp = "assign mul_r = {"
 for i in range(d):
@@ -1222,7 +1178,7 @@ for i in range(d):
 		tmp += "mul_r{i}, ".format(i = i)
 	else:
 		tmp += "mul_r{i}}};\n".format(i = i)	
-print tmp
+print (tmp)
 
 tmp = "assign cache = {"
 for i in range(d):
@@ -1230,6 +1186,6 @@ for i in range(d):
 		tmp += "cache{i}, ".format(i = i)
 	else:
 		tmp += "cache{i}}};\n\nendmodule".format(i = i)	
-print tmp
+print (tmp)
 
 

@@ -1,0 +1,15 @@
+# do {comb_SA_tb_compile.do} 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module comb_SA
+# -- Compiling module processor_A
+# -- Compiling module processor_A_0
+# -- Compiling module processor_A_1
+# -- Compiling module processor_B
+# -- Compiling module processor_B_2
+# -- Compiling module processor_B_3
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	comb_SA
+# 	glbl

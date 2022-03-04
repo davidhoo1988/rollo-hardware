@@ -1,0 +1,286 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Wed Dec 30 19:15:04 2020
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file decrypt_top_control_sets_placed.rpt
+| Design       : decrypt_top
+| Device       : xc7a200t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   215 |
+| Unused register locations in slices containing registers |   874 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |          163 |
+|      6 |            2 |
+|      9 |            4 |
+|     10 |            2 |
+|     11 |            1 |
+|     12 |            1 |
+|    16+ |           41 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |           16112 |         6089 |
+| No           | No                    | Yes                    |               8 |            5 |
+| No           | Yes                   | No                     |            4349 |         1978 |
+| Yes          | No                    | No                     |             569 |          202 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            5560 |         3024 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------+-----------------------------------+------------------+----------------+
+|  Clock Signal  |           Enable Signal           |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------+-----------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | gf2mz/ctrl/A_addr[2]_i_1_n_0      |                                   |                1 |              2 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_133            |                3 |              4 |
+|  clk_IBUF_BUFG | S1S2gen/PRE_done_i_1__0_n_0       |                                   |                2 |              4 |
+|  clk_IBUF_BUFG | S1S2gen/S_addr[5]_i_2_n_0         | S1S2gen/S_addr[5]_i_1_n_0         |                2 |              4 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/A_addr[2]_i_1_n_0      | gf2mz/ctrl/A_addr[5]_i_1_n_0      |                1 |              4 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/C_addr[5]_i_2_n_0      | gf2mz/ctrl/C_addr[5]_i_1_n_0      |                1 |              4 |
+|  clk_IBUF_BUFG | RSR/CTRL/second_half_reg_i_1_n_0  |                                   |                2 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_0              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_14_0              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_12_0              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_13_0              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_0              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_136            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_120            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_14             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_105            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_126            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_128            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_111            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_134            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_114            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_102            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_117            |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_138            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_15             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_137            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_0              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_132            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_125            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_115            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_118            |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_103            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_113            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_116            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_12             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_10             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_101            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_123            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_129            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_13             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_130            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_122            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_131            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_104            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_112            |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_1              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_100            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_106            |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_108            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_11             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_119            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_109            |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_121            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_124            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_135            |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_110            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_107            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_127            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_23             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_18             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_24             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_32             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_28             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_27             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_30             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_33             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_35             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_40             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_43             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_45             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_46             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_25             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_3              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_34             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_26             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_48             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_49             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_52             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_4              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_53             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_54             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_55             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_38             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_5              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_39             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_16             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_20             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_19             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_22             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_36             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_47             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_51             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_56             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_57             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_44             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_17             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_2              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_21             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_29             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_50             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_59             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_31             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_6              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_37             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_42             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_41             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_58             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_60             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_90             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_62             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_75             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_81             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_68             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_82             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_88             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_96             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_95             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_78             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_98             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_3_7               |                2 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_8_0               |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_9_0               |                2 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_93             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_8              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_94             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_61             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_72             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_97             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_2_17              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_67             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_79             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_3_19              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_77             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_71             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_7              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_73             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_83             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_2_11              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_5_1               |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_65             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_89             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_92             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_91             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_6_0               |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_74             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_64             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_87             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_84             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_86             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_99             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_2_23              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_3_13              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_69             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_70             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_7_0               |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_66             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_80             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_85             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_9              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_76             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_63             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_tmp[9]               |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_tmp[12]              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_tmp[15]              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | gf2mz/ctrl/A_addr[5]_i_1_n_0      |                5 |              6 |
+|  clk_IBUF_BUFG | SHA3/f_permutation_/Q[0]          | SHA3/f_permutation_/SR[0]         |                2 |              6 |
+|  clk_IBUF_BUFG | RSR/CTRL/max_addr[8]_i_1_n_0      |                                   |                3 |              9 |
+|  clk_IBUF_BUFG | RSR/CTRL/mem_addra[8]_i_1_n_0     |                                   |                7 |              9 |
+|  clk_IBUF_BUFG | RSR/CTRL/min_addr[8]_i_2_n_0      | RSR/CTRL/min_addr[8]_i_1_n_0      |                3 |              9 |
+|  clk_IBUF_BUFG | S1S2gen/mul/E[0]                  |                                   |                6 |              9 |
+|  clk_IBUF_BUFG | RSR/CTRL/mem_addrb[8]_i_1_n_0     |                                   |                6 |             10 |
+|  clk_IBUF_BUFG | RSR/CTRL/cnt[9]_i_2_n_0           | RSR/CTRL/cnt[9]_i_1_n_0           |                4 |             10 |
+|  clk_IBUF_BUFG | S1S2gen/idx[3]_i_1_n_0            |                                   |                6 |             11 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/B_addrb[5]_i_1_n_0     |                                   |                5 |             12 |
+|  clk_IBUF_BUFG | RSR/CTRL/intersect_num[8]_i_2_n_0 | RSR/CTRL/intersect_num[8]_i_1_n_0 |               10 |             22 |
+|  clk_IBUF_BUFG | S1S2gen/S1S2_dout[165]_i_1_n_0    | S1S2gen/S1S2_dout[82]_i_1_n_0     |               31 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul00/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               71 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul02/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               64 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul21/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               71 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul22/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               65 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul23/start_en              | gf2mz/ctrl/c_reg[82]_1[0]         |               74 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul24/start_en              | gf2mz/ctrl/c_reg[82]_1[0]         |               70 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul40/start_en              | gf2mz/ctrl/c_reg[82][0]           |               68 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul30/start_en              | gf2mz/ctrl/SR[0]                  |               74 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul31/start_en              | gf2mz/ctrl/SR[0]                  |               74 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul34/start_en              | gf2mz/ctrl/SR[0]                  |               68 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul32/start_en              | gf2mz/ctrl/SR[0]                  |               72 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul33/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               72 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul10/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               76 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul03/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               68 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul41/start_en              | gf2mz/ctrl/c_reg[82][0]           |               68 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul42/start_en              | gf2mz/ctrl/c_reg[82][0]           |               73 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul44/start_en              | gf2mz/ctrl/c_reg[82][0]           |               68 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul43/start_en              | gf2mz/ctrl/c_reg[82][0]           |               73 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul04/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               71 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul12/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               73 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul13/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               68 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul14/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               63 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul20/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               76 |             83 |
+|  clk_IBUF_BUFG | S1S2gen/mul/start_en              | S1S2gen/mul/c[82]_i_1__23_n_0     |               60 |             83 |
+|  clk_IBUF_BUFG | S1S2gen/shift_reg[414]_i_2_n_0    | S1S2gen/shift_reg[82]_i_1_n_0     |               34 |             83 |
+|  clk_IBUF_BUFG | RSR/CTRL/mem_write_done           | RSR/CTRL/mem_doutb[165]_i_1_n_0   |               16 |             83 |
+|  clk_IBUF_BUFG | S1S2gen/mul_start_reg_n_0         | gf2mz/mul40/start_en_reg_0        |               46 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul01/start_en              | gf2mz/ctrl/c_reg[82]_1[0]         |               66 |             83 |
+|  clk_IBUF_BUFG | gf2mz/mul11/start_en              | gf2mz/ctrl/c_reg[82]_0[0]         |               76 |             83 |
+|  clk_IBUF_BUFG | S1S2gen/S1S2_dout[165]_i_1_n_0    |                                   |               27 |             84 |
+|  clk_IBUF_BUFG |                                   | ctrl_top/S1S2_addrb_reg[0]        |               24 |            167 |
+|  clk_IBUF_BUFG |                                   | ctrl_top/out[1]                   |               56 |            168 |
+|  clk_IBUF_BUFG | S1S2gen/shift_reg[414]_i_2_n_0    | S1S2gen/shift_reg[414]_i_1_n_0    |              161 |            332 |
+|  clk_IBUF_BUFG |                                   | gf2mz/ctrl/B_web_reg_0            |              170 |            392 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/cache4[82]_i_1_n_0     |                                   |              137 |            415 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/mul_start              | gf2mz/mul40/start_en_reg_0        |              344 |           1079 |
+|  clk_IBUF_BUFG | SHA3/f_permutation_/update        | gf2mz/mul40/start_en_reg_0        |              547 |           1600 |
+|  clk_IBUF_BUFG |                                   | gf2mz/mul40/start_en_reg_0        |             1132 |           2992 |
+|  clk_IBUF_BUFG |                                   |                                   |             6432 |          17204 |
++----------------+-----------------------------------+-----------------------------------+------------------+----------------+
+
+

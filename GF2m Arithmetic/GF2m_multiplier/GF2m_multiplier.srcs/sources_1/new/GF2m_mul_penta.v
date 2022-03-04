@@ -22,7 +22,7 @@
 
 `include "clog2.v"
 
-module GF2m_mul_penta #(parameter WIDTH = 131, k3 = 8, k2 = 3, k1 = 2)(
+module GF2m_mul_penta #(parameter WIDTH = 67, k3 = 5, k2 = 2, k1 = 1)(
 	input wire clk,
 	input wire rst_b,
 	input wire start,
@@ -116,7 +116,7 @@ end
 
 
 assign cx1 = {c[WIDTH-2:0],c[WIDTH-1]};
-assign cx = {cx1[WIDTH-1:k3+1], {cx1[k3]^c[WIDTH-1]}, cx1[k3-1:k2+1], {cx1[k2]^c[WIDTH-1]}, {cx1[k1]^c[WIDTH-1]}, cx1[k1-1:0]};
+assign cx = {cx1[WIDTH-1:k3+1], {cx1[k3]^c[WIDTH-1]}, cx1[k3-1:k2+1], {cx1[k2]^c[WIDTH-1]},cx1[k2-1:k1+1], {cx1[k1]^c[WIDTH-1]}, cx1[k1-1:0]};
 
 assign op_c = c;
 

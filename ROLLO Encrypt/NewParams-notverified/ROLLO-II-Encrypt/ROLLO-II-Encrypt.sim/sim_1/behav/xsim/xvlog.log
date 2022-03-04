@@ -1,0 +1,31 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/define.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/clog2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/define.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/clog2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/K_Gen_Ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module K_Gen_Ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/RegFiles.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFiles
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/c_Gen_Ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module c_Gen_Ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comb_SA
+INFO: [VRFC 10-2458] undeclared symbol pivot_out_1_0, assumed default net type wire [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v:11037]
+INFO: [VRFC 10-2458] undeclared symbol pivot_out_2_0, assumed default net type wire [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v:15671]
+INFO: [VRFC 10-2458] undeclared symbol pivot_out_3_0, assumed default net type wire [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v:20305]
+INFO: [VRFC 10-2458] undeclared symbol pivot_out_4_0, assumed default net type wire [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v:24939]
+INFO: [VRFC 10-2458] undeclared symbol pivot_out_5_0, assumed default net type wire [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v:29573]
+INFO: [VRFC 10-2458] undeclared symbol pivot_out_6_0, assumed default net type wire [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/Gaussian Elimination/comb_SA.v:34207]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/encrypt_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROLLO_II_Encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/SHA3/f_permutation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_permutation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/RNG/f_permutation_200.v" into library xil_defaultlib
+WARNING: [VRFC 10-159] /* in comment [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/RNG/f_permutation_200.v:17]
+INFO: [VRFC 10-311] analyzing module f_permutation_200
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/GF2mZ Arithmetic/gf2m_mul.v" into library xil_defaultlib
+ERROR: [VRFC 10-452] cannot open include file clog2.v [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/GF2mZ Arithmetic/gf2m_mul.v:3]
+INFO: [VRFC 10-311] analyzing module gf2m_mul
+ERROR: [VRFC 10-2787] module gf2m_mul ignored due to previous errors [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/GF2mZ Arithmetic/gf2m_mul.v:5]
+INFO: [VRFC 10-311] analyzing module shift_x_by_i
+ERROR: [VRFC 10-2787] module shift_x_by_i ignored due to previous errors [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-II-Encrypt/Verilog/GF2mZ Arithmetic/gf2m_mul.v:283]

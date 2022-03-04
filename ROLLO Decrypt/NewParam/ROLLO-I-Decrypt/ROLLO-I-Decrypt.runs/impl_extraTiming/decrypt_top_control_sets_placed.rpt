@@ -1,0 +1,248 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Tue Dec 29 14:51:31 2020
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file decrypt_top_control_sets_placed.rpt
+| Design       : decrypt_top
+| Device       : xc7a200t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   178 |
+| Unused register locations in slices containing registers |   736 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |          126 |
+|      5 |            2 |
+|      6 |            1 |
+|      8 |            2 |
+|      9 |            5 |
+|     10 |            1 |
+|    16+ |           41 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |           12337 |         4461 |
+| No           | No                    | Yes                    |               8 |            6 |
+| No           | Yes                   | No                     |            4213 |         1994 |
+| Yes          | No                    | No                     |             482 |          181 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            4792 |         2542 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------+-----------------------------------+------------------+----------------+
+|  Clock Signal  |           Enable Signal           |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------+-----------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_126            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_9_98              |                4 |              4 |
+|  clk_IBUF_BUFG | S1S2gen/PRE_done_i_1__0_n_0       |                                   |                2 |              4 |
+|  clk_IBUF_BUFG | S1S2gen/S_addr[3]_i_2_n_0         | S1S2gen/S_addr[3]_i_1_n_0         |                1 |              4 |
+|  clk_IBUF_BUFG | S1S2gen/cnt[3]_i_1__1_n_0         |                                   |                2 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_0_99              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_0_98              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_110            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_112            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_116            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_114            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_118            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_108            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_12             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_120            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_122            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_124            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_128            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_130            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_132            |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_14             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_16             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_22             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_117            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_119            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_67             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_65             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_71             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_73             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_115            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_55             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_38             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_75             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_127            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_12_98             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_18             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_12_99             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_20             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_54             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_121            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_129            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_68             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_30             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_48             |                4 |              4 |
+|  clk_IBUF_BUFG | RSR/CTRL/second_half_reg_i_1_n_0  |                                   |                1 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_57             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_32             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_26             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_58             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_111            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_125            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_53             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_56             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_49             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_46             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_70             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_113            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_63             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_109            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_62             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_36             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_40             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_44             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_123            |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_24             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_64             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_74             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_34             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_72             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_42             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_61             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_11_69             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_28             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_66             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_52             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_50             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_60             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_10_76             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_14_45             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_11             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_6_98              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_7_99              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_29             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_15             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_31             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_8_98              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_8_99              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_2_99              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_9_100             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_17             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_21             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_9              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_23             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_13_98             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_3              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_27             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_7              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_1_99              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_5_99              |                2 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_6_99              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_3_98              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_5_98              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_5              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_51             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_14_39             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_25             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_33             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_2_98              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_14_101            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_3_99              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_1              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_13             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_13_99             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_4_99              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_13_101            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_1_98              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_15_19             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_4_98              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_7_98              |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_13_100            |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_14_37             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_14_41             |                4 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_9_99              |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_9_101             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_9_102             |                3 |              4 |
+|  clk_IBUF_BUFG |                                   | RSR/SA/start_in_9_103             |                4 |              4 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/A_addr[4]_i_2_n_0      | gf2mz/ctrl/A_addr[4]_i_1_n_0      |                1 |              5 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/C_addr[4]_i_1_n_0      |                                   |                3 |              5 |
+|  clk_IBUF_BUFG | SHA3/f_permutation_/Q[0]          | SHA3/f_permutation_/SR[0]         |                2 |              6 |
+|  clk_IBUF_BUFG | S1S2gen/mul/E[0]                  |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | RSR/CTRL/mem_addra[7]_i_1_n_0     |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | RSR/CTRL/min_addr[7]_i_1_n_0      |                                   |                3 |              9 |
+|  clk_IBUF_BUFG | RSR/CTRL/mem_addrb[7]_i_1_n_0     |                                   |                5 |              9 |
+|  clk_IBUF_BUFG | RSR/CTRL/max_addr[7]_i_1_n_0      |                                   |                3 |              9 |
+|  clk_IBUF_BUFG | S1S2gen/idx[3]_i_1_n_0            |                                   |                3 |              9 |
+|  clk_IBUF_BUFG | RSR/CTRL/cnt[8]_i_2_n_0           | RSR/CTRL/cnt[8]_i_1_n_0           |                4 |              9 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/B_addrb[4]_i_1_n_0     |                                   |                5 |             10 |
+|  clk_IBUF_BUFG | RSR/CTRL/intersect_num[7]_i_2_n_0 | RSR/CTRL/intersect_num[7]_i_1_n_0 |                5 |             19 |
+|  clk_IBUF_BUFG | S1S2gen/mul/start_en              | S1S2gen/mul/c[66]_i_1__24_n_0     |               48 |             67 |
+|  clk_IBUF_BUFG | S1S2gen/mul_start_reg_n_0         | gf2mz/mul14/start_en_reg_0        |               33 |             67 |
+|  clk_IBUF_BUFG | S1S2gen/shift_reg[334]_i_2_n_0    | S1S2gen/shift_reg[66]_i_1_n_0     |               29 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul01/start_en              | gf2mz/ctrl/SR[0]                  |               55 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul02/start_en              | gf2mz/ctrl/c_reg[0][0]            |               55 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul21/start_en              | gf2mz/ctrl/c_reg[0][0]            |               59 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul22/start_en              | gf2mz/ctrl/c_reg[0][0]            |               58 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul23/start_en              | gf2mz/ctrl/c_reg[0][0]            |               54 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul34/start_en              | gf2mz/ctrl/SR[0]                  |               60 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul24/start_en              | gf2mz/ctrl/c_reg[0][0]            |               57 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul30/start_en              | gf2mz/ctrl/SR[0]                  |               52 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul31/start_en              | gf2mz/ctrl/SR[0]                  |               59 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul32/start_en              | gf2mz/ctrl/SR[0]                  |               60 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul33/start_en              | gf2mz/ctrl/SR[0]                  |               54 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul00/start_en              | gf2mz/ctrl/c_reg[0][0]            |               58 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul03/start_en              | gf2mz/ctrl/c_reg[0][0]            |               59 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul41/start_en              | gf2mz/ctrl/SR[0]                  |               59 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul43/start_en              | gf2mz/ctrl/SR[0]                  |               57 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul44/start_en              | gf2mz/ctrl/SR[0]                  |               59 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul04/start_en              | gf2mz/ctrl/c_reg[0][0]            |               58 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul10/start_en              | gf2mz/ctrl/c_reg[0][0]            |               52 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul11/start_en              | gf2mz/ctrl/c_reg[0][0]            |               58 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul12/start_en              | gf2mz/ctrl/SR[0]                  |               59 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul13/start_en              | gf2mz/ctrl/c_reg[0][0]            |               60 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul14/start_en              | gf2mz/ctrl/c_reg[0][0]            |               60 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul20/start_en              | gf2mz/ctrl/c_reg[0][0]            |               55 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul40/start_en              | gf2mz/ctrl/SR[0]                  |               63 |             67 |
+|  clk_IBUF_BUFG | RSR/CTRL/mem_doutb[133]_i_2_n_0   | RSR/CTRL/mem_doutb[133]_i_1_n_0   |               12 |             67 |
+|  clk_IBUF_BUFG | S1S2gen/S1S2_dout[133]_i_1_n_0    | S1S2gen/S1S2_dout[66]_i_1_n_0     |               22 |             67 |
+|  clk_IBUF_BUFG | gf2mz/mul42/start_en              | gf2mz/ctrl/SR[0]                  |               58 |             67 |
+|  clk_IBUF_BUFG | S1S2gen/S1S2_dout[133]_i_1_n_0    |                                   |               23 |             68 |
+|  clk_IBUF_BUFG |                                   | ctrl_top/S1S2_dib_reg[133]        |               23 |            135 |
+|  clk_IBUF_BUFG |                                   | ctrl_top/out[1]                   |               39 |            136 |
+|  clk_IBUF_BUFG | S1S2gen/shift_reg[334]_i_2_n_0    | S1S2gen/shift_reg[334]_i_1_n_0    |              123 |            268 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/cache4[66]_i_1_n_0     |                                   |              120 |            335 |
+|  clk_IBUF_BUFG | gf2mz/ctrl/E[0]                   | gf2mz/mul14/start_en_reg_0        |              271 |            871 |
+|  clk_IBUF_BUFG |                                   | gf2mz/ctrl/A_addr[4]_i_1_n_0      |              616 |           1010 |
+|  clk_IBUF_BUFG | SHA3/f_permutation_/update        | gf2mz/mul14/start_en_reg_0        |              553 |           1600 |
+|  clk_IBUF_BUFG |                                   | gf2mz/mul14/start_en_reg_0        |              852 |           2452 |
+|  clk_IBUF_BUFG |                                   |                                   |             4672 |          13084 |
++----------------+-----------------------------------+-----------------------------------+------------------+----------------+
+
+

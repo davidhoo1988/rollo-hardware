@@ -1,0 +1,544 @@
+m255
+K3
+z0
+13
+cModel Technology
+Z0 dC:\Users\David\Dropbox\LRPC Code\hardware\ROLLO Encrypt\ROLLO-II-Encrypt\ROLLO-II-Encrypt.sim\sim_1\behav\modelsim
+T_opt
+VTc=Pbk^[740AMAAnCkH@_3
+Z1 04 14 4 work encrypt_top_tb fast 0
+Z2 04 4 4 work glbl fast 0
+=1-94c6916e481e-5ebb70f7-156-54fc
+Z3 o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+Z4 OL;O;10.1c;51
+R0
+T_opt1
+VUCOPolK12TXjK>:_08gVO3
+R1
+R2
+=1-94c6916e481e-5ebcb3e7-173-329c
+R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1617247720
+VhPAEiO860MXSTbA3@F]4l2
+R1
+R2
+=1-6c2b59f052b9-60653de8-82-85b8
+R3
+Z5 tCvgOpt 0
+n@_opt2
+OL;O;10.5;63
+vc_Gen_Ctrl
+!s10a 1589341999
+Z6 !s110 1617244990
+!i10b 1
+!s100 `onT14d8gii;TCHLJhg=a2
+IgKAJT^5H2j>A=kKNCcG2d3
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 dC:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams-notverified/ROLLO-II-Encrypt/ROLLO-II-Encrypt.sim/sim_1/behav/modelsim
+w1589341999
+8../../../../Verilog/c_Gen_Ctrl.v
+F../../../../Verilog/c_Gen_Ctrl.v
+L0 4
+Z9 OL;L;10.5;63
+r1
+!s85 0
+31
+Z10 !s108 1617244990.000000
+Z11 !s107 ..\..\..\..\Verilog\define.v|..\..\..\..\Verilog\clog2.v|../../../../Verilog/encrypt_top_tb.v|../../../../Verilog/RNG/round_200.v|../../../../Verilog/SHA3/round.v|../../../../Verilog/RNG/rconst_200.v|../../../../Verilog/SHA3/rconst.v|../../../../Verilog/RNG/prng.v|../../../../Verilog/SHA3/padder.v|../../../../Verilog/Gaussian Elimination/node.v|../../../../Verilog/GF2mZ Arithmetic/mul_ctrl.v|../../../../Verilog/mem_sp.v|../../../../Verilog/mem_dp.v|../../../../Verilog/SHA3/keccak.v|../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v|../../../../Verilog/GF2mZ Arithmetic/gf2m_mul.v|../../../../Verilog/RNG/f_permutation_200.v|../../../../Verilog/SHA3/f_permutation.v|../../../../Verilog/encrypt_top.v|../../../../Verilog/Gaussian Elimination/comb_SA.v|../../../../Verilog/c_Gen_Ctrl.v|../../../../Verilog/RegFiles.v|../../../../Verilog/K_Gen_Ctrl.v|../../../../Verilog/clog2.v|../../../../Verilog/define.v|C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams-notverified/ROLLO-II-Encrypt/Verilog/clog2.v|C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams-notverified/ROLLO-II-Encrypt/Verilog/define.v|
+Z12 !s90 -64|-incr|-work|xil_defaultlib|C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams-notverified/ROLLO-II-Encrypt/Verilog/define.v|C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/ROLLO Encrypt/NewParams-notverified/ROLLO-II-Encrypt/Verilog/clog2.v|../../../../Verilog/define.v|../../../../Verilog/clog2.v|../../../../Verilog/K_Gen_Ctrl.v|../../../../Verilog/RegFiles.v|../../../../Verilog/c_Gen_Ctrl.v|../../../../Verilog/Gaussian Elimination/comb_SA.v|../../../../Verilog/encrypt_top.v|../../../../Verilog/SHA3/f_permutation.v|../../../../Verilog/RNG/f_permutation_200.v|../../../../Verilog/GF2mZ Arithmetic/gf2m_mul.v|../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v|../../../../Verilog/SHA3/keccak.v|../../../../Verilog/mem_dp.v|../../../../Verilog/mem_sp.v|../../../../Verilog/GF2mZ Arithmetic/mul_ctrl.v|../../../../Verilog/Gaussian Elimination/node.v|../../../../Verilog/SHA3/padder.v|../../../../Verilog/RNG/prng.v|../../../../Verilog/SHA3/rconst.v|../../../../Verilog/RNG/rconst_200.v|../../../../Verilog/SHA3/round.v|../../../../Verilog/RNG/round_200.v|../../../../Verilog/encrypt_top_tb.v|
+!i113 0
+Z13 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+nc_@gen_@ctrl
+vcomb_SA
+!s10a 1607840902
+R6
+!i10b 1
+!s100 S;z6o:I<HaI@hMcL[jKn43
+Ioco1Af`;0^8Bagc7HV0[?1
+R7
+R8
+w1607840902
+8../../../../Verilog/Gaussian Elimination/comb_SA.v
+F../../../../Verilog/Gaussian Elimination/comb_SA.v
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+ncomb_@s@a
+vencrypt_top_tb
+!s10a 1589083861
+R6
+!i10b 1
+!s100 >>^9:cT_f:c4IO:PedaVe3
+IQPDOFKJJ0L?aTM8n:h_K;2
+R7
+R8
+w1589083861
+8../../../../Verilog/encrypt_top_tb.v
+F../../../../Verilog/encrypt_top_tb.v
+L0 5
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vf_permutation
+!s10a 1578882493
+R6
+!i10b 1
+!s100 ;LTNU4nXGT4eQgS1AMTUb2
+IPWSUe:bCE5SRzcjeg6eWU2
+R7
+R8
+w1578882493
+8../../../../Verilog/SHA3/f_permutation.v
+F../../../../Verilog/SHA3/f_permutation.v
+Z14 L0 19
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vf_permutation_200
+!s10a 1579421700
+R6
+!i10b 1
+!s100 UnmZE3Sdh@aFR3Q`zC^1R3
+I;2^2TNLcdh>W5kXG5Ai053
+R7
+R8
+w1579421700
+8../../../../Verilog/RNG/f_permutation_200.v
+F../../../../Verilog/RNG/f_permutation_200.v
+R14
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vgf2m_mul
+Z15 !s10a 1607840925
+R6
+!i10b 1
+!s100 gCa>noV3KIz2c40Q@eT570
+Ie`W[XA=fLfHPW?[cNl[VO3
+R7
+R8
+Z16 w1607840925
+Z17 8../../../../Verilog/GF2mZ Arithmetic/gf2m_mul.v
+Z18 F../../../../Verilog/GF2mZ Arithmetic/gf2m_mul.v
+L0 5
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vgf2mz_top
+!s10a 1607841044
+R6
+!i10b 1
+!s100 SAg7NMhkN>RhSWB;XJ6K42
+I33aFARLhZ?LV[4AU7lI0f2
+R7
+R8
+w1607841044
+8../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v
+F../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v
+Z19 L0 25
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vglbl
+Z20 !s110 1617247711
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+IAl?5;D^:bf?I5A^M>WzmU1
+R7
+R8
+w1522801934
+8glbl.v
+Fglbl.v
+L0 6
+R9
+r1
+!s85 0
+31
+!s108 1617247711.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+R13
+R5
+vK_Gen_Ctrl
+!s10a 1589083723
+R6
+!i10b 1
+!s100 dOn5<3gz5eU2T`eC9IHi52
+IcH4IMS26e5a9@`h^10FKi0
+R7
+R8
+w1589083723
+8../../../../Verilog/K_Gen_Ctrl.v
+F../../../../Verilog/K_Gen_Ctrl.v
+L0 4
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+n@k_@gen_@ctrl
+vkeccak
+!s10a 1589165837
+R6
+!i10b 1
+!s100 011_]aKJ_DRi]NYh1Id1z1
+I;^nPS99cXnfJ4iO]VPE]b2
+R7
+R8
+w1589165837
+8../../../../Verilog/SHA3/keccak.v
+F../../../../Verilog/SHA3/keccak.v
+Z21 L0 28
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vmem_dp
+!s10a 1589084158
+R6
+!i10b 1
+!s100 jYVS@<boSRkNPG66mdSKC2
+IWHYc;fCjY8ZUd?hHRaCj>2
+R7
+R8
+w1589084158
+8../../../../Verilog/mem_dp.v
+F../../../../Verilog/mem_dp.v
+Z22 L0 11
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vmem_sp
+!s10a 1589084152
+R6
+!i10b 1
+!s100 L<EXeZK@bl]h1@DQG;5Tg0
+IL_>_W3^26o:R[P4JIzBj63
+R7
+R8
+w1589084152
+8../../../../Verilog/mem_sp.v
+F../../../../Verilog/mem_sp.v
+R22
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vmul_ctrl
+!s10a 1607840930
+R6
+!i10b 1
+!s100 ajh<6of2H]mCHFSV6Oe1k2
+Ib@104=0b:GefFMI:jYT@03
+R7
+R8
+w1607840930
+8../../../../Verilog/GF2mZ Arithmetic/mul_ctrl.v
+F../../../../Verilog/GF2mZ Arithmetic/mul_ctrl.v
+L0 24
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vpadder
+!s10a 1578987974
+R6
+!i10b 1
+!s100 Gd_6I3`0c6a<?k18E<Vj_3
+IECGOnRYehRgg;1W3jeZ7z1
+R7
+R8
+w1578987974
+8../../../../Verilog/SHA3/padder.v
+F../../../../Verilog/SHA3/padder.v
+L0 21
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vprng
+!s10a 1589083990
+R6
+!i10b 1
+!s100 TcFDJg;AaHZ^PoLlPjK@83
+I9QMI67glTg5P7UQT?XQ?d2
+R7
+R8
+w1589083990
+8../../../../Verilog/RNG/prng.v
+F../../../../Verilog/RNG/prng.v
+R21
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vprocessor_AB
+!s10a 1585624155
+R6
+!i10b 1
+!s100 HXRTL7C6EgASGTh>ZMYn?0
+Iao61ET61A5`ME3@jXHh;V3
+R7
+R8
+w1585624155
+8../../../../Verilog/Gaussian Elimination/node.v
+F../../../../Verilog/Gaussian Elimination/node.v
+L0 2
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+nprocessor_@a@b
+vrconst
+Z23 !s10a 1359097870
+R6
+!i10b 1
+!s100 FR:5V7@DVYS<STV3E<kKJ0
+IbNBAg_`zk?RI=Lm8bib:13
+R7
+R8
+Z24 w1359097870
+8../../../../Verilog/SHA3/rconst.v
+F../../../../Verilog/SHA3/rconst.v
+Z25 L0 18
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vrconst_200
+!s10a 1579421671
+R6
+!i10b 1
+!s100 l^NfcZOf^FLXEl:CfkczP1
+IoFPQW@[OiK:b18WKWZZzN2
+R7
+R8
+w1579421671
+8../../../../Verilog/RNG/rconst_200.v
+F../../../../Verilog/RNG/rconst_200.v
+R25
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vRegFiles
+!s10a 1607684915
+R6
+!i10b 1
+!s100 CK]fI3GhOHSD^8FnkjXK00
+I9PJVCAd5<[mc`P46O`fdC3
+R7
+R8
+w1607684915
+8../../../../Verilog/RegFiles.v
+F../../../../Verilog/RegFiles.v
+L0 4
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+n@reg@files
+vROLLO_II_Encrypt
+R20
+!i10b 1
+!s100 QOOGmUA^lASOJ4@9S_MMY0
+Igo>D95hU4h;oH7;KG]Ib53
+R7
+R8
+w1617245928
+8../../../../Verilog/encrypt_top.v
+F../../../../Verilog/encrypt_top.v
+L0 4
+R9
+r1
+!s85 0
+31
+!s108 1617247710.000000
+R11
+R12
+!i113 0
+R13
+R5
+n@r@o@l@l@o_@i@i_@encrypt
+vround
+R23
+R6
+!i10b 1
+!s100 A4]daLmf>8kRjIAO5F[??3
+IHC3?Mo]4_f3NUD9>fh0Mf2
+R7
+R8
+R24
+8../../../../Verilog/SHA3/round.v
+F../../../../Verilog/SHA3/round.v
+R19
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vround_200
+!s10a 1579421655
+R6
+!i10b 1
+!s100 Wl9mloR21kc7MMUGY]^lm0
+I_ID]6e=7GgQbPL<GI1e5Q2
+R7
+R8
+w1579421655
+8../../../../Verilog/RNG/round_200.v
+F../../../../Verilog/RNG/round_200.v
+R19
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vshift_x_by_i
+R15
+R6
+!i10b 1
+!s100 ]iTdYN5g8k]7a>M>DY39N2
+IG0LG6z^j`La2z1nBLnXLP3
+R7
+R8
+R16
+R17
+R18
+L0 315
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5

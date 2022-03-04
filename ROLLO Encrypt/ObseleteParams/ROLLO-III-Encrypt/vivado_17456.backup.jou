@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon May 18 10:54:55 2020
+# Process ID: 17456
+# Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9112 C:\Users\David\Dropbox\LRPC Code\hardware\ROLLO Encrypt\ROLLO-III-Encrypt\ROLLO-III-Encrypt.xpr
+# Log file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/vivado.log
+# Journal file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/ROLLO-III-Encrypt.xpr}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ROLLO_III_Encrypt [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property top encrypt_top_tb [get_filesets sim_1]
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/Verilog/SHA3/mem_sp.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/Verilog/SHA3/mem_sp.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/Verilog/SHA3/mem_dp.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/Verilog/SHA3/mem_dp.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/Verilog/RNG/prng_tb.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/Verilog/RNG/prng_tb.v}}
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/Verilog/Gaussian Elimination/comb_SA-Original.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-III-Encrypt/Verilog/Gaussian Elimination/comb_SA-Original.v}}
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_runs synth_1 -jobs 8
+launch_simulation -install_path F:/modelsim64_10.1c/win64

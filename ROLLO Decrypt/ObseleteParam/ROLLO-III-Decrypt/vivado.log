@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Sep 28 19:13:54 2020
+# Process ID: 11664
+# Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2768 C:\Users\David\Dropbox\LRPC Code\hardware\ROLLO Decrypt\ROLLO-III-Decrypt\ROLLO-III-Decrypt.xpr
+# Log file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/vivado.log
+# Journal file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/ROLLO-III-Decrypt.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 890.480 ; gain = 189.281
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+[Mon Sep 28 19:15:15 2020] Launched impl_1...
+Run output will be captured here: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-III-Decrypt/ROLLO-III-Decrypt.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 900.688 ; gain = 10.207
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 197 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2139.914 ; gain = 46.914
+Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2139.914 ; gain = 46.914
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 277 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 101 instances
+  SRLC32E => SRL16E: 176 instances
+
+open_run: Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 2219.387 ; gain = 1284.227
+open_report: Time (s): cpu = 00:00:20 ; elapsed = 00:00:06 . Memory (MB): peak = 2500.258 ; gain = 273.578
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:29 ; elapsed = 00:00:14 . Memory (MB): peak = 2648.523 ; gain = 109.777
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 2713.559 ; gain = 55.734
+report_utilization: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 2713.559 ; gain = 55.734
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 19:43:48 2020...

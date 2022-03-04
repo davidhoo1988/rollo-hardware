@@ -1,0 +1,44 @@
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {gs_elim_top_tb_simulate.do} 
+# vsim -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib -voptargs=\"+acc\" xil_defaultlib.gs_elim_top_tb xil_defaultlib.glbl 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "gs_elim_ctrl(fast)".
+# 
+# Loading work.gs_elim_top_tb(fast)
+# Loading work.gs_elim_top(fast)
+# Loading work.gs_elim_ctrl(fast)
+# Loading work.comb_SA(fast)
+# Loading work.processor_AB(fast)
+# Loading work.mem_dp(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Error: Cannot open macro file: wave.do
+# Error in macro ./gs_elim_top_tb.udo line 10
+# Cannot open macro file: wave.do
+#     while executing
+# "do {wave.do}"
+restart
+# Loading work.gs_elim_top_tb(fast)
+# Loading work.gs_elim_top(fast)
+# Loading work.gs_elim_ctrl(fast)
+# Loading work.comb_SA(fast)
+# Loading work.processor_AB(fast)
+# Loading work.mem_dp(fast)
+# Loading work.glbl(fast)
+run 30us
+# 
+# runtime: 2281 cycles
+# 

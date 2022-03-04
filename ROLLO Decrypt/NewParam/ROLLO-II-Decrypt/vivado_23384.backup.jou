@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Dec 30 17:58:54 2020
+# Process ID: 23384
+# Current directory: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22616 C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Decrypt\NewParam\ROLLO-II-Decrypt\ROLLO-II-Decrypt.xpr
+# Log file: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/vivado.log
+# Journal file: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.xpr}
+launch_simulation -install_path F:/modelsim64_10.1c/win64 -simset sim_decrypt
+launch_simulation -install_path F:/modelsim64_10.1c/win64 -simset sim_decrypt
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+create_clock -period 5.714 -name clk -waveform {0.000 2.857} [get_ports clk]
+file mkdir {C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new}
+close [ open {C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new/usr_constrain.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new/usr_constrain.xdc}}
+set_property target_constrs_file {C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new/usr_constrain.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_extraTiming -jobs 8
+wait_on_run impl_extraTiming
+close_design
+open_run impl_extraTiming
+report_utilization -name utilization_1

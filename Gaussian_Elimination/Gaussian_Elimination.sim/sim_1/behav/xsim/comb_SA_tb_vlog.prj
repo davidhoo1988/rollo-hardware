@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../verilog" \
+"../../../../verilog/node.v" \
+"../../../../verilog/comb_SA_tb.v" \
+"../../../../verilog/comb_SA.v" \
+"../../../../verilog/mem.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

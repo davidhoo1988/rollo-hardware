@@ -45,39 +45,148 @@ d = args.d
 #
 ############################################################################
 #ROLLO-I setups
+# obselete round-2 parameters
+# if SL == 'ROLLO-I-128':
+#   n = 47
+#   m = 79
+
+#   f_list = (m+1)*[0] # sparse list for polynomial f(x)
+#   f_list[79] = 1
+#   f_list[9] = 1
+#   f_list[0] = 1
+#   f_coeff_list = [79,9,0]
+
+# elif SL == 'ROLLO-I-192':
+#   n = 53
+#   m = 89
+
+#   f_list = (m+1)*[0] # sparse list for polynomial f
+#   f_list[89] = 1
+#   f_list[38] = 1
+#   f_list[0] = 1
+#   f_coeff_list = [89,38,0]
+
+# elif SL == 'ROLLO-I-256': 
+#   n = 67
+#   m = 113
+
+#   f_list = (m+1)*[0] # sparse list for polynomial f
+#   f_list[113] = 1
+#   f_list[9] = 1
+#   f_list[0] = 1
+#   f_coeff_list = [113,9,0]
+
+# #ROLLO-II setups
+# elif SL == 'ROLLO-II-128':
+#   n = 149
+#   m = 83
+
+#   f_list = (m+1)*[0] # sparse list for polynomial f
+#   f_list[83] = 1
+#   f_list[7] = 1
+#   f_list[4] = 1
+#   f_list[2] = 1
+#   f_list[0] = 1
+#   f_coeff_list = [83,7,4,2,0]
+
+# elif SL == 'ROLLO-II-192':
+#   n = 151
+#   m = 107
+  
+#   f_list = (m+1)*[0] # sparse list for polynomial f
+#   f_list[107] = 1
+#   f_list[9] = 1
+#   f_list[7] = 1
+#   f_list[4] = 1
+#   f_list[0] = 1
+#   f_coeff_list = [107,9,7,4,0]
+
+# elif SL == 'ROLLO-II-256':
+#   n = 157
+#   m = 127
+  
+#   f_list = (m+1)*[0] # sparse list for polynomial f
+#   f_list[127] = 1
+#   f_list[1] = 1
+#   f_list[0] = 1
+#   f_coeff_list = [127,1,0]
+
+# elif SL == 'ROLLO-III-128':
+#   n = 47
+#   m = 101
+  
+#   f_list = (m+1)*[0] # sparse list for polynomial f
+#   f_list[101] = 1
+#   f_list[7] = 1
+#   f_list[6] = 1
+#   f_list[1] = 1
+#   f_list[0] = 1
+#   f_coeff_list = [101,7,6,1,0]
+
+# elif SL == 'ROLLO-III-192':
+#   n = 59
+#   m = 107
+  
+#   f_list = (m+1)*[0] # sparse list for polynomial f
+#   f_list[107] = 1
+#   f_list[9] = 1
+#   f_list[7] = 1
+#   f_list[4] = 1
+#   f_list[0] = 1
+#   f_coeff_list = [107,9,7,4,0]
+
+# elif SL == 'ROLLO-III-256':
+#   n = 67
+#   m = 131
+  
+#   f_list = (m+1)*[0] # sparse list for polynomial f
+#   f_list[131] = 1
+#   f_list[8] = 1
+#   f_list[3] = 1
+#   f_list[2] = 1
+#   f_list[0] = 1
+#   f_coeff_list = [131,8,3,2,0]
+
+# else:
+#   print ('Iuput Errors')  
+#   exit()
+
+# latest new parameters
 if SL == 'ROLLO-I-128':
-  n = 47
-  m = 79
+  n = 83
+  m = 67
 
   f_list = (m+1)*[0] # sparse list for polynomial f(x)
+  f_list[67] = 1
+  f_list[5] = 1
+  f_list[2] = 1
+  f_list[1] = 1
+  f_list[0] = 1
+  f_coeff_list = [67,5,2,1,0]
+
+elif SL == 'ROLLO-I-192':
+  n = 97
+  m = 79
+
+  f_list = (m+1)*[0] # sparse list for polynomial f
   f_list[79] = 1
   f_list[9] = 1
   f_list[0] = 1
   f_coeff_list = [79,9,0]
 
-elif SL == 'ROLLO-I-192':
-  n = 53
-  m = 89
-
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[89] = 1
-  f_list[38] = 1
-  f_list[0] = 1
-  f_coeff_list = [89,38,0]
-
 elif SL == 'ROLLO-I-256': 
-  n = 67
-  m = 113
+  n = 113
+  m = 97
 
   f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[113] = 1
-  f_list[9] = 1
+  f_list[97] = 1
+  f_list[6] = 1
   f_list[0] = 1
-  f_coeff_list = [113,9,0]
+  f_coeff_list = [97,6,0]
 
 #ROLLO-II setups
 elif SL == 'ROLLO-II-128':
-  n = 149
+  n = 189
   m = 83
 
   f_list = (m+1)*[0] # sparse list for polynomial f
@@ -89,65 +198,27 @@ elif SL == 'ROLLO-II-128':
   f_coeff_list = [83,7,4,2,0]
 
 elif SL == 'ROLLO-II-192':
-  n = 151
-  m = 107
+  n = 193
+  m = 97
   
   f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[107] = 1
-  f_list[9] = 1
-  f_list[7] = 1
-  f_list[4] = 1
+  f_list[97] = 1
+  f_list[6] = 1
   f_list[0] = 1
-  f_coeff_list = [107,9,7,4,0]
+  f_coeff_list = [97,6,0]
 
 elif SL == 'ROLLO-II-256':
-  n = 157
-  m = 127
+  n = 211
+  m = 97
   
   f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[127] = 1
-  f_list[1] = 1
-  f_list[0] = 1
-  f_coeff_list = [127,1,0]
-
-elif SL == 'ROLLO-III-128':
-  n = 47
-  m = 101
-  
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[101] = 1
-  f_list[7] = 1
+  f_list[97] = 1
   f_list[6] = 1
-  f_list[1] = 1
   f_list[0] = 1
-  f_coeff_list = [101,7,6,1,0]
-
-elif SL == 'ROLLO-III-192':
-  n = 59
-  m = 107
-  
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[107] = 1
-  f_list[9] = 1
-  f_list[7] = 1
-  f_list[4] = 1
-  f_list[0] = 1
-  f_coeff_list = [107,9,7,4,0]
-
-elif SL == 'ROLLO-III-256':
-  n = 67
-  m = 131
-  
-  f_list = (m+1)*[0] # sparse list for polynomial f
-  f_list[131] = 1
-  f_list[8] = 1
-  f_list[3] = 1
-  f_list[2] = 1
-  f_list[0] = 1
-  f_coeff_list = [131,8,3,2,0]
+  f_coeff_list = [97,6,0]
 
 else:
-  print 'Iuput Errors'  
+  print ('Iuput Errors')  
   exit()
 
 if len(f_coeff_list) == 3:

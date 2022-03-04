@@ -1,0 +1,79 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Wed Dec 23 20:59:17 2020
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file gs_elim_top_control_sets_placed.rpt
+| Design       : gs_elim_top
+| Device       : xc7a200t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    57 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            1 |
+|      8 |            1 |
+|      9 |            4 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |           18337 |         6694 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             748 |          545 |
+| Yes          | No                    | No                     |              40 |           18 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             130 |           36 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------+-------------------------------+------------------+----------------+
+|  Clock Signal  |         Enable Signal         |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------+-------------------------------+-------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | CTRL/mem_rwa_i_1_n_0          |                               |                1 |              1 |
+|  clk_IBUF_BUFG | CTRL/second_half_reg_i_1_n_0  |                               |                2 |              4 |
+|  clk_IBUF_BUFG | CTRL/mem_addra[7]_i_1_n_0     |                               |                5 |              8 |
+|  clk_IBUF_BUFG | CTRL/cnt[8]_i_2_n_0           | CTRL/cnt[8]_i_1_n_0           |                5 |              9 |
+|  clk_IBUF_BUFG | CTRL/max_addr[7]_i_1_n_0      |                               |                2 |              9 |
+|  clk_IBUF_BUFG | CTRL/mem_addrb[7]_i_1_n_0     |                               |                5 |              9 |
+|  clk_IBUF_BUFG | CTRL/min_addr[7]_i_1_n_0      |                               |                3 |              9 |
+|  clk_IBUF_BUFG | CTRL/intersect_num[7]_i_2_n_0 | CTRL/intersect_num[7]_i_1_n_0 |               13 |             24 |
+|  clk_IBUF_BUFG | CTRL/mem_doutb[96]_i_2_n_0    | CTRL/mem_doutb[96]_i_1_n_0    |               18 |             97 |
+|  clk_IBUF_BUFG |                               | SA/AB_0_0/r_reg_0             |              545 |            748 |
+|  clk_IBUF_BUFG |                               |                               |             7133 |          19683 |
++----------------+-------------------------------+-------------------------------+------------------+----------------+
+
+

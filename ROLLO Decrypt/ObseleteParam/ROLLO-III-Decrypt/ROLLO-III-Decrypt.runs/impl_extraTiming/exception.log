@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\David\Dropbox\LRPC Code\hardware\ROLLO Decrypt\ROLLO-III-Decrypt\ROLLO-III-Decrypt.runs\impl_extraTiming/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

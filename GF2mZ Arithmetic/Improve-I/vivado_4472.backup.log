@@ -1,0 +1,1480 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Apr 28 11:31:05 2020
+# Process ID: 4472
+# Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20540 C:\Users\David\Dropbox\LRPC Code\hardware\GF2mZ Arithmetic\Improve-I\Improve-I.xpr
+# Log file: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/vivado.log
+# Journal file: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 897.109 ; gain = 137.500
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Apr 28 11:34:59 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 940.898 ; gain = 8.742
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'F:/modelsim64_10.1c/Xilinx_lib/64bit_vivado_lib/modelsim.ini' copied to run dir:'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'gf2mz_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {gf2mz_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Compiling module gf2mz_top
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Compiling module mul_ctrl
+# -- Compiling module gf2mz_top_tb
+# 
+# Top level modules:
+# 	gf2mz_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Program launched (PID=4908)
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 943.027 ; gain = 0.000
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/GF2mZ Arithmetic/mul_ctrl.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/GF2mZ Arithmetic/gf2m_mul.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/GF2mZ Arithmetic/gf2mz_top.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/mem_dp.v}}
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'F:/modelsim64_10.1c/Xilinx_lib/64bit_vivado_lib/modelsim.ini' copied to run dir:'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'gf2mz_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {gf2mz_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module gf2mz_top_tb
+# 
+# Top level modules:
+# 	gf2mz_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 974.852 ; gain = 0.000
+INFO: [USF-ModelSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Program launched (PID=19424)
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 974.852 ; gain = 0.000
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'F:/modelsim64_10.1c/Xilinx_lib/64bit_vivado_lib/modelsim.ini' copied to run dir:'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'gf2mz_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {gf2mz_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Compiling module mul_ctrl
+# -- Skipping module gf2mz_top_tb
+# 
+# Top level modules:
+# 	gf2mz_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Program launched (PID=18288)
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Wed Apr 29 18:08:11 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 999.402 ; gain = 3.133
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Thu Apr 30 14:36:24 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1018.516 ; gain = 0.824
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# ** Error: Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module K_Gen_Ctrl
+# -- Compiling module RegFiles
+# -- Compiling module c_Gen_Ctrl
+# -- Compiling module comb_SA
+# ** Error: ../../../../Verilog/encrypt_top.v(314): (vlog-2730) Undefined variable: 'WIDTH'.
+# 
+# -- Compiling module f_permutation
+# -- Compiling module f_permutation_200
+# -- Compiling module gf2m_mul
+# -- Compiling module shift_x_by_i
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(34): (vlog-2730) Undefined variable: 'WIDTH'.
+# 
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(34): 'A_di' already declared in this scope (gf2mz_top).
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(35): (vlog-2730) Undefined variable: 'DEPTH'.
+# 
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(35): 'A_addr' already declared in this scope (gf2mz_top).
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(34): Identifier must be declared with a port mode: A_di.
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(35): Identifier must be declared with a port mode: A_addr.
+# -- Compiling module keccak
+# -- Compiling module mem_dp
+# -- Compiling module mem_sp
+# -- Compiling module mul_ctrl
+# -- Compiling module processor_AB
+# -- Compiling module padder
+# -- Compiling module prng
+# -- Compiling module rconst
+# -- Compiling module rconst_200
+# -- Compiling module round
+# -- Compiling module round_200
+# -- Compiling module encrypt_top_tb
+# child process exited abnormally
+# Error in macro ./encrypt_top_tb_compile.do line 38
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module K_Gen_Ctrl
+# -- Compiling module RegFiles
+# -- Compiling module c_Gen_Ctrl
+# -- Compiling module comb_SA
+# ** Error: ../../../../Verilog/encrypt_top.v(314): (vlog-2730) Undefined variable: 'WIDTH'.
+# 
+# -- Compiling module f_permutation
+# -- Compiling module f_permutation_200
+# -- Compiling module gf2m_mul
+# -- Compiling module shift_x_by_i
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(34): (vlog-2730) Undefined variable: 'WIDTH'.
+# 
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(34): 'A_di' already declared in this scope (gf2mz_top).
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(35): (vlog-2730) Undefined variable: 'DEPTH'.
+# 
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(35): 'A_addr' already declared in this scope (gf2mz_top).
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(34): Identifier must be declared with a port mode: A_di.
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(35): Identifier must be declared with a port mode: A_addr.
+# -- Compiling module keccak
+# -- Compiling module mem_dp
+# -- Compiling module mem_sp
+# -- Compiling module mul_ctrl
+# -- Compiling module processor_AB
+# -- Compiling module padder
+# -- Compiling module prng
+# -- Compiling module rconst
+# -- Compiling module rconst_200
+# -- Compiling module round
+# -- Compiling module round_200
+# -- Compiling module encrypt_top_tb
+# child process exited abnormally
+#     while executing
+# "exec <nul: {F:\modelsim64_10.1c\win64\vlog.EXE} -64 -incr -work xil_defaultlib {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encryp..."
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 exec $redir $new [lrange $args 1 end]"
+#     (procedure "::unknown" line 40)
+#     invoked from within
+# "F:\\modelsim64_10.1c\\win64\\vlog -64 -incr -work xil_defaultlib "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/defi..."
+ModelSim> INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1040.215 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1040.215 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# ** Error: Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Skipping module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Compiling module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(25): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
+# 
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(34): (vlog-2730) Undefined variable: 'WIDTH'.
+# 
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(34): 'A_di' already declared in this scope (gf2mz_top).
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(35): (vlog-2730) Undefined variable: 'DEPTH'.
+# 
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(35): 'A_addr' already declared in this scope (gf2mz_top).
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(34): Identifier must be declared with a port mode: A_di.
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(35): Identifier must be declared with a port mode: A_addr.
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# child process exited abnormally
+# Error in macro ./encrypt_top_tb_compile.do line 38
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Skipping module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Compiling module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(25): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
+# 
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(34): (vlog-2730) Undefined variable: 'WIDTH'.
+# 
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(34): 'A_di' already declared in this scope (gf2mz_top).
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(35): (vlog-2730) Undefined variable: 'DEPTH'.
+# 
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(35): 'A_addr' already declared in this scope (gf2mz_top).
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(34): Identifier must be declared with a port mode: A_di.
+# ** Error: ../../../../Verilog/GF2mZ Arithmetic/gf2mz_top.v(35): Identifier must be declared with a port mode: A_addr.
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# child process exited abnormally
+#     while executing
+# "exec <nul: {F:\modelsim64_10.1c\win64\vlog.EXE} -64 -incr -work xil_defaultlib {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encryp..."
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 exec $redir $new [lrange $args 1 end]"
+#     (procedure "::unknown" line 40)
+#     invoked from within
+# "F:\\modelsim64_10.1c\\win64\\vlog -64 -incr -work xil_defaultlib "C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/defi..."
+ModelSim> INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1040.215 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1040.215 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Skipping module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Skipping module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Compiling module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=27504)
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Skipping module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Compiling module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=672)
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/SHA3/define.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/SHA3/clog2.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/RNG/clog2.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/SHA3/define.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/SHA3/clog2.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/RNG/clog2.v}}
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module K_Gen_Ctrl
+# -- Compiling module RegFiles
+# -- Compiling module c_Gen_Ctrl
+# -- Compiling module comb_SA
+# -- Compiling module ROLLO_I_Encrypt
+# -- Compiling module f_permutation
+# -- Compiling module f_permutation_200
+# -- Compiling module gf2m_mul
+# -- Compiling module shift_x_by_i
+# -- Compiling module gf2mz_top
+# -- Compiling module keccak
+# -- Compiling module mem_dp
+# -- Compiling module mem_sp
+# -- Compiling module mul_ctrl
+# -- Compiling module processor_AB
+# -- Compiling module padder
+# -- Compiling module prng
+# -- Compiling module rconst
+# -- Compiling module rconst_200
+# -- Compiling module round
+# -- Compiling module round_200
+# -- Compiling module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=17676)
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1040.215 ; gain = 0.000
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Skipping module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Compiling module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=10876)
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1040.215 ; gain = 0.000
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Skipping module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Skipping module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=10628)
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Compiling module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Skipping module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=23940)
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Skipping module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Skipping module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=26016)
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Compiling module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Skipping module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=17568)
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Compiling module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Skipping module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=14992)
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Skipping module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Compiling module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=7864)
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Skipping module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Compiling module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=27852)
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Compiling module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Skipping module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=28176)
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Skipping module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Compiling module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=8096)
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'F:/modelsim64_10.1c/Xilinx_lib/64bit_vivado_lib/modelsim.ini' copied to run dir:'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'gf2mz_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {gf2mz_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module gf2mz_top_tb
+# 
+# Top level modules:
+# 	gf2mz_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Program launched (PID=26416)
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {encrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module K_Gen_Ctrl
+# -- Skipping module RegFiles
+# -- Skipping module c_Gen_Ctrl
+# -- Skipping module comb_SA
+# -- Skipping module ROLLO_I_Encrypt
+# -- Skipping module f_permutation
+# -- Skipping module f_permutation_200
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module keccak
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module prng
+# -- Skipping module rconst
+# -- Skipping module rconst_200
+# -- Skipping module round
+# -- Skipping module round_200
+# -- Skipping module encrypt_top_tb
+# 
+# Top level modules:
+# 	encrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.sim/sim_1/behav/modelsim'
+Program launched (PID=20264)
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'F:/modelsim64_10.1c/Xilinx_lib/64bit_vivado_lib/modelsim.ini' copied to run dir:'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'gf2mz_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {gf2mz_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module gf2mz_top_tb
+# 
+# Top level modules:
+# 	gf2mz_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Program launched (PID=13508)
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'F:/modelsim64_10.1c/Xilinx_lib/64bit_vivado_lib/modelsim.ini' copied to run dir:'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'gf2mz_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {gf2mz_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module gf2mz_top_tb
+# 
+# Top level modules:
+# 	gf2mz_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Program launched (PID=22276)
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'F:/modelsim64_10.1c/Xilinx_lib/64bit_vivado_lib/modelsim.ini' copied to run dir:'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'gf2mz_top_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {gf2mz_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module gf2m_mul
+# -- Compiling module shift_x_by_i
+# -- Skipping module gf2mz_top
+# -- Skipping module mem_dp
+# -- Skipping module mem_sp
+# -- Skipping module mul_ctrl
+# -- Skipping module gf2mz_top_tb
+# 
+# Top level modules:
+# 	gf2mz_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.sim/sim_1/behav/modelsim'
+Program launched (PID=24224)
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May  3 12:08:23 2020...

@@ -1,0 +1,152 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\David\Dropbox\LRPC Code\hardware\Gaussian_Elimination\Gaussian_Elimination.sim\sim_1\behav\modelsim
+T_opt
+VbI]:STgW=VjSHjn^h26k70
+04 7 4 work comb_SA fast 0
+Z1 04 4 4 work glbl fast 0
+=1-94c6916e481e-5e68553d-1cc-450c
+Z2 o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+Z3 OL;O;10.1c;51
+Z4 dC:\Users\David\Dropbox\LRPC Code\hardware\Gaussian_Elimination\Gaussian_Elimination.sim\sim_1\behav\modelsim
+T_opt1
+VJ3UbD<cKWR>EMIzl79a6?3
+Z5 04 10 4 work comb_SA_tb fast 0
+R1
+=1-d46e0e1fef10-5e71ca5f-261-3ed8
+R2
+n@_opt1
+R3
+T_opt2
+V>@XZzdOO];zM6a23;ZjlI1
+R5
+R1
+=1-94c6916e481e-5e6af7f5-1dd-6f4
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L work -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt2
+R3
+R4
+vcomb_SA
+IY^l8NVRcaNifc1YmNbCWL3
+VO<dff:?m<^Wdk7YkcQ94`0
+R4
+w1584515520
+8../../../../verilog/comb_SA.v
+F../../../../verilog/comb_SA.v
+L0 1
+Z6 OL;L;10.1c;51
+r1
+31
+Z7 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../verilog|../../../../verilog/node.v|../../../../verilog/comb_SA.v|../../../../verilog/mem.v|../../../../verilog/comb_SA_tb.v|
+Z8 o-work xil_defaultlib -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z9 !s92 -work xil_defaultlib +incdir+../../../../verilog -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+ncomb_@s@a
+Z10 !s107 ../../../../verilog/clog2.v|../../../../verilog/define.v|../../../../verilog/comb_SA_tb.v|../../../../verilog/mem.v|../../../../verilog/comb_SA.v|../../../../verilog/node.v|
+!i10b 1
+!s100 X_VDI3;>ifN1nb[@gJJDe2
+!s85 0
+!s108 1584515670.397000
+vcomb_SA_tb
+IjGmj_Vg>Jh9F1NJbk:b[T0
+VVHX_L6c=UaAUFWF_>;VLJ1
+R4
+w1583979411
+8../../../../verilog/comb_SA_tb.v
+F../../../../verilog/comb_SA_tb.v
+L0 5
+R6
+r1
+31
+R7
+R8
+R9
+ncomb_@s@a_tb
+R10
+!s10a 1583979411
+!s108 1584515156.930000
+!i10b 1
+!s100 ;>Xk5?lodfl1;@hGDbBFF1
+!s85 0
+vglbl
+IW[VLR6<Sjz:J_[b[HG]gG0
+VM[9mS]S:KA1i4VeCMX35[3
+R4
+w1522801934
+8glbl.v
+Fglbl.v
+L0 6
+R6
+r1
+31
+R8
+!i10b 1
+!s100 ??YMin6;S^;eQM5I2PDA81
+!s85 0
+!s108 1584515670.622000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+vmem
+INDRLOW?4UWkM4<H8_CKoA2
+Va6gT><_CHhmBFO@<6V6gn0
+R4
+w1583910027
+8../../../../verilog/mem.v
+F../../../../verilog/mem.v
+L0 11
+R6
+r1
+31
+R8
+R9
+!s10a 1583910027
+!i10b 1
+!s100 >n4:83z8a]V[[ATl:aP7c1
+!s85 0
+!s108 1584068588.172000
+!s107 ../../../../verilog/clog2.v|../../../../verilog/define.v|../../../../verilog/mem.v|
+!s90 -incr|-work|xil_defaultlib|+incdir+../../../../verilog|../../../../verilog/mem.v|
+vprocessor_A
+Z11 !s10a 1583822866
+Ig93?_KLGV^GbF<d73GG^>0
+VOle7IOVmJfjFVHgZInI:O2
+R4
+Z12 w1583822866
+Z13 8../../../../verilog/node.v
+Z14 F../../../../verilog/node.v
+L0 2
+R6
+r1
+31
+Z15 !s108 1583911193.303000
+Z16 !s107 ../../../../verilog/clog2.v|../../../../verilog/define.v|../../../../verilog/mem.v|../../../../verilog/comb_SA.v|../../../../verilog/comb_SA_tb.v|../../../../verilog/node.v|
+Z17 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../verilog|../../../../verilog/node.v|../../../../verilog/comb_SA_tb.v|../../../../verilog/comb_SA.v|../../../../verilog/mem.v|
+R8
+R9
+nprocessor_@a
+!i10b 1
+!s100 ;@L<3;hV=5Rn96<=f6g:?1
+!s85 0
+vprocessor_B
+R11
+IT`=GT@n:MaNZG3g2_i3UE3
+V@nQnIZ]:HYH1_LQ2fIPjN0
+R4
+R12
+R13
+R14
+L0 39
+R6
+r1
+31
+R15
+R16
+R17
+R8
+R9
+nprocessor_@b
+!i10b 1
+!s100 IeYPH?AUQAeJ=1Mo^Q@?b3
+!s85 0

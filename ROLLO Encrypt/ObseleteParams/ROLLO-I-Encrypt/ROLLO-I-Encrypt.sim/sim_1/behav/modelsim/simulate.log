@@ -1,0 +1,79 @@
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {encrypt_top_tb_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.encrypt_top_tb xil_defaultlib.glbl 
+# Start time: 11:18:14 on Nov 20,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "mul_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "c_Gen_Ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "K_Gen_Ctrl(fast)".
+# Loading work.encrypt_top_tb(fast)
+# Loading work.ROLLO_I_Encrypt(fast)
+# Loading work.K_Gen_Ctrl(fast)
+# Loading work.RegFiles(fast)
+# Loading work.comb_SA(fast)
+# Loading work.processor_AB(fast)
+# Loading work.prng(fast)
+# Loading work.f_permutation_200(fast)
+# Loading work.rconst_200(fast)
+# Loading work.round_200(fast)
+# Loading work.keccak(fast)
+# Loading work.padder(fast)
+# Loading work.f_permutation(fast)
+# Loading work.rconst(fast)
+# Loading work.round(fast)
+# Loading work.c_Gen_Ctrl(fast)
+# Loading work.gf2mz_top(fast)
+# Loading work.gf2m_mul(fast)
+# Loading work.shift_x_by_i(fast)
+# Loading work.shift_x_by_i(fast__1)
+# Loading work.shift_x_by_i(fast__2)
+# Loading work.shift_x_by_i(fast__3)
+# Loading work.shift_x_by_i(fast__4)
+# Loading work.shift_x_by_i(fast__5)
+# Loading work.shift_x_by_i(fast__6)
+# Loading work.shift_x_by_i(fast__7)
+# Loading work.shift_x_by_i(fast__8)
+# Loading work.shift_x_by_i(fast__9)
+# Loading work.shift_x_by_i(fast__10)
+# Loading work.shift_x_by_i(fast__11)
+# Loading work.shift_x_by_i(fast__12)
+# Loading work.shift_x_by_i(fast__13)
+# Loading work.shift_x_by_i(fast__14)
+# Loading work.shift_x_by_i(fast__15)
+# Loading work.mul_ctrl(fast)
+# Loading work.mem_sp(fast)
+# Loading work.mem_sp(fast__1)
+# Loading work.mem_dp(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) ../../../../Verilog/encrypt_top.v(147): [PCDPC] - Port size (113) does not match connection size (79) for port 'data'. The port definition is at: ../../../../Verilog/Gaussian Elimination/comb_SA.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /encrypt_top_tb/DUT/GS File: ../../../../Verilog/Gaussian Elimination/comb_SA.v
+# ** Warning: (vsim-3015) ../../../../Verilog/encrypt_top.v(147): [PCDPC] - Port size (113) does not match connection size (79) for port 'result'. The port definition is at: ../../../../Verilog/Gaussian Elimination/comb_SA.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /encrypt_top_tb/DUT/GS File: ../../../../Verilog/Gaussian Elimination/comb_SA.v
+# ** Warning: (vsim-3015) ../../../../Verilog/encrypt_top.v(188): [PCDPC] - Port size (395) does not match connection size (32) for port 'e2_din'. The port definition is at: ../../../../Verilog/c_Gen_Ctrl.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /encrypt_top_tb/DUT/c_Gen_Ctrl File: ../../../../Verilog/c_Gen_Ctrl.v
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-7) Failed to open readmem file "./mem_h.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : ../../../../Verilog/mem_dp.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /encrypt_top_tb/DUT/h
+run 10us
+# 
+# runtime: 1071 cycles
+# 
+# End time: 11:19:30 on Nov 20,2020, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 4

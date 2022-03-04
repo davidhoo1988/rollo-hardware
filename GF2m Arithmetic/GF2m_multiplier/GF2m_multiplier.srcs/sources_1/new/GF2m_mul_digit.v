@@ -2,7 +2,7 @@
 
 `include "clog2.v" 
 
-module GF2m_mul_digit #(parameter WIDTH = 127, k = 1, d = 64)(
+module GF2m_mul_digit #(parameter WIDTH = 97, k = 6, d = 64)(
 	input wire clk,
 	input wire rst_b,
 	input wire start,
@@ -24,6 +24,18 @@ reg [WIDTH-1:0] c; //result register for a(x)*b(x)
 
 reg start_en;
 reg [`CLOG2(DIGIT_N)-1:0] cnt;
+
+wire [WIDTH-1:0] op_a_BigEndian, op_b_BigEndian, op_c_BigEndian;
+genvar w;
+/* reorder byte ~ ~ */
+generate
+  for(w=0; w<WIDTH; w=w+1)
+    begin : L0
+          assign op_a_BigEndian[WIDTH-1-w] = op_a[w];
+          assign op_b_BigEndian[WIDTH-1-w] = op_b[w];
+          assign op_c[WIDTH-1-w] = op_c_BigEndian[w];
+    end
+endgenerate
 
 //control signal
 always @(posedge clk) begin
@@ -66,7 +78,7 @@ always @(posedge clk) begin
 		// reset
 		a <= {WIDTH_A{1'b0}};
 	else if (start) 
-		a <= op_a;
+		a <= op_a_BigEndian;
 	else if (start_en) //shift by digit
 		a <= {a[WIDTH_A-d-1:0],{d{1'b0}}};
 	else 
@@ -78,7 +90,7 @@ always @(posedge clk) begin
 		// reset
 		b <= {WIDTH{1'b0}};
 	else if (start) 
-		b <= op_b;
+		b <= op_b_BigEndian;
 	else 
 		b <= b;	
 end
@@ -741,14 +753,14 @@ defparam shift_64.k = k;
 defparam shift_64.i = 64;
 
 
-assign op_c = c;
+assign op_c_BigEndian = c;
 
 
 endmodule
 
 
 
-module shift_x_by_i #(parameter WIDTH = 127, k = 1, i = 64)(
+module shift_x_by_i #(parameter WIDTH = 97, k = 6, i = 64)(
 	input wire a,
 	input wire [WIDTH-1:0] p, //polynomial p(x), represented in big-endian notation
 	output wire [WIDTH-1:0] px //output a * p(x)x^i mod f(x)

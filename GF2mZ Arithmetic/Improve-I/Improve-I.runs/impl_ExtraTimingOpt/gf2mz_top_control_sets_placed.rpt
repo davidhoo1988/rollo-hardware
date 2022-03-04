@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Sun Dec  1 17:02:55 2019
+| Date         : Wed May  6 20:25:31 2020
 | Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file gf2mz_top_control_sets_placed.rpt
 | Design       : gf2mz_top
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    16 |
-| Unused register locations in slices containing registers |    29 |
+| Number of unique control sets                            |    30 |
+| Unused register locations in slices containing registers |    43 |
 +----------------------------------------------------------+-------+
 
 
@@ -36,7 +36,7 @@ Table of Contents
 +--------+--------------+
 |      4 |            2 |
 |      8 |            1 |
-|    16+ |           13 |
+|    16+ |           27 |
 +--------+--------------+
 
 
@@ -46,12 +46,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             727 |          345 |
+| No           | No                    | No                     |             263 |          189 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             671 |          277 |
-| Yes          | No                    | No                     |             253 |          118 |
+| No           | Yes                   | No                     |            2331 |          911 |
+| Yes          | No                    | No                     |             411 |          197 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |            1264 |          948 |
+| Yes          | Yes                   | No                     |            2528 |         1944 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -61,22 +61,36 @@ Table of Contents
 +----------------+-------------------------+-------------------------+------------------+----------------+
 |  Clock Signal  |      Enable Signal      |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
 +----------------+-------------------------+-------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | ctrl/A_addr[3]_i_1_n_0  |                         |                2 |              4 |
 |  clk_IBUF_BUFG | ctrl/C_addr[3]_i_1_n_0  |                         |                2 |              4 |
-|  clk_IBUF_BUFG | ctrl/A_addr[3]_i_1_n_0  |                         |                1 |              4 |
-|  clk_IBUF_BUFG | ctrl/B_addrb[3]_i_1_n_0 |                         |                5 |              8 |
-|  clk_IBUF_BUFG | mul00/start_en          | ctrl/SR[0]              |               62 |             79 |
-|  clk_IBUF_BUFG | mul01/start_en          | ctrl/SR[0]              |               69 |             79 |
-|  clk_IBUF_BUFG | mul02/start_en          | ctrl/SR[0]              |               66 |             79 |
-|  clk_IBUF_BUFG | mul10/start_en          | ctrl/SR[0]              |               74 |             79 |
-|  clk_IBUF_BUFG | mul11/start_en          | ctrl/SR[0]              |               73 |             79 |
-|  clk_IBUF_BUFG | mul12/start_en          | ctrl/SR[0]              |               70 |             79 |
-|  clk_IBUF_BUFG | mul20/start_en          | ctrl/SR[0]              |               66 |             79 |
-|  clk_IBUF_BUFG | mul21/start_en          | ctrl/SR[0]              |               71 |             79 |
-|  clk_IBUF_BUFG | mul22/start_en          | ctrl/SR[0]              |               66 |             79 |
-|  clk_IBUF_BUFG | ctrl/cache2[78]_i_1_n_0 |                         |              110 |            237 |
-|  clk_IBUF_BUFG | ctrl/mul_start          | mul00/start_en_reg_0[0] |              331 |            553 |
-|  clk_IBUF_BUFG |                         | mul00/start_en_reg_0[0] |              277 |            671 |
-|  clk_IBUF_BUFG |                         |                         |              345 |            727 |
+|  clk_IBUF_BUFG | ctrl/B_addrb[3]_i_1_n_0 |                         |                6 |              8 |
+|  clk_IBUF_BUFG | mul01/start_en          | ctrl/SR[0]              |               67 |             79 |
+|  clk_IBUF_BUFG | mul00/start_en          | ctrl/SR[0]              |               67 |             79 |
+|  clk_IBUF_BUFG | mul02/start_en          | ctrl/SR[0]              |               69 |             79 |
+|  clk_IBUF_BUFG | mul21/start_en          | ctrl/SR[0]              |               72 |             79 |
+|  clk_IBUF_BUFG | mul32/start_en          | ctrl/SR[0]              |               66 |             79 |
+|  clk_IBUF_BUFG | mul22/start_en          | ctrl/SR[0]              |               68 |             79 |
+|  clk_IBUF_BUFG | mul23/start_en          | ctrl/SR[0]              |               71 |             79 |
+|  clk_IBUF_BUFG | mul30/start_en          | ctrl/SR[0]              |               68 |             79 |
+|  clk_IBUF_BUFG | mul13/start_en          | ctrl/SR[0]              |               67 |             79 |
+|  clk_IBUF_BUFG | mul20/start_en          | ctrl/SR[0]              |               71 |             79 |
+|  clk_IBUF_BUFG | mul31/start_en          | ctrl/SR[0]              |               73 |             79 |
+|  clk_IBUF_BUFG | mul33/start_en          | ctrl/SR[0]              |               69 |             79 |
+|  clk_IBUF_BUFG | mul40/start_en          | ctrl/SR[0]              |               66 |             79 |
+|  clk_IBUF_BUFG | mul03/start_en          | ctrl/SR[0]              |               68 |             79 |
+|  clk_IBUF_BUFG | mul41/start_en          | ctrl/SR[0]              |               71 |             79 |
+|  clk_IBUF_BUFG | mul42/start_en          | ctrl/SR[0]              |               68 |             79 |
+|  clk_IBUF_BUFG | mul43/start_en          | ctrl/SR[0]              |               64 |             79 |
+|  clk_IBUF_BUFG | mul10/start_en          | ctrl/SR[0]              |               71 |             79 |
+|  clk_IBUF_BUFG | mul11/start_en          | ctrl/SR[0]              |               70 |             79 |
+|  clk_IBUF_BUFG | mul12/start_en          | ctrl/SR[0]              |               64 |             79 |
+|  clk_IBUF_BUFG |                         | ctrl/B_doa[393]_i_1_n_0 |               43 |            141 |
+|  clk_IBUF_BUFG |                         |                         |              189 |            263 |
+|  clk_IBUF_BUFG |                         | ctrl/B_doa[394]_i_1_n_0 |              113 |            271 |
+|  clk_IBUF_BUFG | ctrl/cache4[78]_i_1_n_0 |                         |              187 |            395 |
+|  clk_IBUF_BUFG |                         | ctrl/B_dob[394]_i_1_n_0 |              146 |            400 |
+|  clk_IBUF_BUFG | ctrl/mul_start          | mul42/p_0_in            |              574 |            948 |
+|  clk_IBUF_BUFG |                         | mul42/p_0_in            |              609 |           1519 |
 +----------------+-------------------------+-------------------------+------------------+----------------+
 
 

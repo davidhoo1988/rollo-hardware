@@ -7,8 +7,8 @@
 # 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
-# -- Compiling module gf2m_mul
-# -- Compiling module shift_x_by_i
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
 # -- Compiling module gf2mz_top
 # -- Skipping module mem_dp
 # -- Skipping module mem_sp

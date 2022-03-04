@@ -22,7 +22,7 @@
 `include "define.v"
 `include "clog2.v"
 
-module gf2mz_top #(parameter n = 47, m = 79, d = 3, FILE_A = "mem_A.txt", FILE_B = "mem_B.txt")(
+module gf2mz_top #(parameter n = 83, m = 67, d = 3, FILE_A = "mem_A.txt", FILE_B = "mem_B.txt")(
 	input wire 				clk,
 	input wire				rst_b,
 	input wire 				start,
@@ -140,8 +140,10 @@ gf2m_mul mul00 (
 	.op_c (mul00_op_c)
 	);
 
-defparam mul00.WIDTH = 79;
-defparam mul00.k = 9;
+defparam mul00.WIDTH = 67;
+defparam mul00.k3 = 5;
+defparam mul00.k2 = 2;
+defparam mul00.k1 = 1;
 defparam mul00.d = 16;
 
 gf2m_mul mul01 (
@@ -155,8 +157,10 @@ gf2m_mul mul01 (
 	.op_c (mul01_op_c)
 	);
 
-defparam mul01.WIDTH = 79;
-defparam mul01.k = 9;
+defparam mul01.WIDTH = 67;
+defparam mul01.k3 = 5;
+defparam mul01.k2 = 2;
+defparam mul01.k1 = 1;
 defparam mul01.d = 16;
 
 gf2m_mul mul02 (
@@ -170,8 +174,10 @@ gf2m_mul mul02 (
 	.op_c (mul02_op_c)
 	);
 
-defparam mul02.WIDTH = 79;
-defparam mul02.k = 9;
+defparam mul02.WIDTH = 67;
+defparam mul02.k3 = 5;
+defparam mul02.k2 = 2;
+defparam mul02.k1 = 1;
 defparam mul02.d = 16;
 
 gf2m_mul mul10 (
@@ -185,8 +191,10 @@ gf2m_mul mul10 (
 	.op_c (mul10_op_c)
 	);
 
-defparam mul10.WIDTH = 79;
-defparam mul10.k = 9;
+defparam mul10.WIDTH = 67;
+defparam mul10.k3 = 5;
+defparam mul10.k2 = 2;
+defparam mul10.k1 = 1;
 defparam mul10.d = 16;
 
 gf2m_mul mul11 (
@@ -200,8 +208,10 @@ gf2m_mul mul11 (
 	.op_c (mul11_op_c)
 	);
 
-defparam mul11.WIDTH = 79;
-defparam mul11.k = 9;
+defparam mul11.WIDTH = 67;
+defparam mul11.k3 = 5;
+defparam mul11.k2 = 2;
+defparam mul11.k1 = 1;
 defparam mul11.d = 16;
 
 gf2m_mul mul12 (
@@ -215,8 +225,10 @@ gf2m_mul mul12 (
 	.op_c (mul12_op_c)
 	);
 
-defparam mul12.WIDTH = 79;
-defparam mul12.k = 9;
+defparam mul12.WIDTH = 67;
+defparam mul12.k3 = 5;
+defparam mul12.k2 = 2;
+defparam mul12.k1 = 1;
 defparam mul12.d = 16;
 
 gf2m_mul mul20 (
@@ -230,8 +242,10 @@ gf2m_mul mul20 (
 	.op_c (mul20_op_c)
 	);
 
-defparam mul20.WIDTH = 79;
-defparam mul20.k = 9;
+defparam mul20.WIDTH = 67;
+defparam mul20.k3 = 5;
+defparam mul20.k2 = 2;
+defparam mul20.k1 = 1;
 defparam mul20.d = 16;
 
 gf2m_mul mul21 (
@@ -245,8 +259,10 @@ gf2m_mul mul21 (
 	.op_c (mul21_op_c)
 	);
 
-defparam mul21.WIDTH = 79;
-defparam mul21.k = 9;
+defparam mul21.WIDTH = 67;
+defparam mul21.k3 = 5;
+defparam mul21.k2 = 2;
+defparam mul21.k1 = 1;
 defparam mul21.d = 16;
 
 gf2m_mul mul22 (
@@ -260,8 +276,10 @@ gf2m_mul mul22 (
 	.op_c (mul22_op_c)
 	);
 
-defparam mul22.WIDTH = 79;
-defparam mul22.k = 9;
+defparam mul22.WIDTH = 67;
+defparam mul22.k3 = 5;
+defparam mul22.k2 = 2;
+defparam mul22.k1 = 1;
 defparam mul22.d = 16;
 
 

@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Sep 21 15:40:08 2020
+# Process ID: 21568
+# Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11084 C:\Users\David\Dropbox\LRPC Code\hardware\ROLLO Sha3\rollo-sha3-512\rollo-sha3-512.xpr
+# Log file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/vivado.log
+# Journal file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/rollo-sha3-512.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.xpr}
+add_files -norecurse {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/padder.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/keccak.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/padder1.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/rconst.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/round.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/Verilog/f_permutation.v}}
+launch_simulation -install_path F:/modelsim64_10.1c/win64 -simset sim_decrypt
+launch_simulation -install_path F:/modelsim64_10.1c/win64 -simset sim_decrypt
+launch_simulation -install_path F:/modelsim64_10.1c/win64 -simset sim_decrypt
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+save_constraints
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+save_constraints
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+create_run impl_extraTiming -parent_run synth_1 -flow {Vivado Implementation 2018} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports}
+current_run [get_runs impl_extraTiming]
+set_property strategy Performance_ExtraTimingOpt [get_runs impl_extraTiming]
+launch_runs impl_extraTiming -jobs 8
+wait_on_run impl_extraTiming
+open_run impl_extraTiming
+report_utilization -name utilization_1

@@ -1,0 +1,109 @@
+# A bookmarks file was found in the current directory with 1 bookmark
+# Bookmark(s) were restored for window "Wave"
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {decrypt_top_tb_simulate.do} 
+# vsim -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib -voptargs=\"+acc\" xil_defaultlib.decrypt_top_tb xil_defaultlib.glbl 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.decrypt_top_tb(fast)
+# Loading work.decrypt_top(fast)
+# Loading work.ctrl_top(fast)
+# Loading work.gf2mz_top(fast)
+# Loading work.gf2m_mul(fast)
+# Loading work.shift_x_by_i(fast)
+# Loading work.shift_x_by_i(fast__1)
+# Loading work.shift_x_by_i(fast__2)
+# Loading work.shift_x_by_i(fast__3)
+# Loading work.shift_x_by_i(fast__4)
+# Loading work.shift_x_by_i(fast__5)
+# Loading work.shift_x_by_i(fast__6)
+# Loading work.shift_x_by_i(fast__7)
+# Loading work.shift_x_by_i(fast__8)
+# Loading work.shift_x_by_i(fast__9)
+# Loading work.shift_x_by_i(fast__10)
+# Loading work.shift_x_by_i(fast__11)
+# Loading work.shift_x_by_i(fast__12)
+# Loading work.shift_x_by_i(fast__13)
+# Loading work.shift_x_by_i(fast__14)
+# Loading work.shift_x_by_i(fast__15)
+# Loading work.mul_ctrl(fast)
+# Loading work.S1S2_gen(fast)
+# Loading work.gs_elim_top(fast)
+# Loading work.gs_elim_ctrl(fast)
+# Loading work.comb_SA(fast)
+# Loading work.processor_AB(fast)
+# Loading work.keccak(fast)
+# Loading work.padder(fast)
+# Loading work.f_permutation(fast)
+# Loading work.rconst(fast)
+# Loading work.round(fast)
+# Loading work.mem_sp(fast)
+# Loading work.mem_dp(fast)
+# Loading work.mem_sp(fast__1)
+# Loading work.mem_sp(fast__2)
+# Loading work.mem_sp(fast__3)
+# Loading work.glbl(fast)
+# Bookmark "bookmark0" already exists with that definition in window "Wave", ignoring
+# A bookmarks file was found in the current directory with 1 bookmark
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave sim:/decrypt_top_tb/DUT/SHA3/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.sim/sim_decrypt/behav/modelsim/wave.do}
+restart
+# Loading work.decrypt_top_tb(fast)
+# Loading work.decrypt_top(fast)
+# Loading work.ctrl_top(fast)
+# Loading work.gf2mz_top(fast)
+# Loading work.gf2m_mul(fast)
+# Loading work.shift_x_by_i(fast)
+# Loading work.shift_x_by_i(fast__1)
+# Loading work.shift_x_by_i(fast__2)
+# Loading work.shift_x_by_i(fast__3)
+# Loading work.shift_x_by_i(fast__4)
+# Loading work.shift_x_by_i(fast__5)
+# Loading work.shift_x_by_i(fast__6)
+# Loading work.shift_x_by_i(fast__7)
+# Loading work.shift_x_by_i(fast__8)
+# Loading work.shift_x_by_i(fast__9)
+# Loading work.shift_x_by_i(fast__10)
+# Loading work.shift_x_by_i(fast__11)
+# Loading work.shift_x_by_i(fast__12)
+# Loading work.shift_x_by_i(fast__13)
+# Loading work.shift_x_by_i(fast__14)
+# Loading work.shift_x_by_i(fast__15)
+# Loading work.mul_ctrl(fast)
+# Loading work.S1S2_gen(fast)
+# Loading work.gs_elim_top(fast)
+# Loading work.gs_elim_ctrl(fast)
+# Loading work.comb_SA(fast)
+# Loading work.processor_AB(fast)
+# Loading work.keccak(fast)
+# Loading work.padder(fast)
+# Loading work.f_permutation(fast)
+# Loading work.rconst(fast)
+# Loading work.round(fast)
+# Loading work.mem_sp(fast)
+# Loading work.mem_dp(fast)
+# Loading work.mem_sp(fast__1)
+# Loading work.mem_sp(fast__2)
+# Loading work.mem_sp(fast__3)
+# Loading work.glbl(fast)
+run 20us
+run 20us
+run 20us
+run 20us
+# 
+# runtime: 6183 cycles
+# 
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Decrypt/ROLLO-I-Decrypt/ROLLO-I-Decrypt.sim/sim_decrypt/behav/modelsim/wave.do}

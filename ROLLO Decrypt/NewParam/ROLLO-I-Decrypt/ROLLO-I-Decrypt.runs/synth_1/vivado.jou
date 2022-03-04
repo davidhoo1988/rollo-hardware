@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Dec 29 14:28:56 2020
+# Process ID: 2476
+# Current directory: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-I-Decrypt/ROLLO-I-Decrypt.runs/synth_1
+# Command line: vivado.exe -log decrypt_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decrypt_top.tcl
+# Log file: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-I-Decrypt/ROLLO-I-Decrypt.runs/synth_1/decrypt_top.vds
+# Journal file: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-I-Decrypt/ROLLO-I-Decrypt.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source decrypt_top.tcl -notrace

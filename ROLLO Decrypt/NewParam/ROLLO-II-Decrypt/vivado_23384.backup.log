@@ -1,0 +1,210 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Dec 30 17:58:54 2020
+# Process ID: 23384
+# Current directory: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22616 C:\Users\David\Dropbox\ROLLO\hardware\ROLLO Decrypt\NewParam\ROLLO-II-Decrypt\ROLLO-II-Decrypt.xpr
+# Log file: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/vivado.log
+# Journal file: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.xpr}
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.cache/ip'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+launch_simulation -install_path F:/modelsim64_10.1c/win64 -simset sim_decrypt
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.sim/sim_decrypt/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_decrypt'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'F:/modelsim64_10.1c/Xilinx_lib/64bit_vivado_lib/modelsim.ini' copied to run dir:'C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.sim/sim_decrypt/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'decrypt_top_tb' in fileset 'sim_decrypt'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_decrypt'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.sim/sim_decrypt/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {decrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module S1S2_gen
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module mul_ctrl
+# -- Skipping module gf2mz_top
+# -- Skipping module mem_dp
+# -- Skipping module decrypt_top
+# -- Skipping module ctrl_top
+# -- Skipping module mem_sp
+# -- Skipping module comb_SA
+# -- Skipping module gs_elim_top
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module keccak
+# -- Skipping module padder1
+# -- Skipping module rconst
+# -- Skipping module round
+# -- Skipping module f_permutation
+# -- Skipping module gs_elim_ctrl
+# -- Skipping module gf2mz_top_tb
+# -- Skipping module S1S2_gen_tb
+# -- Skipping module decrypt_top_tb
+# 
+# Top level modules:
+# 	padder1
+# 	gf2mz_top_tb
+# 	S1S2_gen_tb
+# 	decrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.sim/sim_decrypt/behav/modelsim'
+Program launched (PID=22452)
+launch_simulation -install_path F:/modelsim64_10.1c/win64 -simset sim_decrypt
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.sim/sim_decrypt/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'F:/modelsim64_10.1c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_decrypt'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'F:/modelsim64_10.1c/Xilinx_lib/64bit_vivado_lib/modelsim.ini' copied to run dir:'C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.sim/sim_decrypt/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'decrypt_top_tb' in fileset 'sim_decrypt'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_decrypt'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.sim/sim_decrypt/behav/modelsim'
+Reading F:/modelsim64_10.1c/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {decrypt_top_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module S1S2_gen
+# -- Skipping module gf2m_mul
+# -- Skipping module shift_x_by_i
+# -- Skipping module mul_ctrl
+# -- Skipping module gf2mz_top
+# -- Skipping module mem_dp
+# -- Compiling module decrypt_top
+# -- Skipping module ctrl_top
+# -- Skipping module mem_sp
+# -- Skipping module comb_SA
+# -- Skipping module gs_elim_top
+# -- Skipping module processor_AB
+# -- Skipping module padder
+# -- Skipping module keccak
+# -- Skipping module padder1
+# -- Skipping module rconst
+# -- Skipping module round
+# -- Skipping module f_permutation
+# -- Skipping module gs_elim_ctrl
+# -- Skipping module gf2mz_top_tb
+# -- Skipping module S1S2_gen_tb
+# -- Skipping module decrypt_top_tb
+# 
+# Top level modules:
+# 	padder1
+# 	gf2mz_top_tb
+# 	S1S2_gen_tb
+# 	decrypt_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.sim/sim_decrypt/behav/modelsim'
+Program launched (PID=18408)
+launch_runs synth_1 -jobs 8
+[Wed Dec 30 18:43:37 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 940.238 ; gain = 3.758
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbg484-1
+INFO: [Netlist 29-17] Analyzing 174 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 83 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 83 instances
+
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 1624.270 ; gain = 572.695
+create_clock -period 5.714 -name clk -waveform {0.000 2.857} [get_ports clk]
+file mkdir {C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new}
+close [ open {C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new/usr_constrain.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new/usr_constrain.xdc}}
+set_property target_constrs_file {C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.srcs/constrs_1/new/usr_constrain.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_extraTiming -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_extraTiming'
+[Wed Dec 30 18:54:47 2020] Launched synth_1...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.runs/synth_1/runme.log
+[Wed Dec 30 18:54:47 2020] Launched impl_extraTiming...
+Run output will be captured here: C:/Users/David/Dropbox/ROLLO/hardware/ROLLO Decrypt/NewParam/ROLLO-II-Decrypt/ROLLO-II-Decrypt.runs/impl_extraTiming/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 2142.898 ; gain = 0.000
+close_design
+open_run impl_extraTiming
+INFO: [Netlist 29-17] Analyzing 174 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2343.102 ; gain = 33.125
+Restored from archive | CPU: 7.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2343.102 ; gain = 33.125
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 220 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 83 instances
+  SRLC32E => SRL16E: 137 instances
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 2373.352 ; gain = 210.434
+open_report: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2451.371 ; gain = 75.441
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 2829.332 ; gain = 320.078
+report_utilization: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 2829.332 ; gain = 320.078
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 31 10:53:04 2020...

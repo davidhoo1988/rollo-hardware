@@ -2,12 +2,12 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Wed Sep 18 00:09:28 2019
-# Process ID: 14420
-# Current directory: C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.runs/synth_2
+# Start of session at: Thu Nov 26 14:02:21 2020
+# Process ID: 24960
+# Current directory: C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.runs/synth_2
 # Command line: vivado.exe -log GF2m_mul_digit_penta.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GF2m_mul_digit_penta.tcl
-# Log file: C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.runs/synth_2/GF2m_mul_digit_penta.vds
-# Journal file: C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.runs/synth_2\vivado.jou
+# Log file: C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.runs/synth_2/GF2m_mul_digit_penta.vds
+# Journal file: C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.runs/synth_2\vivado.jou
 #-----------------------------------------------------------
 source GF2m_mul_digit_penta.tcl -notrace
 Command: synth_design -top GF2m_mul_digit_penta -part xc7a200tfbg676-1
@@ -15,736 +15,98 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4644 
-WARNING: [Synth 8-2507] parameter declaration becomes local in GF2m_mul_digit_penta with formal parameter declaration list [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:15]
-WARNING: [Synth 8-2507] parameter declaration becomes local in GF2m_mul_digit_penta with formal parameter declaration list [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:16]
+INFO: Helper process launched with PID 22200 
+WARNING: [Synth 8-2507] parameter declaration becomes local in GF2m_mul_digit_penta with formal parameter declaration list [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:15]
+WARNING: [Synth 8-2507] parameter declaration becomes local in GF2m_mul_digit_penta with formal parameter declaration list [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:16]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 422.887 ; gain = 109.234
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 422.516 ; gain = 109.918
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'GF2m_mul_digit_penta' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:5]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter d bound to: 32 - type: integer 
-	Parameter DIGIT_N bound to: 5 - type: integer 
-	Parameter WIDTH_A bound to: 160 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'GF2m_mul_digit_penta' [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:5]
+	Parameter WIDTH bound to: 67 - type: integer 
+	Parameter k3 bound to: 5 - type: integer 
+	Parameter k2 bound to: 2 - type: integer 
+	Parameter k1 bound to: 1 - type: integer 
+	Parameter d bound to: 64 - type: integer 
+	Parameter DIGIT_N bound to: 2 - type: integer 
+	Parameter WIDTH_A bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i' [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:891]
+	Parameter WIDTH bound to: 67 - type: integer 
+	Parameter k3 bound to: 5 - type: integer 
+	Parameter k2 bound to: 2 - type: integer 
+	Parameter k1 bound to: 1 - type: integer 
 	Parameter i bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized0' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized0' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized1' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized1' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized2' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized2' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized3' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized3' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized4' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized4' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized5' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 7 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized5' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized6' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized6' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized7' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 9 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized7' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized8' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 10 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized8' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized9' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 11 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized9' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized10' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 12 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized10' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized11' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 13 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized11' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized12' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 14 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized12' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized13' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 15 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized13' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized14' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized14' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized15' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 17 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized15' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized16' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 18 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized16' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized17' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 19 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized17' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized18' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 20 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized18' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized19' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 21 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized19' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized20' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 22 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized20' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized21' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 23 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized21' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized22' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 24 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized22' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized23' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 25 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized23' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized24' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 26 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized24' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized25' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 27 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized25' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized26' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 28 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized26' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized27' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 29 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized27' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized28' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized28' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized29' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 31 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized29' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6157] synthesizing module 'shift_x_by_i__parameterized30' [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-	Parameter WIDTH bound to: 131 - type: integer 
-	Parameter k3 bound to: 8 - type: integer 
-	Parameter k2 bound to: 3 - type: integer 
-	Parameter k1 bound to: 2 - type: integer 
-	Parameter i bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'shift_x_by_i__parameterized30' (1#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:495]
-INFO: [Synth 8-6155] done synthesizing module 'GF2m_mul_digit_penta' (2#1) [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:5]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 463.961 ; gain = 150.309
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 463.961 ; gain = 150.309
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 463.961 ; gain = 150.309
----------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a200tfbg676-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/constrs_1/new/usr_constrain.xdc]
-Finished Parsing XDC File [C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/constrs_1/new/usr_constrain.xdc]
-Completed Processing XDC Constraints
-
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 874.133 ; gain = 0.000
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 874.133 ; gain = 560.480
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Loading Part and Timing Information
----------------------------------------------------------------------------------
-Loading part: xc7a200tfbg676-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 874.133 ; gain = 560.480
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 874.133 ; gain = 560.480
----------------------------------------------------------------------------------
-INFO: [Synth 8-5544] ROM "start_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 874.133 ; gain = 560.480
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start RTL Component Statistics 
----------------------------------------------------------------------------------
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      3 Bit       Adders := 1     
-+---XORs : 
-	  33 Input    131 Bit         XORs := 1     
-	   2 Input     32 Bit         XORs := 3     
-	   2 Input     31 Bit         XORs := 3     
-	   2 Input     30 Bit         XORs := 3     
-	   2 Input     29 Bit         XORs := 3     
-	   2 Input     28 Bit         XORs := 3     
-	   2 Input     27 Bit         XORs := 3     
-	   2 Input     26 Bit         XORs := 3     
-	   2 Input     25 Bit         XORs := 3     
-	   2 Input     24 Bit         XORs := 3     
-	   2 Input     23 Bit         XORs := 3     
-	   2 Input     22 Bit         XORs := 3     
-	   2 Input     21 Bit         XORs := 3     
-	   2 Input     20 Bit         XORs := 3     
-	   2 Input     19 Bit         XORs := 3     
-	   2 Input     18 Bit         XORs := 3     
-	   2 Input     17 Bit         XORs := 3     
-	   2 Input     16 Bit         XORs := 3     
-	   2 Input     15 Bit         XORs := 3     
-	   2 Input     14 Bit         XORs := 3     
-	   2 Input     13 Bit         XORs := 3     
-	   2 Input     12 Bit         XORs := 3     
-	   2 Input     11 Bit         XORs := 3     
-	   2 Input     10 Bit         XORs := 3     
-	   2 Input      9 Bit         XORs := 3     
-	   2 Input      8 Bit         XORs := 3     
-	   2 Input      7 Bit         XORs := 3     
-	   2 Input      6 Bit         XORs := 3     
-	   2 Input      5 Bit         XORs := 3     
-	   2 Input      4 Bit         XORs := 3     
-	   2 Input      3 Bit         XORs := 3     
-	   2 Input      2 Bit         XORs := 3     
-	   2 Input      1 Bit         XORs := 3     
-+---Registers : 
-	              160 Bit    Registers := 1     
-	              131 Bit    Registers := 2     
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input    160 Bit        Muxes := 3     
-	   2 Input    131 Bit        Muxes := 33    
-	   2 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 4     
----------------------------------------------------------------------------------
-Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Hierarchical Component Statistics 
----------------------------------------------------------------------------------
-Hierarchical RTL Component report 
-Module GF2m_mul_digit_penta 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      3 Bit       Adders := 1     
-+---XORs : 
-	  33 Input    131 Bit         XORs := 1     
-+---Registers : 
-	              160 Bit    Registers := 1     
-	              131 Bit    Registers := 2     
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input    160 Bit        Muxes := 3     
-	   2 Input    131 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 4     
-Module shift_x_by_i 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      1 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized0 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      2 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized1 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      3 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized2 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      4 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized3 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      5 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized4 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      6 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized5 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      7 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized6 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      8 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized7 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      9 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized8 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     10 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized9 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     11 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized10 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     12 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized11 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     13 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized12 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     14 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized13 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     15 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized14 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     16 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized15 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     17 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized16 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     18 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized17 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     19 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized18 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     20 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized19 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     21 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized20 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     22 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized21 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     23 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized22 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     24 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized23 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     25 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized24 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     26 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized25 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     27 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized26 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     28 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized27 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     29 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized28 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     30 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized29 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     31 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
-Module shift_x_by_i__parameterized30 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input     32 Bit         XORs := 3     
-+---Muxes : 
-	   2 Input    131 Bit        Muxes := 1     
----------------------------------------------------------------------------------
-Finished RTL Hierarchical Component Statistics
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Part Resource Summary
----------------------------------------------------------------------------------
-Part Resources:
-DSPs: 740 (col length:100)
-BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
----------------------------------------------------------------------------------
-Finished Part Resource Summary
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
-Warning: Parallel synthesis criteria is not met 
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 874.133 ; gain = 560.480
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 874.133 ; gain = 560.480
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 957.863 ; gain = 644.211
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 970.348 ; gain = 656.695
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 970.348 ; gain = 656.695
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 970.348 ; gain = 656.695
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 970.348 ; gain = 656.695
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 970.348 ; gain = 656.695
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 970.348 ; gain = 656.695
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 970.348 ; gain = 656.695
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |BUFG |     1|
-|2     |LUT1 |     1|
-|3     |LUT2 |    98|
-|4     |LUT3 |    46|
-|5     |LUT4 |  1353|
-|6     |LUT5 |   344|
-|7     |LUT6 |   897|
-|8     |FDRE |   427|
-|9     |IBUF |   265|
-|10    |OBUF |   132|
-+------+-----+------+
-
-Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |  3564|
-+------+---------+-------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 970.348 ; gain = 656.695
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 970.348 ; gain = 246.523
-Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 970.348 ; gain = 656.695
-INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 265 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'GF2m_mul_digit_penta' is not ideal for floorplanning, since the cellview 'GF2m_mul_digit_penta' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
+ERROR: [Synth 8-523] part-select [3:5] does not match declaration [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:902]
+ERROR: [Synth 8-6156] failed synthesizing module 'shift_x_by_i' [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:891]
+ERROR: [Synth 8-476] no matching instance 'shift_64' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:881]
+ERROR: [Synth 8-476] no matching instance 'shift_63' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:866]
+ERROR: [Synth 8-476] no matching instance 'shift_62' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:854]
+ERROR: [Synth 8-476] no matching instance 'shift_61' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:842]
+ERROR: [Synth 8-476] no matching instance 'shift_60' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:830]
+ERROR: [Synth 8-476] no matching instance 'shift_59' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:818]
+ERROR: [Synth 8-476] no matching instance 'shift_58' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:806]
+ERROR: [Synth 8-476] no matching instance 'shift_57' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:794]
+ERROR: [Synth 8-476] no matching instance 'shift_56' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:782]
+ERROR: [Synth 8-476] no matching instance 'shift_55' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:770]
+ERROR: [Synth 8-476] no matching instance 'shift_54' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:758]
+ERROR: [Synth 8-476] no matching instance 'shift_53' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:746]
+ERROR: [Synth 8-476] no matching instance 'shift_52' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:734]
+ERROR: [Synth 8-476] no matching instance 'shift_51' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:722]
+ERROR: [Synth 8-476] no matching instance 'shift_50' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:710]
+ERROR: [Synth 8-476] no matching instance 'shift_49' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:698]
+ERROR: [Synth 8-476] no matching instance 'shift_48' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:686]
+ERROR: [Synth 8-476] no matching instance 'shift_47' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:674]
+ERROR: [Synth 8-476] no matching instance 'shift_46' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:662]
+ERROR: [Synth 8-476] no matching instance 'shift_45' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:650]
+ERROR: [Synth 8-476] no matching instance 'shift_44' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:638]
+ERROR: [Synth 8-476] no matching instance 'shift_43' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:626]
+ERROR: [Synth 8-476] no matching instance 'shift_42' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:614]
+ERROR: [Synth 8-476] no matching instance 'shift_41' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:602]
+ERROR: [Synth 8-476] no matching instance 'shift_40' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:590]
+ERROR: [Synth 8-476] no matching instance 'shift_39' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:578]
+ERROR: [Synth 8-476] no matching instance 'shift_38' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:566]
+ERROR: [Synth 8-476] no matching instance 'shift_37' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:554]
+ERROR: [Synth 8-476] no matching instance 'shift_36' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:542]
+ERROR: [Synth 8-476] no matching instance 'shift_35' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:530]
+ERROR: [Synth 8-476] no matching instance 'shift_34' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:518]
+ERROR: [Synth 8-476] no matching instance 'shift_33' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:506]
+ERROR: [Synth 8-476] no matching instance 'shift_32' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:494]
+ERROR: [Synth 8-476] no matching instance 'shift_31' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:482]
+ERROR: [Synth 8-476] no matching instance 'shift_30' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:470]
+ERROR: [Synth 8-476] no matching instance 'shift_29' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:458]
+ERROR: [Synth 8-476] no matching instance 'shift_28' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:446]
+ERROR: [Synth 8-476] no matching instance 'shift_27' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:434]
+ERROR: [Synth 8-476] no matching instance 'shift_26' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:422]
+ERROR: [Synth 8-476] no matching instance 'shift_25' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:410]
+ERROR: [Synth 8-476] no matching instance 'shift_24' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:398]
+ERROR: [Synth 8-476] no matching instance 'shift_23' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:386]
+ERROR: [Synth 8-476] no matching instance 'shift_22' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:374]
+ERROR: [Synth 8-476] no matching instance 'shift_21' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:362]
+ERROR: [Synth 8-476] no matching instance 'shift_20' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:350]
+ERROR: [Synth 8-476] no matching instance 'shift_19' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:338]
+ERROR: [Synth 8-476] no matching instance 'shift_18' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:326]
+ERROR: [Synth 8-476] no matching instance 'shift_17' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:314]
+ERROR: [Synth 8-476] no matching instance 'shift_16' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:302]
+ERROR: [Synth 8-476] no matching instance 'shift_15' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:290]
+ERROR: [Synth 8-476] no matching instance 'shift_14' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:278]
+ERROR: [Synth 8-476] no matching instance 'shift_13' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:266]
+ERROR: [Synth 8-476] no matching instance 'shift_12' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:254]
+ERROR: [Synth 8-476] no matching instance 'shift_11' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:242]
+ERROR: [Synth 8-476] no matching instance 'shift_10' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:230]
+ERROR: [Synth 8-476] no matching instance 'shift_9' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:218]
+ERROR: [Synth 8-476] no matching instance 'shift_8' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:206]
+ERROR: [Synth 8-476] no matching instance 'shift_7' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:194]
+ERROR: [Synth 8-476] no matching instance 'shift_6' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:182]
+ERROR: [Synth 8-476] no matching instance 'shift_5' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:170]
+ERROR: [Synth 8-476] no matching instance 'shift_4' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:158]
+ERROR: [Synth 8-476] no matching instance 'shift_3' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:146]
+ERROR: [Synth 8-476] no matching instance 'shift_2' for defparam [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:134]
+ERROR: [Synth 8-6156] failed synthesizing module 'GF2m_mul_digit_penta' [C:/Users/David/Dropbox/ROLLO/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.srcs/sources_1/new/GF2m_mul_digit_penta.v:5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 455.508 ; gain = 142.910
+---------------------------------------------------------------------------------
+RTL Elaboration failed
 INFO: [Common 17-83] Releasing license: Synthesis
-78 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 970.348 ; gain = 668.441
-INFO: [Common 17-1381] The checkpoint 'C:/Users/david/Dropbox/LRPC Code/hardware/GF2m Arithmetic/GF2m_multiplier/GF2m_multiplier.runs/synth_2/GF2m_mul_digit_penta.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file GF2m_mul_digit_penta_utilization_synth.rpt -pb GF2m_mul_digit_penta_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 970.348 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Sep 18 00:10:36 2019...
+4 Infos, 2 Warnings, 0 Critical Warnings and 67 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 26 14:02:36 2020...

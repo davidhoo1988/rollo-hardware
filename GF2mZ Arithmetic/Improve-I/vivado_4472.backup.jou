@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Apr 28 11:31:05 2020
+# Process ID: 4472
+# Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20540 C:\Users\David\Dropbox\LRPC Code\hardware\GF2mZ Arithmetic\Improve-I\Improve-I.xpr
+# Log file: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/vivado.log
+# Journal file: C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.xpr}
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/GF2mZ Arithmetic/mul_ctrl.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/GF2mZ Arithmetic/gf2m_mul.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/GF2mZ Arithmetic/gf2mz_top.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/mem_dp.v}}
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/SHA3/define.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/SHA3/clog2.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/RNG/clog2.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/SHA3/define.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/SHA3/clog2.v} {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/Verilog/RNG/clog2.v}}
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64

@@ -1,0 +1,581 @@
+
+*** Running vivado
+    with args -log keccak.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source keccak.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source keccak.tcl -notrace
+Command: synth_design -top keccak -part xc7a50tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16884 
+WARNING: [Synth 8-2507] parameter declaration becomes local in padder with formal parameter declaration list [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/padder.v:30]
+WARNING: [Synth 8-2507] parameter declaration becomes local in padder with formal parameter declaration list [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/padder.v:31]
+WARNING: [Synth 8-2507] parameter declaration becomes local in padder with formal parameter declaration list [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/padder.v:32]
+WARNING: [Synth 8-2507] parameter declaration becomes local in keccak with formal parameter declaration list [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/keccak.v:36]
+WARNING: [Synth 8-2507] parameter declaration becomes local in keccak with formal parameter declaration list [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/keccak.v:37]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 421.266 ; gain = 108.973
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'keccak' [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/keccak.v:28]
+	Parameter n bound to: 67 - type: integer 
+	Parameter m bound to: 113 - type: integer 
+	Parameter r bound to: 7 - type: integer 
+	Parameter d bound to: 8 - type: integer 
+	Parameter digit bound to: 4 - type: integer 
+	Parameter FILE_E bound to: mem_E.txt - type: string 
+	Parameter WIDTH bound to: 452 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'padder' [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/padder.v:21]
+	Parameter n bound to: 67 - type: integer 
+	Parameter m bound to: 113 - type: integer 
+	Parameter digit bound to: 4 - type: integer 
+	Parameter PAD_W bound to: 124 - type: integer 
+	Parameter LAST_DIGIT bound to: 3 - type: integer 
+	Parameter NUM_BYTES bound to: 43 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'padder' (1#1) [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/padder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'f_permutation' [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/f_permutation.v:19]
+INFO: [Synth 8-6157] synthesizing module 'rconst' [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/rconst.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'rconst' (2#1) [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/rconst.v:18]
+INFO: [Synth 8-6157] synthesizing module 'round' [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/round.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'round' (3#1) [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/round.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'f_permutation' (4#1) [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/f_permutation.v:19]
+INFO: [Synth 8-6157] synthesizing module 'mem_sp' [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/mem_sp.v:11]
+	Parameter WIDTH bound to: 452 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter FILE bound to: mem_E.txt - type: string 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/mem_sp.v:20]
+INFO: [Synth 8-3876] $readmem data file 'mem_E.txt' is read successfully [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/mem_sp.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'mem_sp' (5#1) [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/mem_sp.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'keccak' (6#1) [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/keccak.v:28]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[62]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[61]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[60]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[59]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[58]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[57]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[56]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[55]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[54]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[53]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[52]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[51]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[50]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[49]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[48]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[47]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[46]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[45]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[44]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[43]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[42]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[41]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[40]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[39]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[38]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[37]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[36]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[35]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[34]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[33]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[32]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[30]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[29]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[28]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[27]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[26]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[25]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[24]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[23]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[22]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[21]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[20]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[19]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[18]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[17]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[16]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[14]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[13]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[12]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[11]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[10]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[9]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[8]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[6]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[5]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[4]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 467.227 ; gain = 154.934
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 467.227 ; gain = 154.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 467.227 ; gain = 154.934
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a50tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/rollo-sha3-512.srcs/constrs_1/new/usr_constrain.xdc]
+Finished Parsing XDC File [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/rollo-sha3-512.srcs/constrs_1/new/usr_constrain.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 821.777 ; gain = 0.742
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 821.852 ; gain = 509.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 821.852 ; gain = 509.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 821.852 ; gain = 509.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5583] The signal mem_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (1 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 821.852 ; gain = 509.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register out_reg [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/f_permutation.v:63]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input    576 Bit         XORs := 1     
+	   5 Input     64 Bit         XORs := 5     
+	   3 Input     64 Bit         XORs := 25    
+	   2 Input     64 Bit         XORs := 25    
+	   8 Input     64 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 7     
++---Registers : 
+	             1600 Bit    Registers := 1     
+	              576 Bit    Registers := 1     
+	              452 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	              904 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input   1600 Bit        Muxes := 1     
+	   2 Input    576 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register out_reg [C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/verilog/f_permutation.v:63]
+Hierarchical RTL Component report 
+Module keccak 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   8 Input     64 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module padder 
+Detailed RTL Component Info : 
++---Registers : 
+	              576 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    576 Bit        Muxes := 3     
+Module round 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input     64 Bit         XORs := 5     
+	   3 Input     64 Bit         XORs := 25    
+	   2 Input     64 Bit         XORs := 25    
+	   2 Input      1 Bit         XORs := 7     
+Module f_permutation 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    576 Bit         XORs := 1     
++---Registers : 
+	             1600 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   1600 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mem_sp 
+Detailed RTL Component Info : 
++---Registers : 
+	              452 Bit    Registers := 1     
++---RAMs : 
+	              904 Bit         RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+Removed BRAM instance from module keccak due to constant propagation
+Removed BRAM instance from module keccak due to constant propagation
+Removed BRAM instance from module keccak due to constant propagation
+Removed BRAM instance from module keccak due to constant propagation
+Removed BRAM instance from module keccak due to constant propagation
+Removed BRAM instance from module keccak due to constant propagation
+Removed BRAM instance from module keccak due to constant propagation
+Removed BRAM instance from module keccak due to constant propagation
+Removed BRAM instance from module keccak due to constant propagation
+Removed 9 RAM instances from module keccak due to constant propagation
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[461]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[116]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[436]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[462]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[117]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[437]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[463]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[118]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[438]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[448]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[280]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[119]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[439]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[449]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[281]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[104]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[424]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[450]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[282]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[233]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[105]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[425]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[451]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[234]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[115]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[435]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[469]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[444]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[470]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[243]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[445]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[471]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[244]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[446]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[456]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[288]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[245]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[447]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[457]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[289]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[246]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[112]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[432]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[458]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[293]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[290]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[241]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[247]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[113]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[433]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[459]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[294]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[291]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[242]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[123]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[443]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[232]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[114]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[434]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[460]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[295]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[292]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[477]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[28]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[552]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[42]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[362]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[68]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[388]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[259]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[478]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[29]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[553]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[43]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[363]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[540]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[91]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[411]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[251]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[69]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[389]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[260]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[479]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[30]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[554]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[541]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[252]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[70]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[390]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[464]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[31]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[542]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[296]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[253]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[71]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[391]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[465]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[16]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[543]' (FD) to 'padder_/out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'padder_/out_reg[297]' (FD) to 'padder_/out_reg[555]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\padder_/out_reg[507] )
+WARNING: [Synth 8-3332] Sequential element (padder_/out_reg[507]) is unused and will be removed from module keccak.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1114.070 ; gain = 801.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem_sp:     | mem_reg    | 2 x 452(READ_FIRST)    | W | R |                        |   |   | Port A           | 13     | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_E/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_E/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_E/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_E/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_E/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_E/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_E/mem_reg_12 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/mem_E/mem_reg_12 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 1114.070 ; gain = 801.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:02 . Memory (MB): peak = 1114.070 ; gain = 801.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem_sp:     | mem_reg    | 2 x 452(READ_FIRST)    | W | R |                        |   |   | Port A           | 13     | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance mem_E/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 1691.984 ; gain = 1379.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:01:12 . Memory (MB): peak = 1691.984 ; gain = 1379.691
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:12 . Memory (MB): peak = 1691.984 ; gain = 1379.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:01:12 . Memory (MB): peak = 1691.984 ; gain = 1379.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:01:12 . Memory (MB): peak = 1691.984 ; gain = 1379.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:01:13 . Memory (MB): peak = 1691.984 ; gain = 1379.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:01:13 . Memory (MB): peak = 1691.984 ; gain = 1379.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |LUT1       |     1|
+|3     |LUT2       |    67|
+|4     |LUT3       |   134|
+|5     |LUT4       |    76|
+|6     |LUT5       |   257|
+|7     |LUT6       |  1885|
+|8     |RAMB18E1_4 |     1|
+|9     |RAMB18E1_5 |     1|
+|10    |RAMB18E1_6 |     1|
+|11    |RAMB18E1_7 |     1|
+|12    |FDRE       |  1648|
+|13    |IBUF       |     3|
+|14    |OBUF       |    65|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------+--------------+------+
+|      |Instance         |Module        |Cells |
++------+-----------------+--------------+------+
+|1     |top              |              |  4141|
+|2     |  f_permutation_ |f_permutation |  3915|
+|3     |  mem_E          |mem_sp        |   114|
+|4     |  padder_        |padder        |    40|
++------+-----------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:01:13 . Memory (MB): peak = 1691.984 ; gain = 1379.691
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1691.984 ; gain = 1025.066
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:01:13 . Memory (MB): peak = 1691.984 ; gain = 1379.691
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'keccak' is not ideal for floorplanning, since the cellview 'f_permutation' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+139 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:16 . Memory (MB): peak = 1691.984 ; gain = 1392.516
+INFO: [Common 17-1381] The checkpoint 'C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Sha3/rollo-sha3-512/rollo-sha3-512.runs/synth_1/keccak.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file keccak_utilization_synth.rpt -pb keccak_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1691.984 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 17 19:36:42 2020...

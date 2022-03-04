@@ -1,0 +1,21 @@
+# do {comb_SA_tb_compile.do} 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module comb_SA
+# -- Skipping module processor_A
+# -- Skipping module processor_A_0
+# -- Skipping module processor_A_1
+# -- Skipping module processor_B
+# -- Skipping module processor_B_2
+# -- Skipping module processor_B_3
+# -- Skipping module glbl
+# 
+# Top level modules:
+# 	comb_SA
+# 	glbl

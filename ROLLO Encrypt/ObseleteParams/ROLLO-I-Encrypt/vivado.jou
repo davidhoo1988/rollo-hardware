@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun May  3 11:35:10 2020
+# Process ID: 3228
+# Current directory: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29220 C:\Users\David\Dropbox\LRPC Code\hardware\ROLLO Encrypt\ROLLO-I-Encrypt\ROLLO-I-Encrypt.xpr
+# Log file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/vivado.log
+# Journal file: C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/ROLLO Encrypt/ROLLO-I-Encrypt/ROLLO-I-Encrypt.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+close_project
+open_project {C:/Users/David/Dropbox/LRPC Code/hardware/GF2mZ Arithmetic/Improve-I/Improve-I.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+launch_simulation -install_path F:/modelsim64_10.1c/win64

@@ -1,0 +1,27 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 4ae46f5f977c4f8d90a22665cf042262 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot comb_SA_tb_behav xil_defaultlib.comb_SA_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination/verilog/comb_SA.v" Line 1. Module comb_SA(DAT_W=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination/verilog/node.v" Line 2. Module processor_A doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination/verilog/node.v" Line 39. Module processor_B doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination/verilog/node.v" Line 39. Module processor_B doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination/verilog/node.v" Line 39. Module processor_B doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination/verilog/node.v" Line 2. Module processor_A doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination/verilog/node.v" Line 39. Module processor_B doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination/verilog/node.v" Line 39. Module processor_B doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination/verilog/node.v" Line 2. Module processor_A doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination/verilog/node.v" Line 39. Module processor_B doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination/verilog/mem.v" Line 11. Module mem(WIDTH=4,DEPTH=9,FILE="../../../../verilog/data.in") doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.processor_A
+Compiling module xil_defaultlib.processor_B
+Compiling module xil_defaultlib.comb_SA(DAT_W=4)
+Compiling module xil_defaultlib.mem(WIDTH=4,DEPTH=9,FILE="../../...
+Compiling module xil_defaultlib.comb_SA_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot comb_SA_tb_behav

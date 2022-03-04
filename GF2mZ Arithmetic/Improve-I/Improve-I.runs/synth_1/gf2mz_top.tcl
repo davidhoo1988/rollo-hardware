@@ -16,7 +16,11 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param messaging.defaultLimit 2500
 set_param simulator.modelsimInstallPath F:/modelsim64_10.1c/win64
+set_msg_config -id {33-285} -limit 100
+set_msg_config -id {33-288} -limit 100
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tfgg676-1
 
 set_param project.singleFileAddWarning.threshold 0
